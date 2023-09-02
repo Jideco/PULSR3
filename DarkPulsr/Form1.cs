@@ -26,7 +26,7 @@ namespace DarkPulsr
         private int largeCircleRadius = 250;
         private int smallCircleRadius = 10;
         private double angle = 270;
-        private double angularSpeed = 1;
+        private double angularSpeed = 5;
         private int cycleCount = 0;
         public Form1()
         {
