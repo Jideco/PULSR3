@@ -1,3 +1,2 @@
 # PULSR3
-first commit
-linked
+This a repo for my work pertaining to PULSR.
