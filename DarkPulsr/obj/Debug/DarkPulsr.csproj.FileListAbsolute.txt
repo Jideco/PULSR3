@@ -8,3 +8,13 @@ C:\Users\MECRUN\source\repos\DarkPulsr\obj\Debug\DarkPulsr.csproj.GenerateResour
 C:\Users\MECRUN\source\repos\DarkPulsr\obj\Debug\DarkPulsr.csproj.CoreCompileInputs.cache
 C:\Users\MECRUN\source\repos\DarkPulsr\obj\Debug\DarkPulsr.exe
 C:\Users\MECRUN\source\repos\DarkPulsr\obj\Debug\DarkPulsr.pdb
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\bin\Debug\DarkPulsr.exe.config
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\bin\Debug\DarkPulsr.exe
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\bin\Debug\DarkPulsr.pdb
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.csproj.AssemblyReference.cache
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.Form1.resources
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.Properties.Resources.resources
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.csproj.GenerateResource.cache
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.csproj.CoreCompileInputs.cache
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.exe
+C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\DarkPulsr\obj\Debug\DarkPulsr.pdb
