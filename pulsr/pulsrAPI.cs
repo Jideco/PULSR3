@@ -347,7 +347,7 @@ namespace PULSR_3
             upper.angle = (motor_data[1] << (8)) + motor_data[2];
             lower.angle = (motor_data[3] << 8) + motor_data[4];
             // remove later //
-            Console.WriteLine("angles: " + upper.angle + ", " + lower.angle);
+            //Console.WriteLine("angles: " + upper.angle + ", " + lower.angle);
         }
 
         public void UpdateSensorData()
@@ -559,8 +559,8 @@ namespace PULSR_3
             y = (int)(-(e2 * Math.Cos(DegreeToRadian(20))) - (e1 * Math.Sin(DegreeToRadian(20))));
             x = (int)((e1 * Math.Cos(DegreeToRadian(20))) - (e2 * Math.Sin(DegreeToRadian(20))));
 
-            y = y * 25;
-            x = x * 25;
+            y = y * 25;   //scaler can go in here, fixed of 25
+            x = x * 25;   //scaler can go in here, fixed of 25
 
             return new int[] { y, x };
         }

@@ -25,7 +25,7 @@ namespace PULSR_3
         pulsr pulsr3 = new pulsr();
 
         int selectedMode; //Store the Selected mode
-        bool running;   // ///////testing///
+        bool running;   // ///////testing/// store state for assistive mode 
 
         //int upper_force_t { get; set; }
         //int lower_force_t { get; set; }
@@ -61,7 +61,7 @@ namespace PULSR_3
         private int largeCircleRadius = 250;
         private int smallCircleRadius = 10;
         private double angle = 270;
-        private double angularSpeed = 1;
+        private double angularSpeed = 1; //can be changed, initiated to 1
         private int cycleCount = 0;
 
         public string fileName ;
@@ -195,10 +195,10 @@ namespace PULSR_3
 
                 //int[] upper_force_t = Enumerable.Repeat(32000, 70).ToArray();
                 //int[] lower_force_t = Enumerable.Repeat(32000, 70).ToArray();
-                upper_force_t = new List<int>(Enumerable.Repeat(32000, 70));
-                lower_force_t = new List<int>(Enumerable.Repeat(32000, 70));
+                upper_force_t = new List<int>(Enumerable.Repeat(32000, 70)); //70 samples of load cell data used in plotting graph
+                lower_force_t = new List<int>(Enumerable.Repeat(32000, 70)); //70 samples of load cell data used in plotting graph
 
-                threshold = 1000;
+                threshold = 0;  //real value in start click
 
 
                 pulsr3.ComputerMode();
@@ -273,10 +273,16 @@ namespace PULSR_3
         private void maximizeButton(object sender, MouseEventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            int width = this.Width;
+            int height = this.Height;
+            Console.WriteLine("MAXIMIZED Width: " + width + ", Height: " + height);
         }
         private void minimizeButton(object sender, MouseEventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
+            int width = this.Width;
+            int height = this.Height;
+            Console.WriteLine("NORMAL Width: " + width + ", Height: " + height);
         }
 
         //////// START Button //////
@@ -300,14 +306,16 @@ namespace PULSR_3
             //cycleCount = 0;
             //cycleCount += 1;
             //textBox1.Text = cycleCount.ToString();
-            timer.Start(); // Start the timer to begin the animation  // Take it to the bottom and see the effect
+
+            //timer.Start(); // Start the timer to begin the animation  // Take it to the bottom and see the effect
 
             
             if (selectedMode == 4)
             {
+                threshold = 1000;
                 running = true; /////////////testing///
 
-                //button2.Text = Convert.ToString(threshold = 1000);
+                button2.Text = Convert.ToString(threshold);
             }
 
 
@@ -327,6 +335,8 @@ namespace PULSR_3
 
                 file.Close();
             }
+
+            timer.Start();
         }
 
         ////////// RESET Button///
@@ -369,8 +379,8 @@ namespace PULSR_3
             ///
             //button2.Text = Convert.ToString(levelStart += 1000);
 
-            button2.Text = Convert.ToString(threshold += 1000); //test
-
+            threshold += 1000;
+            button2.Text = Convert.ToString(threshold); //test
 
         }
 
@@ -390,7 +400,8 @@ namespace PULSR_3
 
                 //button2.Text = Convert.ToString(levelStart -= 1000);
 
-                button2.Text = Convert.ToString(threshold += 1000);  //test
+                threshold -= 1000;
+                button2.Text = Convert.ToString(threshold);  //test
 
             }
         }
@@ -487,7 +498,7 @@ namespace PULSR_3
                 //Thread.Sleep(100);
 
                 //////////////////
-                Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);
+                //Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);  //moved to buttom
                 float centerX = orbitPanel.Width / 2;
                 float centerY = orbitPanel.Height / 2;
                 //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
@@ -498,7 +509,7 @@ namespace PULSR_3
                 float largeCircleY = centerY - largeCircleRadius;
                 float largeCircleDiameter = 2 * largeCircleRadius;
 
-                e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter);
+                //e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter); //moved to buttom
 
 
                 /// Draw Small Obiting Circle
@@ -562,6 +573,8 @@ namespace PULSR_3
                 Brush ellipseBrush = Brushes.Green;  //default colour
                 SolidBrush rectangleBrush = (SolidBrush)Brushes.Blue; //default colour
 
+                Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);
+
                 if (distance <= 100)
                 {
                     if (distance <= 70)
@@ -569,6 +582,7 @@ namespace PULSR_3
                         //change to green green
                         ellipseBrush = Brushes.Green;
                         rectangleBrush = (SolidBrush)Brushes.Green;
+                        largeCirclePen = new Pen(Color.Green, 5.0f);
 
 
                         //update score
@@ -586,12 +600,14 @@ namespace PULSR_3
                     // change to green purple
                     ellipseBrush = Brushes.Purple;
                     rectangleBrush = (SolidBrush)Brushes.Green;
+                    largeCirclePen = new Pen(Color.Purple, 5.0f);
                 }
 
+                e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter);
                 e.Graphics.FillEllipse(ellipseBrush, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter);
 
                 // Draw the trail
-                Pen trailPen = new Pen(Color.White, 3); // Change the color and thickness as needed
+                Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
                 trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash; // Set the DashStyle to Dash
                 for (int i = 0; i < trailPoints.Count - 1; i++)
                 {
@@ -634,7 +650,7 @@ namespace PULSR_3
                 pulsr3.UpdateUpperLoadCell(); //logic
                 pulsr3.UpdateLowerLoadCell(); //logic
 
-                Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);
+                //Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);  //moved to buttom
                 float centerX = orbitPanel.Width / 2;
                 float centerY = orbitPanel.Height / 2;
                 //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
@@ -645,7 +661,7 @@ namespace PULSR_3
                 float largeCircleY = centerY - largeCircleRadius;
                 float largeCircleDiameter = 2 * largeCircleRadius;
 
-                e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter);
+                //e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter);  //moved to buttom
 
 
                 /// Draw Small Obiting Circle
@@ -709,6 +725,8 @@ namespace PULSR_3
                 Brush ellipseBrush = Brushes.Green;  //default colour
                 SolidBrush rectangleBrush = (SolidBrush)Brushes.Blue; //default colour
 
+                Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);
+
                 if (distance <= 100)
                 {
                     if (distance <= 70)
@@ -716,6 +734,7 @@ namespace PULSR_3
                         //change to green green
                         ellipseBrush = Brushes.Green;
                         rectangleBrush = (SolidBrush)Brushes.Green;
+                        largeCirclePen = new Pen(Color.Green, 5.0f);
 
 
                         //update score
@@ -726,6 +745,7 @@ namespace PULSR_3
                         // change to orange orange
                         ellipseBrush = Brushes.Orange;
                         rectangleBrush = (SolidBrush)Brushes.Orange;
+                        
                     }
                 }
                 else
@@ -733,12 +753,14 @@ namespace PULSR_3
                     // change to green purple
                     ellipseBrush = Brushes.Purple;
                     rectangleBrush = (SolidBrush)Brushes.Green;
+                    largeCirclePen = new Pen(Color.Purple, 5.0f);
                 }
 
+                e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter);
                 e.Graphics.FillEllipse(ellipseBrush, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter);
 
                 // Draw the trail
-                Pen trailPen = new Pen(Color.White, 3); // Change the color and thickness as needed
+                Pen trailPen = new Pen(Color.White, 1); // Change the color and thickness as needed
                 trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash; // Set the DashStyle to Dash
                 for (int i = 0; i < trailPoints.Count - 1; i++)
                 {
