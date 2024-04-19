@@ -541,9 +541,10 @@ namespace PULSR_3
 
                 pulsr3.ReturnXYCoordinate();
                 //pulsr3.ComputeXY();
+                //Console.WriteLine($"This is raw x {pulsr3.x} and y {pulsr3.y}");
 
-                new_x = (xOffset - pulsr3.x);
-                new_y = (pulsr3.y - yOffset);
+                new_x = (400 - pulsr3.x);
+                new_y = (pulsr3.y - (-40));
 
                 //new_x = pulsr3.x; // + 306;
                 //new_y = pulsr3.y; // + 95;
@@ -693,16 +694,17 @@ namespace PULSR_3
 
                 pulsr3.ReturnXYCoordinate();
                 //pulsr3.ComputeXY();
+                Console.WriteLine($"This is raw x {pulsr3.x} and y {pulsr3.y}");
 
-                new_x = (xOffset - pulsr3.x);
-                new_y = (pulsr3.y - yOffset);
+                new_x = (400 - pulsr3.x);
+                new_y = (pulsr3.y - (-40));
 
                 //new_x = pulsr3.x; // + 306;
                 //new_y = pulsr3.y; // + 95;
 
                 current_x = (int)(centerX - new_x);
                 current_y = (int)(centerY + new_y);
-
+                
                 // Add the current position to the trail points
                 trailPoints.Add(new Point(current_y, current_x));
 
