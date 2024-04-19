@@ -2,6 +2,6 @@
 #PULSR project files to be ignored 
 
 pulsr/bin/
-pulsr/obj/
 pulsr/.vs/
+pulsr/obj/
 
