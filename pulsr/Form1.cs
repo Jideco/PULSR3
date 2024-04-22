@@ -44,8 +44,8 @@ namespace PULSR_3
         private int current_x;
         private int current_y;
         public int new_x;
-        public int yOffset = 38;
-        public int xOffset = 195;
+        public int yOffset { get; set; } = 38;
+        public int xOffset { get; set; } = 195;
 
         int levelStart = 0;   // This should be threshold // see effect and remove later
         int cycle = 0;
@@ -266,23 +266,23 @@ namespace PULSR_3
         private void closeButton(object sender, MouseEventArgs e)
         {
             DialogResult dr = MessageBox.Show("Do you want to close this window", "Confirm", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
-            if (dr == DialogResult.Yes) { Close(); }
+            if (dr == DialogResult.Yes) { Close(); pulsr3.UpdateMotorSpeed(0, 0); }
             else if (dr == DialogResult.No) { }
             else { }
         }
         private void maximizeButton(object sender, MouseEventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            int width = this.Width;
-            int height = this.Height;
-            Console.WriteLine("MAXIMIZED Width: " + width + ", Height: " + height);
+            //int width = this.Width;
+            //int height = this.Height;
+            //Console.WriteLine("MAXIMIZED Width: " + width + ", Height: " + height);
         }
         private void minimizeButton(object sender, MouseEventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-            int width = this.Width;
-            int height = this.Height;
-            Console.WriteLine("NORMAL Width: " + width + ", Height: " + height);
+            //int width = this.Width;
+            //int height = this.Height;
+            //Console.WriteLine("NORMAL Width: " + width + ", Height: " + height);
         }
 
         //////// START Button //////
@@ -543,8 +543,19 @@ namespace PULSR_3
                 //pulsr3.ComputeXY();
                 //Console.WriteLine($"This is raw x {pulsr3.x} and y {pulsr3.y}");
 
-                new_x = (400 - pulsr3.x);
-                new_y = (pulsr3.y - (-40));
+                if (this.Width == 1024 && this.Height == 749)
+                {
+                    xOffset = 195;
+                    yOffset = 38;
+                }
+                else
+                {
+                    xOffset = 400;
+                    yOffset = -40;
+                }
+
+                new_x = (xOffset - pulsr3.x);
+                new_y = (pulsr3.y - (yOffset));
 
                 //new_x = pulsr3.x; // + 306;
                 //new_y = pulsr3.y; // + 95;
@@ -694,10 +705,21 @@ namespace PULSR_3
 
                 pulsr3.ReturnXYCoordinate();
                 //pulsr3.ComputeXY();
-                Console.WriteLine($"This is raw x {pulsr3.x} and y {pulsr3.y}");
+                //Console.WriteLine($"This is raw x {pulsr3.x} and y {pulsr3.y}");
 
-                new_x = (400 - pulsr3.x);
-                new_y = (pulsr3.y - (-40));
+                if (this.Width == 1024 && this.Height == 749)
+                {
+                    xOffset = 195;
+                    yOffset = 38;
+                }
+                else
+                {
+                    xOffset = 400;
+                    yOffset = -40;
+                }
+
+                new_x = (xOffset - pulsr3.x);
+                new_y = (pulsr3.y - (yOffset));
 
                 //new_x = pulsr3.x; // + 306;
                 //new_y = pulsr3.y; // + 95;
