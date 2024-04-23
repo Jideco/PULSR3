@@ -494,6 +494,7 @@ namespace PULSR_3
                 }
 
                 // Update speed instruction
+                Console.WriteLine($"This is Upper Target {us} and Lower Target {ls}");
                 pulsr3.UpdateMotorSpeed((int)us, (int)ls);
                 //Thread.Sleep(100);
 
