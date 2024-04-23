@@ -1,0 +1,717 @@
+13:14:54:954	This is Upper Target 10 and Lower Target -10
+
+13:14:55:190	This is Upper Target 10 and Lower Target -10
+
+13:14:55:442	This is Upper Target 10 and Lower Target -10
+
+13:14:55:703	This is Upper Target -10 and Lower Target -10
+
+13:14:55:940	This is Upper Target -10 and Lower Target -10
+
+13:14:56:201	This is Upper Target -10 and Lower Target -10
+
+13:14:56:451	This is Upper Target -10 and Lower Target -10
+
+13:14:56:699	This is Upper Target 10 and Lower Target -10
+
+13:14:56:699	This is Upper Target 10 and Lower Target 10
+
+13:14:56:948	This is Upper Target 10 and Lower Target 10
+
+13:14:57:197	This is Upper Target 10 and Lower Target -10
+
+13:14:57:444	This is Upper Target -10 and Lower Target -10
+
+13:14:57:692	This is Upper Target -10 and Lower Target 10
+
+13:14:57:944	This is Upper Target -10 and Lower Target 10
+
+13:14:58:190	This is Upper Target 10 and Lower Target -10
+
+13:14:58:446	This is Upper Target 10 and Lower Target 10
+
+13:14:58:446	This is Upper Target 10 and Lower Target 10
+
+13:14:58:691	This is Upper Target 10 and Lower Target -10
+
+13:14:58:948	This is Upper Target 10 and Lower Target 10
+
+13:14:59:199	This is Upper Target -10 and Lower Target -10
+
+13:14:59:446	This is Upper Target -10 and Lower Target -10
+
+13:14:59:696	This is Upper Target -10 and Lower Target 10
+
+13:14:59:943	This is Upper Target 10 and Lower Target 10
+
+13:15:00:192	This is Upper Target 10 and Lower Target -10
+
+13:15:00:192	This is Upper Target 10 and Lower Target -10
+
+13:15:00:443	This is Upper Target -10 and Lower Target 10
+
+13:15:00:709	This is Upper Target -10 and Lower Target -10
+
+13:15:00:969	This is Upper Target -10 and Lower Target -10
+
+13:15:01:217	This is Upper Target 10 and Lower Target 10
+
+13:15:01:217	This is Upper Target 10 and Lower Target -10
+
+13:15:01:465	This is Upper Target -10 and Lower Target -10
+
+13:15:01:712	This is Upper Target -10 and Lower Target 10
+
+13:15:01:965	This is Upper Target -10 and Lower Target -10
+
+13:15:02:211	This is Upper Target -10 and Lower Target 10
+
+13:15:02:460	This is Upper Target -10 and Lower Target -10
+
+13:15:02:460	This is Upper Target 10 and Lower Target 10
+
+13:15:02:710	This is Upper Target 10 and Lower Target -10
+
+13:15:02:957	This is Upper Target -10 and Lower Target -10
+
+13:15:03:208	This is Upper Target -10 and Lower Target 10
+
+13:15:03:459	This is Upper Target -10 and Lower Target 10
+
+13:15:03:711	This is Upper Target 10 and Lower Target -10
+
+13:15:03:711	This is Upper Target 10 and Lower Target 10
+
+13:15:03:968	This is Upper Target 10 and Lower Target -10
+
+13:15:04:220	This is Upper Target -10 and Lower Target -10
+
+13:15:04:455	This is Upper Target -10 and Lower Target 10
+
+13:15:04:719	This is Upper Target -10 and Lower Target 10
+
+13:15:04:964	This is Upper Target 10 and Lower Target -10
+
+13:15:04:964	This is Upper Target 10 and Lower Target -10
+
+13:15:05:214	This is Upper Target 10 and Lower Target 10
+
+13:15:05:464	This is Upper Target -10 and Lower Target -10
+
+13:15:05:711	This is Upper Target -10 and Lower Target 10
+
+13:15:05:960	This is Upper Target -10 and Lower Target -10
+
+13:15:06:208	This is Upper Target -10 and Lower Target 10
+
+13:15:06:454	This is Upper Target 10 and Lower Target -10
+
+13:15:06:708	This is Upper Target 10 and Lower Target -10
+
+13:15:06:708	This is Upper Target -10 and Lower Target 10
+
+13:15:06:965	This is Upper Target -10 and Lower Target -10
+
+13:15:07:214	This is Upper Target -10 and Lower Target -10
+1
+13:15:07:463	This is Upper Target -10 and Lower Target 10
+
+13:15:07:708	This is Upper Target -10 and Lower Target -10
+
+13:15:07:956	This is Upper Target -10 and Lower Target -10
+
+13:15:08:209	This is Upper Target -10 and Lower Target 10
+
+13:15:08:458	This is Upper Target -10 and Lower Target 10
+
+13:15:08:707	This is Upper Target 10 and Lower Target -10
+
+13:15:08:957	This is Upper Target 10 and Lower Target -10
+
+13:15:08:957	This is Upper Target -10 and Lower Target 10
+
+13:15:09:206	This is Upper Target -10 and Lower Target -10
+
+13:15:09:459	This is Upper Target -10 and Lower Target 10
+
+13:15:09:706	This is Upper Target 10 and Lower Target -10
+
+13:15:09:956	This is Upper Target 10 and Lower Target 10
+
+13:15:10:205	This is Upper Target -10 and Lower Target -10
+
+13:15:10:467	This is Upper Target -10 and Lower Target 10
+
+13:15:10:715	This is Upper Target -10 and Lower Target -10
+
+13:15:10:967	This is Upper Target -10 and Lower Target -10
+
+13:15:10:967	This is Upper Target -10 and Lower Target 10
+
+13:15:11:214	This is Upper Target -10 and Lower Target 10
+
+13:15:11:462	This is Upper Target -10 and Lower Target -10
+
+13:15:11:715	This is Upper Target 10 and Lower Target -10
+
+13:15:11:963	This is Upper Target 10 and Lower Target 10
+
+13:15:12:211	This is Upper Target -10 and Lower Target 10
+
+13:15:12:464	This is Upper Target -10 and Lower Target -10
+
+13:15:12:712	This is Upper Target -10 and Lower Target -10
+
+13:15:12:712	This is Upper Target -10 and Lower Target 10
+
+13:15:12:961	This is Upper Target -10 and Lower Target -10
+
+13:15:13:212	This is Upper Target -10 and Lower Target -10
+
+13:15:13:462	This is Upper Target -10 and Lower Target 10
+
+13:15:13:711	This is Upper Target -10 and Lower Target 10
+
+13:15:13:957	This is Upper Target -10 and Lower Target -10
+
+13:15:14:207	This is Upper Target 10 and Lower Target -10
+
+13:15:14:455	This is Upper Target 10 and Lower Target 10
+
+13:15:14:709	This is Upper Target -10 and Lower Target 10
+
+13:15:14:957	This is Upper Target -10 and Lower Target -10
+
+13:15:14:957	This is Upper Target -10 and Lower Target -10
+
+13:15:15:206	This is Upper Target -10 and Lower Target 10
+
+13:15:15:461	This is Upper Target 10 and Lower Target -10
+
+13:15:15:706	This is Upper Target -10 and Lower Target 10
+
+13:15:15:954	This is Upper Target -10 and Lower Target -10
+
+13:15:16:220	This is Upper Target -10 and Lower Target -10
+
+13:15:16:220	This is Upper Target 10 and Lower Target 10
+
+13:15:16:459	This is Upper Target -10 and Lower Target 10
+
+13:15:16:716	This is Upper Target -10 and Lower Target -10
+
+13:15:16:959	This is Upper Target -10 and Lower Target -10
+
+13:15:17:206	This is Upper Target -10 and Lower Target 10
+
+13:15:17:466	This is Upper Target 10 and Lower Target 10
+
+13:15:17:718	This is Upper Target 10 and Lower Target -10
+
+13:15:17:967	This is Upper Target -10 and Lower Target -10
+
+13:15:18:214	This is Upper Target -10 and Lower Target 10
+
+13:15:18:462	This is Upper Target -10 and Lower Target 10
+
+13:15:18:708	This is Upper Target 10 and Lower Target -10
+
+13:15:18:708	This is Upper Target 10 and Lower Target -10
+
+13:15:18:959	This is Upper Target -10 and Lower Target 10
+
+13:15:19:209	This is Upper Target -10 and Lower Target 10
+
+13:15:19:459	This is Upper Target -10 and Lower Target -10
+
+13:15:19:708	This is Upper Target -10 and Lower Target -10
+
+13:15:19:955	This is Upper Target -10 and Lower Target 10
+
+13:15:19:955	This is Upper Target -10 and Lower Target -10
+
+13:15:20:220	This is Upper Target -10 and Lower Target -10
+
+13:15:20:458	This is Upper Target 10 and Lower Target 10
+
+13:15:20:705	This is Upper Target -10 and Lower Target 10
+
+13:15:20:956	This is Upper Target -10 and Lower Target -10
+
+13:15:21:217	This is Upper Target -10 and Lower Target -10
+
+13:15:21:465	This is Upper Target 10 and Lower Target 10
+
+13:15:21:713	This is Upper Target 10 and Lower Target 10
+
+13:15:21:962	This is Upper Target -10 and Lower Target -10
+
+13:15:22:212	This is Upper Target -10 and Lower Target -10
+
+13:15:22:212	This is Upper Target -10 and Lower Target 10
+
+13:15:22:461	This is Upper Target -10 and Lower Target 10
+
+13:15:22:712	This is Upper Target 10 and Lower Target -10
+
+13:15:22:959	This is Upper Target 10 and Lower Target -10
+
+13:15:23:207	This is Upper Target -10 and Lower Target 10
+
+13:15:23:459	This is Upper Target -10 and Lower Target 10
+
+13:15:23:717	This is Upper Target -10 and Lower Target -10
+
+13:15:23:717	This is Upper Target 10 and Lower Target -10
+
+13:15:23:967	This is Upper Target 10 and Lower Target 10
+
+13:15:24:214	This is Upper Target -10 and Lower Target 10
+
+13:15:24:468	This is Upper Target -10 and Lower Target -10
+
+13:15:24:718	This is Upper Target -10 and Lower Target 10
+
+13:15:24:967	This is Upper Target -10 and Lower Target -10
+
+13:15:25:216	This is Upper Target -10 and Lower Target 10
+
+13:15:25:463	This is Upper Target -10 and Lower Target -10
+
+13:15:25:712	This is Upper Target -10 and Lower Target 10
+
+13:15:25:712	This is Upper Target 10 and Lower Target 10
+
+13:15:25:962	This is Upper Target 10 and Lower Target -10
+
+13:15:26:209	This is Upper Target -10 and Lower Target 10
+
+13:15:26:458	This is Upper Target -10 and Lower Target -10
+
+13:15:26:708	This is Upper Target -10 and Lower Target 10
+
+13:15:26:957	This is Upper Target -10 and Lower Target -10
+
+13:15:27:220	This is Upper Target 10 and Lower Target 10
+
+13:15:27:220	This is Upper Target 10 and Lower Target 10
+
+13:15:27:468	This is Upper Target -10 and Lower Target -10
+
+13:15:27:721	This is Upper Target -10 and Lower Target 10
+
+13:15:27:964	This is Upper Target -10 and Lower Target -10
+
+13:15:28:214	This is Upper Target -10 and Lower Target 10
+
+13:15:28:466	This is Upper Target -10 and Lower Target 10
+
+13:15:28:714	This is Upper Target -10 and Lower Target -10
+
+13:15:28:963	This is Upper Target 10 and Lower Target -10
+
+13:15:29:216	This is Upper Target 10 and Lower Target 10
+
+13:15:29:216	This is Upper Target -10 and Lower Target 10
+
+13:15:29:457	This is Upper Target -10 and Lower Target -10
+
+13:15:29:707	This is Upper Target -10 and Lower Target 10
+
+13:15:29:958	This is Upper Target -10 and Lower Target -10
+
+13:15:30:209	This is Upper Target -10 and Lower Target 10
+
+13:15:30:458	This is Upper Target 10 and Lower Target -10
+
+13:15:30:709	This is Upper Target 10 and Lower Target 10
+
+13:15:30:957	This is Upper Target 10 and Lower Target 10
+
+13:15:30:957	This is Upper Target -10 and Lower Target 10
+
+13:15:31:207	This is Upper Target -10 and Lower Target -10
+
+13:15:31:460	This is Upper Target -10 and Lower Target 10
+
+13:15:31:717	This is Upper Target 10 and Lower Target -10
+
+13:15:31:963	This is Upper Target 10 and Lower Target 10
+
+13:15:32:211	This is Upper Target 10 and Lower Target 10
+
+13:15:32:458	This is Upper Target -10 and Lower Target -10
+
+13:15:32:708	This is Upper Target -10 and Lower Target 10
+
+13:15:32:978	This is Upper Target -10 and Lower Target 10
+
+13:15:33:212	This is Upper Target 10 and Lower Target -10
+
+13:15:33:456	This is Upper Target 10 and Lower Target 10
+
+13:15:33:456	This is Upper Target -10 and Lower Target 10
+
+13:15:33:717	This is Upper Target -10 and Lower Target -10
+
+13:15:33:964	This is Upper Target -10 and Lower Target 10
+
+13:15:34:210	This is Upper Target 10 and Lower Target -10
+
+13:15:34:461	This is Upper Target 10 and Lower Target 10
+
+13:15:34:707	This is Upper Target -10 and Lower Target 10
+
+13:15:34:970	This is Upper Target -10 and Lower Target -10
+
+13:15:34:970	This is Upper Target -10 and Lower Target 10
+
+13:15:35:220	This is Upper Target -10 and Lower Target -10
+
+13:15:35:457	This is Upper Target 10 and Lower Target 10
+
+13:15:35:716	This is Upper Target 10 and Lower Target 10
+
+13:15:35:964	This is Upper Target -10 and Lower Target -10
+
+13:15:36:214	This is Upper Target -10 and Lower Target 10
+
+13:15:36:458	This is Upper Target -10 and Lower Target 10
+
+13:15:36:769	This is Upper Target 10 and Lower Target -10
+
+13:15:36:769	This is Upper Target 10 and Lower Target -10
+
+13:15:36:965	This is Upper Target 10 and Lower Target 10
+
+13:15:37:213	This is Upper Target -10 and Lower Target 10
+4
+13:15:37:460	This is Upper Target -10 and Lower Target 10
+
+13:15:37:709	This is Upper Target -10 and Lower Target -10
+
+13:15:37:968	This is Upper Target -10 and Lower Target 10
+
+13:15:38:215	This is Upper Target 10 and Lower Target -10
+
+13:15:38:460	This is Upper Target 10 and Lower Target 10
+
+13:15:38:710	This is Upper Target -10 and Lower Target 10
+
+13:15:38:710	This is Upper Target -10 and Lower Target -10
+
+13:15:38:957	This is Upper Target -10 and Lower Target 10
+
+13:15:39:218	This is Upper Target 10 and Lower Target 10
+
+13:15:39:454	This is Upper Target 10 and Lower Target -10
+
+13:15:39:714	This is Upper Target 10 and Lower Target 10
+
+13:15:39:964	This is Upper Target 10 and Lower Target 10
+
+13:15:40:213	This is Upper Target -10 and Lower Target 10
+
+13:15:40:461	This is Upper Target -10 and Lower Target -10
+
+13:15:40:461	This is Upper Target 10 and Lower Target -10
+
+13:15:40:712	This is Upper Target 10 and Lower Target 10
+
+13:15:40:961	This is Upper Target 10 and Lower Target 10
+
+13:15:41:213	This is Upper Target 10 and Lower Target 10
+
+13:15:41:461	This is Upper Target 10 and Lower Target -10
+
+13:15:41:708	This is Upper Target 10 and Lower Target 10
+
+13:15:41:957	This is Upper Target 10 and Lower Target 10
+
+13:15:42:219	This is Upper Target -10 and Lower Target 10
+
+13:15:42:219	This is Upper Target -10 and Lower Target -10
+
+13:15:42:465	This is Upper Target 10 and Lower Target 10
+
+13:15:42:717	This is Upper Target 10 and Lower Target -10
+
+13:15:42:966	This is Upper Target 10 and Lower Target 10
+
+13:15:43:215	This is Upper Target 10 and Lower Target 10
+
+13:15:43:463	This is Upper Target -10 and Lower Target 10
+
+13:15:43:712	This is Upper Target -10 and Lower Target -10
+
+13:15:43:960	This is Upper Target 10 and Lower Target 10
+
+13:15:44:208	This is Upper Target 10 and Lower Target -10
+
+13:15:44:458	This is Upper Target 10 and Lower Target 10
+
+13:15:44:458	This is Upper Target -10 and Lower Target 10
+
+13:15:44:706	This is Upper Target -10 and Lower Target 10
+
+13:15:44:954	This is Upper Target -10 and Lower Target -10
+
+13:15:45:206	This is Upper Target 10 and Lower Target 10
+
+13:15:45:454	This is Upper Target 10 and Lower Target -10
+
+13:15:45:721	This is Upper Target 10 and Lower Target 10
+
+13:15:45:984	This is Upper Target 10 and Lower Target 10
+
+13:15:46:231	This is Upper Target -10 and Lower Target 10
+
+13:15:46:231	This is Upper Target -10 and Lower Target -10
+
+13:15:46:479	This is Upper Target 10 and Lower Target 10
+
+13:15:46:728	This is Upper Target 10 and Lower Target 10
+
+13:15:46:975	This is Upper Target 10 and Lower Target -10
+
+13:15:47:224	This is Upper Target 10 and Lower Target 10
+
+13:15:47:474	This is Upper Target -10 and Lower Target 10
+
+13:15:47:721	This is Upper Target -10 and Lower Target 10
+
+13:15:47:983	This is Upper Target 10 and Lower Target -10
+
+13:15:48:233	This is Upper Target 10 and Lower Target 10
+
+13:15:48:473	This is Upper Target 10 and Lower Target 10
+
+13:15:48:473	This is Upper Target -10 and Lower Target -10
+
+13:15:48:733	This is Upper Target -10 and Lower Target 10
+
+13:15:48:980	This is Upper Target 10 and Lower Target 10
+
+13:15:49:229	This is Upper Target 10 and Lower Target -10
+
+13:15:49:482	This is Upper Target 10 and Lower Target -10
+
+13:15:49:727	This is Upper Target 10 and Lower Target 10
+
+13:15:49:973	This is Upper Target -10 and Lower Target 10
+
+13:15:50:232	This is Upper Target -10 and Lower Target -10
+
+13:15:50:476	This is Upper Target 10 and Lower Target 10
+
+13:15:50:723	This is Upper Target 10 and Lower Target -10
+
+13:15:50:723	This is Upper Target 10 and Lower Target 10
+
+13:15:50:972	This is Upper Target 10 and Lower Target 10
+
+13:15:51:223	This is Upper Target 10 and Lower Target -10
+
+13:15:51:485	This is Upper Target 10 and Lower Target 10
+
+13:15:51:721	This is Upper Target 10 and Lower Target 10
+
+13:15:51:981	This is Upper Target 10 and Lower Target -10
+
+13:15:52:230	This is Upper Target 10 and Lower Target -10
+
+13:15:52:478	This is Upper Target -10 and Lower Target 10
+
+13:15:52:478	This is Upper Target 10 and Lower Target -10
+
+13:15:52:727	This is Upper Target 10 and Lower Target -10
+
+13:15:52:976	This is Upper Target 10 and Lower Target -10
+
+13:15:53:224	This is Upper Target 10 and Lower Target 10
+
+13:15:53:473	This is Upper Target 10 and Lower Target -10
+
+13:15:53:728	This is Upper Target 10 and Lower Target 10
+
+13:15:53:974	This is Upper Target -10 and Lower Target 10
+
+13:15:54:221	This is Upper Target -10 and Lower Target -10
+
+13:15:54:485	This is Upper Target 10 and Lower Target -10
+
+13:15:54:485	This is Upper Target 10 and Lower Target 10
+
+13:15:54:731	This is Upper Target 10 and Lower Target 10
+
+13:15:54:977	This is Upper Target 10 and Lower Target -10
+
+13:15:55:224	This is Upper Target 10 and Lower Target 10
+
+13:15:55:486	This is Upper Target 10 and Lower Target 10
+
+13:15:55:732	This is Upper Target 10 and Lower Target -10
+
+13:15:55:976	This is Upper Target 10 and Lower Target -10
+
+13:15:56:223	This is Upper Target 10 and Lower Target 10
+
+13:15:56:223	This is Upper Target 10 and Lower Target 10
+
+13:15:56:484	This is Upper Target 10 and Lower Target -10
+
+13:15:56:721	This is Upper Target 10 and Lower Target 10
+
+13:15:56:981	This is Upper Target -10 and Lower Target 10
+
+13:15:57:233	This is Upper Target -10 and Lower Target -10
+
+13:15:57:477	This is Upper Target -10 and Lower Target 10
+
+13:15:57:727	This is Upper Target 10 and Lower Target -10
+
+13:15:57:980	This is Upper Target 10 and Lower Target -10
+
+13:15:58:224	This is Upper Target 10 and Lower Target 10
+
+13:15:58:476	This is Upper Target -10 and Lower Target 10
+
+13:15:58:727	This is Upper Target -10 and Lower Target -10
+
+13:15:58:727	This is Upper Target 10 and Lower Target -10
+
+13:15:58:986	This is Upper Target 10 and Lower Target 10
+
+13:15:59:239	This is Upper Target 10 and Lower Target 10
+
+13:15:59:485	This is Upper Target -10 and Lower Target -10
+
+13:15:59:722	This is Upper Target -10 and Lower Target -10
+
+13:15:59:978	This is Upper Target 10 and Lower Target 10
+
+13:16:00:225	This is Upper Target 10 and Lower Target 10
+
+13:16:00:475	This is Upper Target 10 and Lower Target -10
+
+13:16:00:722	This is Upper Target -10 and Lower Target -10
+
+13:16:00:972	This is Upper Target -10 and Lower Target 10
+
+13:16:01:221	This is Upper Target 10 and Lower Target -10
+
+13:16:01:484	This is Upper Target 10 and Lower Target 10
+
+13:16:01:732	This is Upper Target 10 and Lower Target -10
+
+13:16:01:979	This is Upper Target 10 and Lower Target -10
+
+13:16:01:979	This is Upper Target 10 and Lower Target 10
+
+13:16:02:227	This is Upper Target 10 and Lower Target 10
+
+13:16:02:473	This is Upper Target 10 and Lower Target -10
+
+13:16:02:721	This is Upper Target 10 and Lower Target -10
+
+13:16:02:971	This is Upper Target -10 and Lower Target -10
+
+13:16:03:221	This is Upper Target 10 and Lower Target -10
+
+13:16:03:471	This is Upper Target 10 and Lower Target 10
+
+13:16:03:721	This is Upper Target 10 and Lower Target -10
+
+13:16:03:971	This is Upper Target 10 and Lower Target -10
+
+13:16:04:234	This is Upper Target -10 and Lower Target 10
+
+13:16:04:480	This is Upper Target 10 and Lower Target -10
+
+13:16:04:729	This is Upper Target 10 and Lower Target -10
+
+13:16:04:729	This is Upper Target 10 and Lower Target 10
+
+13:16:04:982	This is Upper Target 10 and Lower Target -10
+
+13:16:05:228	This is Upper Target 10 and Lower Target -10
+
+13:16:05:477	This is Upper Target -10 and Lower Target 10
+
+13:16:05:725	This is Upper Target -10 and Lower Target -10
+
+13:16:05:977	This is Upper Target 10 and Lower Target 10
+
+13:16:06:224	This is Upper Target 10 and Lower Target -10
+
+13:16:06:474	This is Upper Target 10 and Lower Target -10
+
+13:16:06:723	This is Upper Target 10 and Lower Target 10
+
+13:16:06:970	This is Upper Target -10 and Lower Target 10
+
+13:16:07:235	This is Upper Target -10 and Lower Target -10
+
+13:16:07:235	This is Upper Target 10 and Lower Target -10
+
+13:16:07:484	This is Upper Target 10 and Lower Target 10
+
+13:16:07:731	This is Upper Target 10 and Lower Target 10
+
+13:16:07:980	This is Upper Target -10 and Lower Target -10
+
+13:16:08:225	This is Upper Target -10 and Lower Target -10
+
+13:16:08:473	This is Upper Target -10 and Lower Target 10
+
+13:16:08:725	This is Upper Target 10 and Lower Target -10
+
+13:16:08:974	This is Upper Target 10 and Lower Target -10
+
+13:16:09:223	This is Upper Target 10 and Lower Target 10
+
+13:16:09:476	This is Upper Target 10 and Lower Target -10
+
+13:16:09:720	This is Upper Target -10 and Lower Target -10
+
+13:16:09:972	This is Upper Target -10 and Lower Target 10
+
+13:16:10:233	This is Upper Target 10 and Lower Target -10
+
+13:16:10:233	This is Upper Target 10 and Lower Target -10
+
+13:16:10:471	This is Upper Target 10 and Lower Target 10
+
+13:16:10:723	This is Upper Target 10 and Lower Target -10
+
+13:16:10:979	This is Upper Target -10 and Lower Target -10
+
+13:16:11:228	This is Upper Target -10 and Lower Target 10
+
+13:16:11:475	This is Upper Target 10 and Lower Target -10
+
+13:16:11:724	This is Upper Target 10 and Lower Target -10
+
+13:16:11:986	This is Upper Target 10 and Lower Target -10
+
+13:16:12:236	This is Upper Target 10 and Lower Target 10
+
+13:16:12:485	This is Upper Target 10 and Lower Target -10
+
+13:16:12:729	This is Upper Target -10 and Lower Target -10
+
+13:16:12:973	This is Upper Target -10 and Lower Target 10
+
+13:16:13:222	This is Upper Target -10 and Lower Target -10
+
+13:16:13:222	This is Upper Target 10 and Lower Target -10
+
+13:16:13:487	This is Upper Target 10 and Lower Target 10
+
+13:16:13:733	This is Upper Target -10 and Lower Target -10
+
+13:16:13:980	This is Upper Target -10 and Lower Target -10
+
+13:16:14:228	This is Upper Target -10 and Lower Target 10
+
+13:16:14:478	This is Upper Target 10 and Lower Target -10
