@@ -273,47 +273,29 @@ namespace motor
 
                 if (isNumber && levels.Contains(number))
                 {
-                    Console.WriteLine("You entered a number. Press x to exit ");
+                        Console.WriteLine("You entered a number. Press x to exit ");
 
-                    while (true)
-                    {
-                        // Logic 
-
-                        //List<int> upper_force_t = new List<int>(Enumerable.Repeat(32000, 70));
-                        //List<int> lower_force_t = new List<int>(Enumerable.Repeat(32000, 70));
-
+                    
+                    
+                        // Logic  //
                         pulsr3.UpdateUpperLoadCell();
-                        Console.WriteLine("UPPER LINK FORCE: " + pulsr3.upper.link_force);
+                        //Console.WriteLine("UPPER LINK FORCE: " + pulsr3.upper.link_force);
                         pulsr3.UpdateLowerLoadCell();
-                        Console.WriteLine("LOWER LINK FORCE: " + pulsr3.lower.link_force);
+                        //xConsole.WriteLine("LOWER LINK FORCE: " + pulsr3.lower.link_force);
                         //Thread.Sleep(2000);
                         pulsr3.UpdateSensorData();
-
-                        //upper_force_t.RemoveAt(0);
-                        //upper_force_t.Add(pulsr3.upper.link_force);
-
-                        //lower_force_t.RemoveAt(0);
-                        //lower_force_t.Add(pulsr3.lower.link_force);
-
-                        //Console.WriteLine("upper thres"+ threshold_upper);
-                        //Console.WriteLine("lower thres" + threshold_lower);
-                        //Thread.Sleep(2000);
 
                         double ls, us;
                         double dest = 10;
 
-
-
                         // Read all lines from the text files
-                        string[] usLines = File.ReadAllLines("upper_targets1txt");
+                        string[] usLines = File.ReadAllLines("upper_targets1.txt");
                         string[] lsLines = File.ReadAllLines("lower_targets1.txt");
-
 
                         // Initialize lists for ls and us // Populate with the data from assistive
                         List<double> usList = new List<double>();
                         List<double> lsList = new List<double>();
                         
-
                         // Parse and add the values to the lsList
                         foreach (string line in lsLines)
                         {
@@ -333,13 +315,12 @@ namespace motor
                           
                             return;
                         }
-                        if (lsList.Count == usList.Count)
-                        {
-                            Console.WriteLine(lsList.Count);
-                        }
+                    Console.WriteLine(lsList.Count());
+                    Console.WriteLine(usList.Count());
 
-                        // Loop through the lists
-                       /* for (int i = 0; i < lsList.Count; i++)
+                    // Loop through the lists
+                    Console.WriteLine("Circle Mode Started...");
+                        for (int i = 0; i < lsList.Count && i < usList.Count; i++)
                         {
                             ls = lsList[i];
                             us = usList[i];
@@ -347,9 +328,9 @@ namespace motor
                             // Update motor speed
                             pulsr3.UpdateMotorSpeed((int)us, (int)ls);
 
-                            Console.WriteLine("SPEED UPDATED");
-
-                            Thread.Sleep(100);
+                            Thread.Sleep(200);
+                            Console.WriteLine(i);
+                            pulsr3.UpdateSensorData();
 
 
 
@@ -363,47 +344,17 @@ namespace motor
                                     break;
                                 }
                             } 
-
-                        }*/
-
-
-                        // Update speed instruction
-                        //pulsr3.UpdateMotorSpeed((int)us, (int)ls);
-
-                        //Console.WriteLine("SPEED UPDATED");
-
-                        //Thread.Sleep(100);
-
-
-
-
-
-                        if (Console.KeyAvailable)
-                        {
-                            var key = Console.ReadKey(true).Key;
-                            if (key == ConsoleKey.X)
-                            {
-                                Console.WriteLine("You pressed 'x'. Exiting the loop.");
-                                pulsr3.UpdateMotorSpeed(0, 0);
-                                break;
-                            }
                         }
+                        Console.WriteLine("Circle Mode Ended...");
+                        pulsr3.UpdateMotorSpeed(0, 0);
 
-                    }
+
                 }
                 else
                 {
                     Console.WriteLine("Enter a Correct Level");
                 }
             };
-
-
-            //pulsr3.DisableLowerMotor();
-            //pulsr3.DisableUpperMotor();
-            //Console.WriteLine("Motor Disabled");
-
         }
-
-        
     }
 }
