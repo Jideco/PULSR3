@@ -246,6 +246,12 @@ namespace PULSR_3
 
                     pulsr3.UpdateMotorSpeed(0, 0); // Stop motor movement 
                 }
+                else if (selectedMode == 8)
+                {
+                    running = false;
+
+                    pulsr3.UpdateMotorSpeed(0, 0);
+                }
                 //file.Close();  //Close the file after each cycle
 
             }
@@ -310,13 +316,21 @@ namespace PULSR_3
             //timer.Start(); // Start the timer to begin the animation  // Take it to the bottom and see the effect
 
             
-            if (selectedMode == 4)
+            if (selectedMode == 4) // For assistive
             {
                 threshold = 1000;
                 running = true; /////////////testing///
 
                 button2.Text = Convert.ToString(threshold);
             }
+            else if (selectedMode == 8) // For active
+            {
+                //threshold = 1000;
+                running = true;
+
+                button2.Text = Convert.ToString(threshold);
+            }
+
 
 
             // Initiate the filename to log parameters //
@@ -408,7 +422,7 @@ namespace PULSR_3
         ///////// Orbiting Circle /////////////
         public void orbitPanelPaint(object sender, PaintEventArgs e)
         {
-            if (running == true) // For assistive mode
+            if (running == true && selectedMode == 4 ) // For assistive mode
             {
                 pulsr3.UpdateUpperLoadCell(); //logic
                 pulsr3.UpdateLowerLoadCell(); // logic
@@ -658,7 +672,7 @@ namespace PULSR_3
                 }
                 Console.WriteLine($"{pulsr3.upper.angle} , {pulsr3.lower.angle} , {pulsr3.upper.link_force} , {pulsr3.lower.link_force}");
             }
-            else if ( selectedMode != 4 && selectedMode == 0 || selectedMode == 8) // For active and passive
+            else if (selectedMode != 4 && selectedMode == 0 ) // For Passive
             {
                 pulsr3.UpdateUpperLoadCell(); //logic
                 pulsr3.UpdateLowerLoadCell(); //logic
@@ -821,6 +835,217 @@ namespace PULSR_3
                 }
                 Console.WriteLine($"{pulsr3.upper.angle} , {pulsr3.lower.angle} , {pulsr3.upper.link_force} , {pulsr3.lower.link_force}");
 
+            }
+            else if (selectedMode != 4 && selectedMode == 8 && running == true )  // For Active
+            {
+                
+
+                double ls, us;
+                double dest = 10;
+
+
+                // Read all lines from the text files
+                string[] usLines = File.ReadAllLines("upper_targets1.txt"); /// add txt file of the data
+                string[] lsLines = File.ReadAllLines("lower_targets1.txt"); ///
+
+                // Initialize lists for ls and us // Populate with the data from assistive
+                List<double> usList = new List<double>();
+                List<double> lsList = new List<double>();
+
+                // Parse and add the values to the lsList
+                foreach (string line in lsLines)
+                {
+                    lsList.Add(double.Parse(line));
+                }
+                // Parse and add the values to the usList
+                foreach (string line in usLines)
+                {
+                    usList.Add(double.Parse(line));
+                }
+
+
+                // Ensure both lists have the same length
+                if (lsList.Count != usList.Count)
+                {
+                    Console.WriteLine("Error: Lists are not the same length.");
+
+                    return;
+                }
+
+                // Loop through the lists
+                //Console.WriteLine("Circle Mode Started...");
+                for (int i = 0; i < lsList.Count; i++)
+                {
+                    ls = lsList[i];
+                    us = usList[i];
+                    ///////////////////
+                    pulsr3.UpdateUpperLoadCell(); //logic
+                    pulsr3.UpdateLowerLoadCell(); // logic
+
+
+                    if (selectedMode == 4)
+                    {
+                        threshold_upper = (threshold / 2) + ((threshold * Math.Cos(Math.PI * pulsr3.upper.angle / 180)) / 2);
+                        threshold_lower = (threshold / 2) + ((threshold * Math.Cos(Math.PI * (pulsr3.lower.angle - 110) / 180)) / 2);
+                    }
+                    else
+                    {
+                        threshold_upper = threshold;
+                        threshold_lower = threshold;
+                    }
+
+                    // Update motor speed
+                    pulsr3.UpdateMotorSpeed((int)us, (int)ls);
+
+
+                    //////////////////
+                    //Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);  //moved to buttom
+                    float centerX = orbitPanel.Width / 2;
+                    float centerY = orbitPanel.Height / 2;
+                    //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
+                    //float orbitingY = centerY + (float)(orbitRadius * Math.Sin(angle));
+
+                    /// Draw the larger circle
+                    float largeCircleX = centerX - largeCircleRadius;
+                    float largeCircleY = centerY - largeCircleRadius;
+                    float largeCircleDiameter = 2 * largeCircleRadius;
+
+                    //e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter); //moved to buttom
+
+
+                    /// Draw Small Obiting Circle
+                    double radians = angle * Math.PI / 180;
+                    smallCircleX = (int)(centerX + largeCircleRadius * Math.Cos(radians));
+                    smallCircleY = (int)(centerY + largeCircleRadius * Math.Sin(radians));
+
+                    int smallCircleDiameter = 2 * smallCircleRadius;
+
+                    int smallCircleXPos = smallCircleX - smallCircleRadius;
+                    int smallCircleYPos = smallCircleY - smallCircleRadius;
+
+                    //e.Graphics.FillEllipse(Brushes.Green, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter); //moved to buttom
+
+                    /// Display the coordinates in the terminal ///
+                    Console.WriteLine("Small Orbiting Circle Coordinates: X = {0}, Y = {1}", smallCircleXPos, smallCircleYPos);
+
+                    ///// Draw the small rectangle connected to end effector  /////
+                    float rectWidth = 20;
+                    float rectHeight = 20;
+                    float rectX = centerX - rectWidth / 2;
+                    //float rectY = centerY - orbitingCircleRadius - rectHeight;
+                    //e.Graphics.FillRectangle(Brushes.Blue, rectX, rectY, rectWidth, rectHeight);
+                    //e.Graphics.FillRectangle(Brushes.Blue, 57, 345, rectWidth, rectHeight);
+
+                    /// update effector coordinate to give new effector coordinates ///
+                    //old_x = new_x;
+                    //old_y = new_y;
+
+                    pulsr3.ReturnXYCoordinate();
+                    //pulsr3.ComputeXY();
+                    //Console.WriteLine($"This is raw x {pulsr3.x} and y {pulsr3.y}");
+
+                    if (this.Width == 1024 && this.Height == 749)
+                    {
+                        xOffset = 195;
+                        yOffset = 38;
+                    }
+                    else
+                    {
+                        xOffset = 400;
+                        yOffset = -40;
+                    }
+
+                    new_x = (xOffset - pulsr3.x);
+                    new_y = (pulsr3.y - (yOffset));
+
+                    //new_x = pulsr3.x; // + 306;
+                    //new_y = pulsr3.y; // + 95;
+
+                    current_x = (int)(centerX - new_x);
+                    current_y = (int)(centerY + new_y);
+
+                    // Add the current position to the trail points
+                    trailPoints.Add(new Point(current_y, current_x));
+
+
+                    //e.Graphics.FillRectangle(Brushes.Blue, current_y, current_x, rectWidth, rectHeight); // moved to buttom
+
+                    //Console.WriteLine("End effector : X = {0}, Y = {1}", new_x, new_y);
+                    Console.WriteLine("End effector Coordinates: X = {0}, Y = {1}", current_y, current_x);
+
+
+                    /// Scoring Calculations ///
+                    int xDiff = current_y - smallCircleXPos;
+                    int yDiff = current_x - smallCircleYPos;
+
+                    distance = (int)Math.Sqrt((xDiff * xDiff) + (yDiff * yDiff));
+                    Console.WriteLine("Distance between .... :" + distance);
+
+
+
+                    Brush ellipseBrush = Brushes.Green;  //default colour
+                    SolidBrush rectangleBrush = (SolidBrush)Brushes.Blue; //default colour
+
+                    Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);
+
+                    if (distance <= 100)
+                    {
+                        if (distance <= 70)
+                        {
+                            //change to green green
+                            ellipseBrush = Brushes.Green;
+                            rectangleBrush = (SolidBrush)Brushes.Green;
+                            largeCirclePen = new Pen(Color.Green, 5.0f);
+
+
+                            //update score
+                            button3.Text = Convert.ToString(score += 1);
+                        }
+                        else
+                        {
+                            // change to orange orange
+                            ellipseBrush = Brushes.Orange;
+                            rectangleBrush = (SolidBrush)Brushes.Orange;
+                        }
+                    }
+                    else
+                    {
+                        // change to green purple
+                        ellipseBrush = Brushes.Purple;
+                        rectangleBrush = (SolidBrush)Brushes.Green;
+                        largeCirclePen = new Pen(Color.Purple, 5.0f);
+                    }
+
+                    e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter);
+                    e.Graphics.FillEllipse(ellipseBrush, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter);
+
+                    // Draw the trail
+                    Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
+                    trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash; // Set the DashStyle to Dash
+                    for (int p = 0; p < trailPoints.Count - 1; p++)
+                    {
+                        e.Graphics.DrawLine(trailPen, trailPoints[p], trailPoints[p + 1]);
+                    }
+
+                    e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
+
+
+                    /// Loggging parameter into CSV file ///
+                    parameterLogging();
+
+                    fileName = "sessions_files/" + (cyclename) + ".csv";
+                    using (StreamWriter file = new StreamWriter(fileName, true))
+                    {
+                        file.WriteLine(threshold + "," + score + "," + pulsr3.upper.angle + "," + threshold_upper + "," + pulsr3.upper.link_force + "," + pulsr3.lower.angle + "," + threshold_lower + "," + pulsr3.lower.link_force + "," + DEP + "," + DEM + "," + DateTime.Now.ToString() + "," + cycleCount);
+                        file.Close();
+
+                        //file.WriteLine($"{threshold},{score},{pulsr2.upper.angle},{threshold_upper},{pulsr2.upper.link_force},{pulsr2.lower.angle},{threshold_lower},{pulsr2.lower.link_force},{DEP},{DEM},{DateTime.Now.Ticks},{n}");
+                    }
+                    Console.WriteLine($"{pulsr3.upper.angle} , {pulsr3.lower.angle} , {pulsr3.upper.link_force} , {pulsr3.lower.link_force}");
+
+                }
+
+                
             }
         }
 
