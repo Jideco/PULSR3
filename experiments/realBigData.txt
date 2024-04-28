@@ -1,0 +1,1827 @@
+17:22:02:148	'PULSR_3.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:02:396	'PULSR_3.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\MECRUN\Desktop\JideCode\pulsr3\PULSR3\pulsr\bin\Debug\PULSR_3.exe'. Symbols loaded.
+17:22:02:640	'PULSR_3.exe' (CLR v4.0.30319: PULSR_3.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:02:640	'PULSR_3.exe' (CLR v4.0.30319: PULSR_3.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:02:640	'PULSR_3.exe' (CLR v4.0.30319: PULSR_3.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:03:638	COM12
+17:22:03:638	COM13
+17:22:03:638	COM14
+17:22:03:895	The thread 0x20c0 has exited with code 0 (0x0).
+17:22:03:895	The thread 0x2114 has exited with code 0 (0x0).
+17:22:04:144	The thread 0x3690 has exited with code 0 (0x0).
+17:22:04:144	COM12 COM13 COM14
+17:22:04:391	'PULSR_3.exe' (CLR v4.0.30319: PULSR_3.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:04:641	'PULSR_3.exe' (CLR v4.0.30319: PULSR_3.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:04:903	'PULSR_3.exe' (CLR v4.0.30319: PULSR_3.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+17:22:05:742	load_cell_coms: COM12
+17:22:05:742	encoder_coms: COM13
+17:22:05:742	motor_coms: COM14
+17:22:05:742	load cell board connected
+17:22:05:742	encoder board connected
+17:22:05:742	pulsr communication check successful
+17:22:05:742	load cell board connected
+17:22:05:742	encoder board connected
+17:22:05:742	pulsr communication check successful
+17:22:05:742	Communication Port is Active
+17:22:12:322	Now in Assistive
+17:22:20:079	This is Upper Target 10 and Lower Target 10
+17:22:20:079	Small Orbiting Circle Coordinates: X = 473, Y = 105
+17:22:20:079	End effector Coordinates: X = 405, Y = 88
+17:22:20:079	Distance between .... :70
+17:22:20:079	0 , 110 , 32261 , 31854
+17:22:20:335	This is Upper Target 10 and Lower Target 10
+17:22:20:335	Small Orbiting Circle Coordinates: X = 469, Y = 105
+17:22:20:335	End effector Coordinates: X = 405, Y = 88
+17:22:20:335	Distance between .... :66
+17:22:20:335	0 , 110 , 31975 , 34472
+17:22:20:577	This is Upper Target -10 and Lower Target -10
+17:22:20:577	Small Orbiting Circle Coordinates: X = 464, Y = 105
+17:22:20:577	End effector Coordinates: X = 430, Y = 88
+17:22:20:577	Distance between .... :38
+17:22:20:577	0 , 111 , 35048 , 35485
+17:22:20:832	This is Upper Target -10 and Lower Target 10
+17:22:20:832	Small Orbiting Circle Coordinates: X = 460, Y = 105
+17:22:20:832	End effector Coordinates: X = 405, Y = 88
+17:22:20:832	Distance between .... :57
+17:22:20:832	0 , 110 , 43072 , 32952
+17:22:21:078	This is Upper Target -10 and Lower Target 10
+17:22:21:078	Small Orbiting Circle Coordinates: X = 456, Y = 105
+17:22:21:078	End effector Coordinates: X = 430, Y = 88
+17:22:21:078	Distance between .... :31
+17:22:21:078	1 , 111 , 41591 , 33849
+17:22:21:336	This is Upper Target 10 and Lower Target -10
+17:22:21:336	Small Orbiting Circle Coordinates: X = 451, Y = 106
+17:22:21:336	End effector Coordinates: X = 430, Y = 88
+17:22:21:336	Distance between .... :27
+17:22:21:336	2 , 111 , 34334 , 36033
+17:22:21:336	This is Upper Target 10 and Lower Target 10
+17:22:21:336	Small Orbiting Circle Coordinates: X = 447, Y = 106
+17:22:21:579	End effector Coordinates: X = 430, Y = 88
+17:22:21:579	Distance between .... :24
+17:22:21:579	1 , 111 , 33338 , 33989
+17:22:21:579	This is Upper Target -10 and Lower Target 10
+17:22:21:579	Small Orbiting Circle Coordinates: X = 443, Y = 107
+17:22:21:830	End effector Coordinates: X = 430, Y = 88
+17:22:21:830	Distance between .... :23
+17:22:21:830	0 , 111 , 37891 , 33857
+17:22:21:830	This is Upper Target -10 and Lower Target -10
+17:22:21:830	Small Orbiting Circle Coordinates: X = 438, Y = 108
+17:22:22:085	End effector Coordinates: X = 455, Y = 88
+17:22:22:085	Distance between .... :26
+17:22:22:085	1 , 112 , 47234 , 35863
+17:22:22:085	This is Upper Target -10 and Lower Target 10
+17:22:22:085	Small Orbiting Circle Coordinates: X = 434, Y = 108
+17:22:22:085	End effector Coordinates: X = 430, Y = 88
+17:22:22:085	Distance between .... :20
+17:22:22:085	2 , 111 , 49313 , 34309
+17:22:22:341	This is Upper Target -10 and Lower Target 10
+17:22:22:341	Small Orbiting Circle Coordinates: X = 430, Y = 109
+17:22:22:341	End effector Coordinates: X = 430, Y = 113
+17:22:22:341	Distance between .... :4
+17:22:22:341	3 , 112 , 38447 , 33850
+17:22:22:581	This is Upper Target -10 and Lower Target -10
+17:22:22:581	Small Orbiting Circle Coordinates: X = 426, Y = 110
+17:22:22:581	End effector Coordinates: X = 430, Y = 113
+17:22:22:581	Distance between .... :5
+17:22:22:581	3 , 112 , 36460 , 36374
+17:22:22:841	This is Upper Target 10 and Lower Target 10
+17:22:22:841	Small Orbiting Circle Coordinates: X = 421, Y = 111
+17:22:22:841	End effector Coordinates: X = 430, Y = 113
+17:22:22:841	Distance between .... :9
+17:22:22:841	4 , 112 , 34393 , 34513
+17:22:23:078	This is Upper Target 10 and Lower Target -10
+17:22:23:078	Small Orbiting Circle Coordinates: X = 417, Y = 112
+17:22:23:078	End effector Coordinates: X = 430, Y = 113
+17:22:23:078	Distance between .... :13
+17:22:23:078	3 , 112 , 31881 , 36067
+17:22:23:334	This is Upper Target 10 and Lower Target 10
+17:22:23:334	Small Orbiting Circle Coordinates: X = 413, Y = 113
+17:22:23:334	End effector Coordinates: X = 455, Y = 88
+17:22:23:334	Distance between .... :48
+17:22:23:334	2 , 112 , 33332 , 33835
+17:22:23:334	This is Upper Target -10 and Lower Target 10
+17:22:23:334	Small Orbiting Circle Coordinates: X = 409, Y = 114
+17:22:23:577	End effector Coordinates: X = 455, Y = 88
+17:22:23:577	Distance between .... :52
+17:22:23:577	2 , 113 , 40989 , 34839
+17:22:23:577	This is Upper Target -10 and Lower Target -10
+17:22:23:577	Small Orbiting Circle Coordinates: X = 404, Y = 115
+17:22:23:842	End effector Coordinates: X = 455, Y = 88
+17:22:23:842	Distance between .... :57
+17:22:23:842	2 , 113 , 48848 , 39038
+17:22:23:842	This is Upper Target -10 and Lower Target -10
+17:22:23:842	Small Orbiting Circle Coordinates: X = 400, Y = 117
+17:22:23:842	End effector Coordinates: X = 455, Y = 113
+17:22:23:842	Distance between .... :55
+17:22:23:842	3 , 113 , 52260 , 36412
+17:22:24:078	This is Upper Target -10 and Lower Target 10
+17:22:24:078	Small Orbiting Circle Coordinates: X = 396, Y = 118
+17:22:24:078	End effector Coordinates: X = 430, Y = 113
+17:22:24:078	Distance between .... :34
+17:22:24:078	4 , 112 , 42011 , 33860
+17:22:24:328	This is Upper Target -10 and Lower Target -10
+17:22:24:328	Small Orbiting Circle Coordinates: X = 392, Y = 120
+17:22:24:328	End effector Coordinates: X = 430, Y = 113
+17:22:24:328	Distance between .... :38
+17:22:24:328	4 , 112 , 39663 , 35372
+17:22:24:593	This is Upper Target -10 and Lower Target 10
+17:22:24:593	Small Orbiting Circle Coordinates: X = 388, Y = 121
+17:22:24:593	End effector Coordinates: X = 430, Y = 138
+17:22:24:593	Distance between .... :45
+17:22:24:593	5 , 112 , 37430 , 34388
+17:22:24:593	This is Upper Target 10 and Lower Target -10
+17:22:24:839	Small Orbiting Circle Coordinates: X = 384, Y = 123
+17:22:24:839	End effector Coordinates: X = 430, Y = 138
+17:22:24:839	Distance between .... :48
+17:22:24:839	6 , 112 , 32926 , 38016
+17:22:24:839	This is Upper Target 10 and Lower Target -10
+17:22:24:839	Small Orbiting Circle Coordinates: X = 380, Y = 124
+17:22:25:078	End effector Coordinates: X = 430, Y = 138
+17:22:25:078	Distance between .... :51
+17:22:25:078	5 , 112 , 31885 , 36971
+17:22:25:078	This is Upper Target 10 and Lower Target 10
+17:22:25:078	Small Orbiting Circle Coordinates: X = 376, Y = 126
+17:22:25:338	End effector Coordinates: X = 405, Y = 113
+17:22:25:338	Distance between .... :31
+17:22:25:338	4 , 111 , 33338 , 34468
+17:22:25:338	This is Upper Target -10 and Lower Target -10
+17:22:25:338	Small Orbiting Circle Coordinates: X = 372, Y = 128
+17:22:25:338	End effector Coordinates: X = 430, Y = 113
+17:22:25:338	Distance between .... :59
+17:22:25:338	4 , 112 , 40484 , 40691
+17:22:25:580	This is Upper Target -10 and Lower Target -10
+17:22:25:580	Small Orbiting Circle Coordinates: X = 368, Y = 130
+17:22:25:580	End effector Coordinates: X = 405, Y = 113
+17:22:25:580	Distance between .... :40
+17:22:25:580	4 , 111 , 44690 , 39511
+17:22:25:839	This is Upper Target -10 and Lower Target 10
+17:22:25:839	Small Orbiting Circle Coordinates: X = 364, Y = 132
+17:22:25:839	End effector Coordinates: X = 405, Y = 138
+17:22:25:839	Distance between .... :41
+17:22:25:839	5 , 111 , 45233 , 34419
+17:22:26:089	This is Upper Target -10 and Lower Target -10
+17:22:26:089	Small Orbiting Circle Coordinates: X = 360, Y = 134
+17:22:26:089	End effector Coordinates: X = 405, Y = 138
+17:22:26:089	Distance between .... :45
+17:22:26:089	6 , 111 , 37035 , 38430
+17:22:26:338	This is Upper Target 10 and Lower Target -10
+17:22:26:338	Small Orbiting Circle Coordinates: X = 356, Y = 136
+17:22:26:338	End effector Coordinates: X = 405, Y = 163
+17:22:26:338	Distance between .... :55
+17:22:26:338	7 , 111 , 33950 , 37958
+17:22:26:578	This is Upper Target 10 and Lower Target 10
+17:22:26:578	Small Orbiting Circle Coordinates: X = 352, Y = 138
+17:22:26:578	End effector Coordinates: X = 380, Y = 138
+17:22:26:578	Distance between .... :28
+17:22:26:578	6 , 110 , 31318 , 34331
+17:22:26:838	This is Upper Target 10 and Lower Target -10
+17:22:26:838	Small Orbiting Circle Coordinates: X = 349, Y = 140
+17:22:26:838	End effector Coordinates: X = 405, Y = 138
+17:22:26:838	Distance between .... :56
+17:22:26:838	5 , 111 , 34038 , 41129
+17:22:26:838	This is Upper Target -10 and Lower Target -10
+17:22:26:838	Small Orbiting Circle Coordinates: X = 345, Y = 142
+17:22:26:838	End effector Coordinates: X = 405, Y = 113
+17:22:26:838	Distance between .... :66
+17:22:26:838	4 , 110 , 40521 , 42142
+17:22:27:087	This is Upper Target -10 and Lower Target -10
+17:22:27:087	Small Orbiting Circle Coordinates: X = 341, Y = 145
+17:22:27:087	End effector Coordinates: X = 380, Y = 138
+17:22:27:087	Distance between .... :39
+17:22:27:087	5 , 110 , 46597 , 37927
+17:22:27:335	This is Upper Target -10 and Lower Target 10
+17:22:27:335	Small Orbiting Circle Coordinates: X = 338, Y = 147
+17:22:27:335	End effector Coordinates: X = 355, Y = 138
+17:22:27:335	Distance between .... :19
+17:22:27:335	6 , 109 , 40626 , 34846
+17:22:27:591	This is Upper Target 10 and Lower Target -10
+17:22:27:591	Small Orbiting Circle Coordinates: X = 334, Y = 150
+17:22:27:591	End effector Coordinates: X = 380, Y = 163
+17:22:27:591	Distance between .... :47
+17:22:27:591	7 , 110 , 34310 , 39959
+17:22:27:841	This is Upper Target 10 and Lower Target -10
+17:22:27:841	Small Orbiting Circle Coordinates: X = 331, Y = 152
+17:22:27:841	End effector Coordinates: X = 355, Y = 138
+17:22:27:841	Distance between .... :27
+17:22:27:841	6 , 109 , 32983 , 40026
+17:22:28:086	This is Upper Target 10 and Lower Target 10
+17:22:28:086	Small Orbiting Circle Coordinates: X = 327, Y = 155
+17:22:28:086	End effector Coordinates: X = 355, Y = 138
+17:22:28:086	Distance between .... :32
+17:22:28:086	5 , 109 , 34418 , 34482
+17:22:28:336	This is Upper Target -10 and Lower Target -10
+17:22:28:336	Small Orbiting Circle Coordinates: X = 324, Y = 157
+17:22:28:336	End effector Coordinates: X = 355, Y = 138
+17:22:28:336	Distance between .... :36
+17:22:28:336	5 , 109 , 42718 , 41684
+17:22:28:336	This is Upper Target -10 and Lower Target -10
+17:22:28:336	Small Orbiting Circle Coordinates: X = 320, Y = 160
+17:22:28:587	End effector Coordinates: X = 355, Y = 138
+17:22:28:587	Distance between .... :41
+17:22:28:587	5 , 109 , 48334 , 40627
+17:22:28:587	This is Upper Target -10 and Lower Target 10
+17:22:28:587	Small Orbiting Circle Coordinates: X = 317, Y = 163
+17:22:28:587	End effector Coordinates: X = 355, Y = 138
+17:22:28:587	Distance between .... :45
+17:22:28:587	6 , 109 , 50278 , 34848
+17:22:28:830	This is Upper Target -10 and Lower Target -10
+17:22:28:830	Small Orbiting Circle Coordinates: X = 313, Y = 166
+17:22:28:830	End effector Coordinates: X = 355, Y = 138
+17:22:28:830	Distance between .... :50
+17:22:28:830	6 , 109 , 41723 , 40142
+17:22:29:088	This is Upper Target 10 and Lower Target -10
+17:22:29:088	Small Orbiting Circle Coordinates: X = 310, Y = 169
+17:22:29:088	End effector Coordinates: X = 355, Y = 163
+17:22:29:088	Distance between .... :45
+17:22:29:088	7 , 109 , 34380 , 39471
+17:22:29:328	This is Upper Target 10 and Lower Target 10
+17:22:29:328	Small Orbiting Circle Coordinates: X = 307, Y = 172
+17:22:29:328	End effector Coordinates: X = 330, Y = 138
+17:22:29:328	Distance between .... :41
+17:22:29:328	6 , 108 , 32373 , 34854
+17:22:29:581	This is Upper Target -10 and Lower Target -10
+17:22:29:581	Small Orbiting Circle Coordinates: X = 304, Y = 175
+17:22:29:581	End effector Coordinates: X = 355, Y = 138
+17:22:29:581	Distance between .... :63
+17:22:29:581	6 , 109 , 37549 , 41209
+17:22:29:831	This is Upper Target -10 and Lower Target -10
+17:22:29:831	Small Orbiting Circle Coordinates: X = 301, Y = 178
+17:22:29:831	End effector Coordinates: X = 330, Y = 138
+17:22:29:831	Distance between .... :49
+17:22:29:831	6 , 108 , 47319 , 40522
+17:22:30:088	This is Upper Target -10 and Lower Target -10
+17:22:30:088	Small Orbiting Circle Coordinates: X = 298, Y = 181
+17:22:30:088	End effector Coordinates: X = 330, Y = 163
+17:22:30:088	Distance between .... :36
+17:22:30:088	7 , 108 , 48156 , 35482
+17:22:30:088	This is Upper Target -10 and Lower Target 10
+17:22:30:088	Small Orbiting Circle Coordinates: X = 295, Y = 184
+17:22:30:333	End effector Coordinates: X = 305, Y = 163
+17:22:30:333	Distance between .... :23
+17:22:30:333	8 , 107 , 39665 , 34505
+17:22:30:333	This is Upper Target -10 and Lower Target -10
+17:22:30:333	Small Orbiting Circle Coordinates: X = 292, Y = 187
+17:22:30:583	End effector Coordinates: X = 330, Y = 163
+17:22:30:583	Distance between .... :44
+17:22:30:583	8 , 108 , 36429 , 39102
+17:22:30:583	This is Upper Target 10 and Lower Target -10
+17:22:30:583	Small Orbiting Circle Coordinates: X = 289, Y = 190
+17:22:30:839	End effector Coordinates: X = 305, Y = 163
+17:22:30:839	Distance between .... :31
+17:22:30:839	9 , 107 , 33325 , 37913
+17:22:30:839	This is Upper Target 10 and Lower Target 10
+17:22:30:839	Small Orbiting Circle Coordinates: X = 286, Y = 194
+17:22:31:081	End effector Coordinates: X = 280, Y = 163
+17:22:31:081	Distance between .... :31
+17:22:31:081	8 , 106 , 32266 , 34443
+17:22:31:081	This is Upper Target -10 and Lower Target -10
+17:22:31:081	Small Orbiting Circle Coordinates: X = 283, Y = 197
+17:22:31:081	End effector Coordinates: X = 305, Y = 163
+17:22:31:081	Distance between .... :40
+17:22:31:081	8 , 107 , 36002 , 36507
+17:22:31:334	This is Upper Target -10 and Lower Target -10
+17:22:31:334	Small Orbiting Circle Coordinates: X = 280, Y = 201
+17:22:31:334	End effector Coordinates: X = 305, Y = 163
+17:22:31:334	Distance between .... :45
+17:22:31:334	8 , 107 , 46732 , 35571
+17:22:31:582	This is Upper Target -10 and Lower Target 10
+17:22:31:582	Small Orbiting Circle Coordinates: X = 278, Y = 204
+17:22:31:582	End effector Coordinates: X = 280, Y = 163
+17:22:31:582	Distance between .... :41
+17:22:31:582	9 , 106 , 49673 , 33839
+17:22:31:832	This is Upper Target -10 and Lower Target -10
+17:22:31:832	Small Orbiting Circle Coordinates: X = 275, Y = 208
+17:22:31:832	End effector Coordinates: X = 305, Y = 188
+17:22:31:832	Distance between .... :36
+17:22:31:832	10 , 107 , 42533 , 35459
+17:22:31:832	This is Upper Target -10 and Lower Target 10
+17:22:31:832	Small Orbiting Circle Coordinates: X = 273, Y = 211
+17:22:32:089	End effector Coordinates: X = 280, Y = 188
+17:22:32:089	Distance between .... :24
+17:22:32:089	10 , 106 , 40055 , 34868
+17:22:32:089	This is Upper Target -10 and Lower Target -10
+17:22:32:089	Small Orbiting Circle Coordinates: X = 270, Y = 215
+17:22:32:089	End effector Coordinates: X = 305, Y = 188
+17:22:32:089	Distance between .... :44
+17:22:32:089	11 , 107 , 35984 , 38116
+17:22:32:327	This is Upper Target -10 and Lower Target -10
+17:22:32:327	Small Orbiting Circle Coordinates: X = 268, Y = 218
+17:22:32:327	End effector Coordinates: X = 280, Y = 188
+17:22:32:327	Distance between .... :32
+17:22:32:327	11 , 106 , 35888 , 38043
+17:22:32:584	This is Upper Target 10 and Lower Target 10
+17:22:32:584	Small Orbiting Circle Coordinates: X = 265, Y = 222
+17:22:32:584	End effector Coordinates: X = 280, Y = 213
+17:22:32:584	Distance between .... :17
+17:22:32:584	12 , 106 , 33933 , 33847
+17:22:32:833	This is Upper Target 10 and Lower Target -10
+17:22:32:833	Small Orbiting Circle Coordinates: X = 263, Y = 226
+17:22:32:833	End effector Coordinates: X = 280, Y = 188
+17:22:32:833	Distance between .... :41
+17:22:32:833	11 , 106 , 32943 , 35372
+17:22:33:081	This is Upper Target -10 and Lower Target 10
+17:22:33:081	Small Orbiting Circle Coordinates: X = 261, Y = 229
+17:22:33:081	End effector Coordinates: X = 280, Y = 188
+17:22:33:081	Distance between .... :45
+17:22:33:081	11 , 106 , 36495 , 33952
+17:22:33:334	This is Upper Target -10 and Lower Target 10
+17:22:33:334	Small Orbiting Circle Coordinates: X = 259, Y = 233
+17:22:33:334	End effector Coordinates: X = 280, Y = 188
+17:22:33:334	Distance between .... :49
+17:22:33:334	11 , 106 , 51289 , 34932
+17:22:33:582	This is Upper Target -10 and Lower Target -10
+17:22:33:582	Small Orbiting Circle Coordinates: X = 257, Y = 237
+17:22:33:582	End effector Coordinates: X = 305, Y = 213
+17:22:33:582	Distance between .... :53
+17:22:33:582	12 , 107 , 51895 , 41147
+17:22:33:582	This is Upper Target -10 and Lower Target -10
+17:22:33:582	Small Orbiting Circle Coordinates: X = 255, Y = 241
+17:22:33:832	End effector Coordinates: X = 280, Y = 213
+17:22:33:832	Distance between .... :37
+17:22:33:832	12 , 106 , 43575 , 41040
+17:22:33:832	This is Upper Target -10 and Lower Target 10
+17:22:33:832	Small Orbiting Circle Coordinates: X = 253, Y = 245
+17:22:33:832	End effector Coordinates: X = 280, Y = 213
+17:22:33:832	Distance between .... :41
+17:22:33:832	13 , 106 , 39454 , 34399
+17:22:34:079	This is Upper Target -10 and Lower Target -10
+17:22:34:079	Small Orbiting Circle Coordinates: X = 251, Y = 249
+17:22:34:079	End effector Coordinates: X = 280, Y = 238
+17:22:34:079	Distance between .... :31
+17:22:34:079	14 , 106 , 38137 , 37934
+17:22:34:327	This is Upper Target -10 and Lower Target -10
+17:22:34:327	Small Orbiting Circle Coordinates: X = 249, Y = 253
+17:22:34:327	End effector Coordinates: X = 280, Y = 238
+17:22:34:327	Distance between .... :34
+17:22:34:327	15 , 106 , 37557 , 37600
+17:22:34:592	This is Upper Target 10 and Lower Target 10
+17:22:34:592	Small Orbiting Circle Coordinates: X = 247, Y = 257
+17:22:34:592	End effector Coordinates: X = 255, Y = 238
+17:22:34:592	Distance between .... :20
+17:22:34:592	15 , 105 , 34878 , 33963
+17:22:34:833	This is Upper Target -10 and Lower Target -10
+17:22:34:833	Small Orbiting Circle Coordinates: X = 246, Y = 261
+17:22:34:833	End effector Coordinates: X = 280, Y = 238
+17:22:34:833	Distance between .... :41
+17:22:34:833	15 , 106 , 34988 , 35350
+17:22:35:086	This is Upper Target -10 and Lower Target 10
+17:22:35:086	Small Orbiting Circle Coordinates: X = 244, Y = 265
+17:22:35:086	End effector Coordinates: X = 255, Y = 238
+17:22:35:086	Distance between .... :29
+17:22:35:086	15 , 105 , 41599 , 34442
+17:22:35:086	This is Upper Target -10 and Lower Target -10
+17:22:35:086	Small Orbiting Circle Coordinates: X = 243, Y = 269
+17:22:35:334	End effector Coordinates: X = 280, Y = 263
+17:22:35:334	Distance between .... :37
+17:22:35:334	16 , 106 , 44184 , 36371
+17:22:35:334	This is Upper Target -10 and Lower Target -10
+17:22:35:334	Small Orbiting Circle Coordinates: X = 241, Y = 273
+17:22:35:584	End effector Coordinates: X = 255, Y = 263
+17:22:35:584	Distance between .... :17
+17:22:35:584	17 , 105 , 37581 , 37426
+17:22:35:584	This is Upper Target -10 and Lower Target 10
+17:22:35:584	Small Orbiting Circle Coordinates: X = 240, Y = 277
+17:22:35:584	End effector Coordinates: X = 255, Y = 263
+17:22:35:584	Distance between .... :20
+17:22:35:584	17 , 105 , 35030 , 33962
+17:22:35:838	This is Upper Target 10 and Lower Target -10
+17:22:35:838	Small Orbiting Circle Coordinates: X = 238, Y = 281
+17:22:35:838	End effector Coordinates: X = 255, Y = 263
+17:22:35:838	Distance between .... :24
+17:22:35:838	18 , 105 , 34498 , 36021
+17:22:36:080	This is Upper Target 10 and Lower Target 10
+17:22:36:080	Small Orbiting Circle Coordinates: X = 237, Y = 286
+17:22:36:080	End effector Coordinates: X = 255, Y = 263
+17:22:36:080	Distance between .... :29
+17:22:36:080	17 , 105 , 32961 , 34927
+17:22:36:328	This is Upper Target -10 and Lower Target -10
+17:22:36:328	Small Orbiting Circle Coordinates: X = 236, Y = 290
+17:22:36:328	End effector Coordinates: X = 255, Y = 263
+17:22:36:328	Distance between .... :33
+17:22:36:328	17 , 105 , 36575 , 35902
+17:22:36:328	The thread 0x44e8 has exited with code 0 (0x0).
+17:22:36:328	This is Upper Target -10 and Lower Target -10
+17:22:36:328	Small Orbiting Circle Coordinates: X = 235, Y = 294
+17:22:36:585	End effector Coordinates: X = 255, Y = 263
+17:22:36:585	Distance between .... :36
+17:22:36:585	17 , 105 , 46770 , 35441
+17:22:36:585	This is Upper Target -10 and Lower Target 10
+17:22:36:585	Small Orbiting Circle Coordinates: X = 234, Y = 298
+17:22:36:838	End effector Coordinates: X = 230, Y = 263
+17:22:36:838	Distance between .... :35
+17:22:36:838	18 , 104 , 51880 , 32954
+17:22:36:838	This is Upper Target -10 and Lower Target -10
+17:22:36:838	Small Orbiting Circle Coordinates: X = 233, Y = 303
+17:22:36:838	End effector Coordinates: X = 230, Y = 288
+17:22:36:838	Distance between .... :15
+17:22:36:838	19 , 104 , 40539 , 35037
+17:22:37:080	This is Upper Target -10 and Lower Target 10
+17:22:37:080	Small Orbiting Circle Coordinates: X = 232, Y = 307
+17:22:37:080	End effector Coordinates: X = 230, Y = 288
+17:22:37:080	Distance between .... :19
+17:22:37:080	19 , 104 , 38494 , 34501
+17:22:37:334	This is Upper Target -10 and Lower Target -10
+17:22:37:334	Small Orbiting Circle Coordinates: X = 231, Y = 311
+17:22:37:334	End effector Coordinates: X = 230, Y = 288
+17:22:37:334	Distance between .... :23
+17:22:37:334	20 , 104 , 36376 , 36082
+17:22:37:582	This is Upper Target 10 and Lower Target -10
+17:22:37:582	Small Orbiting Circle Coordinates: X = 231, Y = 315
+17:22:37:582	End effector Coordinates: X = 230, Y = 313
+17:22:37:582	Distance between .... :2
+17:22:37:582	21 , 104 , 33866 , 36094
+17:22:37:839	This is Upper Target 10 and Lower Target 10
+17:22:37:839	Small Orbiting Circle Coordinates: X = 230, Y = 320
+17:22:37:839	End effector Coordinates: X = 205, Y = 288
+17:22:37:839	Distance between .... :40
+17:22:37:839	20 , 103 , 32998 , 33379
+17:22:38:083	This is Upper Target -10 and Lower Target 10
+17:22:38:083	Small Orbiting Circle Coordinates: X = 229, Y = 324
+17:22:38:083	End effector Coordinates: X = 230, Y = 288
+17:22:38:083	Distance between .... :36
+17:22:38:083	19 , 104 , 37515 , 34521
+17:22:38:328	This is Upper Target -10 and Lower Target -10
+17:22:38:328	Small Orbiting Circle Coordinates: X = 229, Y = 328
+17:22:38:328	End effector Coordinates: X = 255, Y = 288
+17:22:38:328	Distance between .... :47
+17:22:38:328	20 , 105 , 47738 , 40031
+17:22:38:590	This is Upper Target -10 and Lower Target -10
+17:22:38:590	Small Orbiting Circle Coordinates: X = 228, Y = 333
+17:22:38:590	End effector Coordinates: X = 230, Y = 288
+17:22:38:590	Distance between .... :45
+17:22:38:590	20 , 104 , 49246 , 37515
+17:22:38:590	This is Upper Target -10 and Lower Target 10
+17:22:38:590	Small Orbiting Circle Coordinates: X = 228, Y = 337
+17:22:38:590	End effector Coordinates: X = 230, Y = 313
+17:22:38:590	Distance between .... :24
+17:22:38:590	21 , 104 , 40032 , 33871
+17:22:38:826	This is Upper Target -10 and Lower Target -10
+17:22:38:826	Small Orbiting Circle Coordinates: X = 228, Y = 341
+17:22:38:826	End effector Coordinates: X = 230, Y = 313
+17:22:38:826	Distance between .... :28
+17:22:38:826	22 , 104 , 38042 , 35014
+17:22:39:091	This is Upper Target -10 and Lower Target 10
+17:22:39:091	Small Orbiting Circle Coordinates: X = 228, Y = 346
+17:22:39:091	End effector Coordinates: X = 205, Y = 313
+17:22:39:091	Distance between .... :40
+17:22:39:091	23 , 103 , 37022 , 34329
+17:22:39:331	This is Upper Target -10 and Lower Target -10
+17:22:39:331	Small Orbiting Circle Coordinates: X = 228, Y = 350
+17:22:39:331	End effector Coordinates: X = 230, Y = 338
+17:22:39:331	Distance between .... :12
+17:22:39:331	23 , 104 , 36421 , 35391
+17:22:39:579	This is Upper Target 10 and Lower Target -10
+17:22:39:579	Small Orbiting Circle Coordinates: X = 228, Y = 355
+17:22:39:579	End effector Coordinates: X = 205, Y = 338
+17:22:39:579	Distance between .... :28
+17:22:39:579	24 , 103 , 34347 , 35348
+17:22:39:832	This is Upper Target 10 and Lower Target 10
+17:22:39:832	Small Orbiting Circle Coordinates: X = 228, Y = 359
+17:22:39:832	End effector Coordinates: X = 205, Y = 313
+17:22:39:832	Distance between .... :51
+17:22:39:832	23 , 103 , 33391 , 32836
+17:22:39:832	This is Upper Target -10 and Lower Target 10
+17:22:39:832	Small Orbiting Circle Coordinates: X = 228, Y = 363
+17:22:40:086	End effector Coordinates: X = 205, Y = 313
+17:22:40:086	Distance between .... :55
+17:22:40:086	23 , 103 , 36577 , 34428
+17:22:40:086	This is Upper Target -10 and Lower Target -10
+17:22:40:086	Small Orbiting Circle Coordinates: X = 228, Y = 368
+17:22:40:086	End effector Coordinates: X = 230, Y = 338
+17:22:40:086	Distance between .... :30
+17:22:40:086	23 , 104 , 46137 , 37030
+17:22:40:335	This is Upper Target -10 and Lower Target -10
+17:22:40:335	Small Orbiting Circle Coordinates: X = 228, Y = 372
+17:22:40:581	End effector Coordinates: X = 205, Y = 338
+17:22:40:581	Distance between .... :41
+17:22:40:581	24 , 103 , 48840 , 35386
+17:22:40:581	This is Upper Target -10 and Lower Target 10
+17:22:40:581	Small Orbiting Circle Coordinates: X = 228, Y = 376
+17:22:40:581	End effector Coordinates: X = 205, Y = 338
+17:22:40:581	Distance between .... :44
+17:22:40:581	25 , 103 , 40642 , 32776
+17:22:40:835	This is Upper Target -10 and Lower Target 10
+17:22:40:835	Small Orbiting Circle Coordinates: X = 229, Y = 381
+17:22:40:835	End effector Coordinates: X = 205, Y = 338
+17:22:40:835	Distance between .... :49
+17:22:40:835	25 , 103 , 37573 , 34415
+17:22:41:091	This is Upper Target -10 and Lower Target -10
+17:22:41:091	Small Orbiting Circle Coordinates: X = 229, Y = 385
+17:22:41:091	End effector Coordinates: X = 230, Y = 363
+17:22:41:091	Distance between .... :22
+17:22:41:091	26 , 104 , 36468 , 37044
+17:22:41:091	This is Upper Target 10 and Lower Target 10
+17:22:41:337	Small Orbiting Circle Coordinates: X = 230, Y = 389
+17:22:41:337	End effector Coordinates: X = 205, Y = 363
+17:22:41:337	Distance between .... :36
+17:22:41:337	26 , 103 , 32971 , 33838
+17:22:41:337	This is Upper Target 10 and Lower Target 10
+17:22:41:337	Small Orbiting Circle Coordinates: X = 231, Y = 394
+17:22:41:581	End effector Coordinates: X = 230, Y = 363
+17:22:41:581	Distance between .... :31
+17:22:41:581	26 , 104 , 33435 , 34836
+17:22:41:581	This is Upper Target -10 and Lower Target -10
+17:22:41:581	Small Orbiting Circle Coordinates: X = 231, Y = 398
+17:22:41:845	End effector Coordinates: X = 230, Y = 338
+17:22:41:845	Distance between .... :60
+17:22:41:845	25 , 104 , 37461 , 40456
+17:22:41:845	This is Upper Target -10 and Lower Target 10
+17:22:41:845	Small Orbiting Circle Coordinates: X = 232, Y = 402
+17:22:41:845	End effector Coordinates: X = 230, Y = 363
+17:22:41:845	Distance between .... :39
+17:22:41:845	26 , 104 , 50317 , 34518
+17:22:42:102	This is Upper Target -10 and Lower Target -10
+17:22:42:102	Small Orbiting Circle Coordinates: X = 233, Y = 406
+17:22:42:102	End effector Coordinates: X = 230, Y = 363
+17:22:42:102	Distance between .... :43
+17:22:42:102	26 , 104 , 44053 , 35941
+17:22:42:342	This is Upper Target -10 and Lower Target 10
+17:22:42:342	Small Orbiting Circle Coordinates: X = 234, Y = 411
+17:22:42:342	End effector Coordinates: X = 230, Y = 363
+17:22:42:342	Distance between .... :48
+17:22:42:342	27 , 104 , 41135 , 33937
+17:22:42:594	This is Upper Target -10 and Lower Target -10
+17:22:42:594	Small Orbiting Circle Coordinates: X = 235, Y = 415
+17:22:42:594	End effector Coordinates: X = 230, Y = 388
+17:22:42:594	Distance between .... :27
+17:22:42:594	28 , 104 , 41121 , 35527
+17:22:42:852	This is Upper Target -10 and Lower Target 10
+17:22:42:852	Small Orbiting Circle Coordinates: X = 236, Y = 419
+17:22:42:852	End effector Coordinates: X = 230, Y = 388
+17:22:42:852	Distance between .... :31
+17:22:42:852	28 , 104 , 42094 , 33902
+17:22:43:102	This is Upper Target -10 and Lower Target -10
+17:22:43:102	Small Orbiting Circle Coordinates: X = 237, Y = 423
+17:22:43:102	End effector Coordinates: X = 230, Y = 388
+17:22:43:102	Distance between .... :35
+17:22:43:102	29 , 104 , 42174 , 35053
+17:22:43:102	This is Upper Target -10 and Lower Target 10
+17:22:43:102	Small Orbiting Circle Coordinates: X = 238, Y = 428
+17:22:43:343	End effector Coordinates: X = 230, Y = 413
+17:22:43:343	Distance between .... :17
+17:22:43:343	30 , 104 , 41498 , 33986
+17:22:43:343	This is Upper Target -10 and Lower Target -10
+17:22:43:343	Small Orbiting Circle Coordinates: X = 240, Y = 432
+17:22:43:609	End effector Coordinates: X = 255, Y = 413
+17:22:43:609	Distance between .... :24
+17:22:43:609	31 , 104 , 40559 , 35909
+17:22:43:609	This is Upper Target -10 and Lower Target -10
+17:22:43:609	Small Orbiting Circle Coordinates: X = 241, Y = 436
+17:22:43:609	End effector Coordinates: X = 255, Y = 413
+17:22:43:609	Distance between .... :26
+17:22:43:609	31 , 104 , 38515 , 35476
+17:22:43:850	This is Upper Target -10 and Lower Target 10
+17:22:43:850	Small Orbiting Circle Coordinates: X = 243, Y = 440
+17:22:43:850	End effector Coordinates: X = 230, Y = 438
+17:22:43:850	Distance between .... :13
+17:22:43:850	32 , 103 , 38068 , 32874
+17:22:44:102	This is Upper Target -10 and Lower Target 10
+17:22:44:102	Small Orbiting Circle Coordinates: X = 244, Y = 444
+17:22:44:102	End effector Coordinates: X = 255, Y = 438
+17:22:44:102	Distance between .... :12
+17:22:44:102	33 , 104 , 37541 , 34817
+17:22:44:358	This is Upper Target -10 and Lower Target -10
+17:22:44:358	Small Orbiting Circle Coordinates: X = 246, Y = 448
+17:22:44:358	End effector Coordinates: X = 255, Y = 438
+17:22:44:358	Distance between .... :13
+17:22:44:358	33 , 104 , 36961 , 37926
+17:22:44:602	This is Upper Target -10 and Lower Target -10
+17:22:44:602	Small Orbiting Circle Coordinates: X = 247, Y = 452
+17:22:44:602	End effector Coordinates: X = 255, Y = 463
+17:22:44:602	Distance between .... :13
+17:22:44:602	34 , 104 , 36466 , 35342
+17:22:44:846	This is Upper Target 10 and Lower Target 10
+17:22:44:846	Small Orbiting Circle Coordinates: X = 249, Y = 456
+17:22:44:846	End effector Coordinates: X = 230, Y = 463
+17:22:44:846	Distance between .... :20
+17:22:44:846	35 , 103 , 33956 , 32974
+17:22:45:097	This is Upper Target 10 and Lower Target 10
+17:22:45:097	Small Orbiting Circle Coordinates: X = 251, Y = 460
+17:22:45:097	End effector Coordinates: X = 255, Y = 463
+17:22:45:097	Distance between .... :5
+17:22:45:097	34 , 104 , 32431 , 34359
+17:22:45:097	This is Upper Target 10 and Lower Target -10
+17:22:45:350	Small Orbiting Circle Coordinates: X = 253, Y = 464
+17:22:45:350	End effector Coordinates: X = 255, Y = 438
+17:22:45:350	Distance between .... :26
+17:22:45:350	33 , 104 , 32371 , 38528
+17:22:45:350	This is Upper Target -10 and Lower Target 10
+17:22:45:350	Small Orbiting Circle Coordinates: X = 255, Y = 468
+17:22:45:606	End effector Coordinates: X = 255, Y = 438
+17:22:45:606	Distance between .... :30
+17:22:45:606	33 , 104 , 39038 , 34015
+17:22:45:606	This is Upper Target -10 and Lower Target 10
+17:22:45:606	Small Orbiting Circle Coordinates: X = 257, Y = 472
+17:22:45:606	End effector Coordinates: X = 255, Y = 438
+17:22:45:606	Distance between .... :34
+17:22:45:606	33 , 104 , 49239 , 34337
+17:22:45:852	This is Upper Target -10 and Lower Target -10
+17:22:45:852	Small Orbiting Circle Coordinates: X = 259, Y = 476
+17:22:45:852	End effector Coordinates: X = 280, Y = 463
+17:22:45:852	Distance between .... :24
+17:22:45:852	34 , 105 , 45262 , 39938
+17:22:46:094	This is Upper Target -10 and Lower Target -10
+17:22:46:094	Small Orbiting Circle Coordinates: X = 261, Y = 480
+17:22:46:094	End effector Coordinates: X = 255, Y = 463
+17:22:46:094	Distance between .... :18
+17:22:46:094	35 , 104 , 35969 , 36083
+17:22:46:356	This is Upper Target -10 and Lower Target 10
+17:22:46:356	Small Orbiting Circle Coordinates: X = 263, Y = 483
+17:22:46:356	End effector Coordinates: X = 255, Y = 463
+17:22:46:356	Distance between .... :21
+17:22:46:356	35 , 104 , 35005 , 33293
+17:22:46:604	This is Upper Target 10 and Lower Target -10
+17:22:46:604	Small Orbiting Circle Coordinates: X = 265, Y = 487
+17:22:46:604	End effector Coordinates: X = 255, Y = 463
+17:22:46:604	Distance between .... :26
+17:22:46:604	36 , 104 , 34402 , 35342
+17:22:46:857	This is Upper Target 10 and Lower Target 10
+17:22:46:857	Small Orbiting Circle Coordinates: X = 268, Y = 491
+17:22:46:857	End effector Coordinates: X = 255, Y = 463
+17:22:46:857	Distance between .... :30
+17:22:46:857	36 , 104 , 33378 , 33915
+17:22:47:104	This is Upper Target -10 and Lower Target 10
+17:22:47:104	Small Orbiting Circle Coordinates: X = 270, Y = 494
+17:22:47:104	End effector Coordinates: X = 255, Y = 463
+17:22:47:104	Distance between .... :34
+17:22:47:104	35 , 104 , 38076 , 34897
+17:22:47:104	This is Upper Target -10 and Lower Target -10
+17:22:47:344	Small Orbiting Circle Coordinates: X = 273, Y = 498
+17:22:47:344	End effector Coordinates: X = 280, Y = 463
+17:22:47:344	Distance between .... :35
+17:22:47:344	35 , 105 , 48184 , 38981
+17:22:47:344	This is Upper Target -10 and Lower Target -10
+17:22:47:344	Small Orbiting Circle Coordinates: X = 275, Y = 501
+17:22:47:602	End effector Coordinates: X = 255, Y = 463
+17:22:47:602	Distance between .... :42
+17:22:47:602	36 , 104 , 47680 , 36971
+17:22:47:602	This is Upper Target -10 and Lower Target 10
+17:22:47:602	Small Orbiting Circle Coordinates: X = 278, Y = 505
+17:22:47:602	End effector Coordinates: X = 255, Y = 488
+17:22:47:602	Distance between .... :28
+17:22:47:602	37 , 104 , 38131 , 33822
+17:22:47:843	This is Upper Target -10 and Lower Target 10
+17:22:47:843	Small Orbiting Circle Coordinates: X = 280, Y = 508
+17:22:47:843	End effector Coordinates: X = 255, Y = 488
+17:22:47:843	Distance between .... :32
+17:22:47:843	37 , 104 , 35928 , 34537
+17:22:48:094	This is Upper Target -10 and Lower Target -10
+17:22:48:094	Small Orbiting Circle Coordinates: X = 283, Y = 512
+17:22:48:094	End effector Coordinates: X = 280, Y = 488
+17:22:48:094	Distance between .... :24
+17:22:48:094	38 , 105 , 35068 , 40658
+17:22:48:344	This is Upper Target -10 and Lower Target -10
+17:22:48:344	Small Orbiting Circle Coordinates: X = 286, Y = 515
+17:22:48:344	End effector Coordinates: X = 255, Y = 513
+17:22:48:344	Distance between .... :31
+17:22:48:344	39 , 104 , 35509 , 36527
+17:22:48:603	This is Upper Target 10 and Lower Target 10
+17:22:48:603	Small Orbiting Circle Coordinates: X = 289, Y = 519
+17:22:48:603	End effector Coordinates: X = 255, Y = 513
+17:22:48:603	Distance between .... :34
+17:22:48:603	39 , 104 , 33803 , 33481
+17:22:48:847	This is Upper Target 10 and Lower Target 10
+17:22:48:847	Small Orbiting Circle Coordinates: X = 292, Y = 522
+17:22:48:847	End effector Coordinates: X = 255, Y = 513
+17:22:48:847	Distance between .... :38
+17:22:48:847	39 , 104 , 32342 , 34421
+17:22:49:101	This is Upper Target -10 and Lower Target -10
+17:22:49:101	Small Orbiting Circle Coordinates: X = 295, Y = 525
+17:22:49:101	End effector Coordinates: X = 280, Y = 488
+17:22:49:101	Distance between .... :39
+17:22:49:101	38 , 105 , 35038 , 37416
+17:22:49:341	This is Upper Target -10 and Lower Target 10
+17:22:49:341	Small Orbiting Circle Coordinates: X = 298, Y = 528
+17:22:49:341	End effector Coordinates: X = 255, Y = 513
+17:22:49:341	Distance between .... :45
+17:22:49:341	39 , 104 , 43129 , 33886
+17:22:49:341	This is Upper Target -10 and Lower Target 10
+17:22:49:341	Small Orbiting Circle Coordinates: X = 301, Y = 531
+17:22:49:598	End effector Coordinates: X = 280, Y = 513
+17:22:49:598	Distance between .... :27
+17:22:49:598	39 , 105 , 39052 , 34407
+17:22:49:598	This is Upper Target 10 and Lower Target -10
+17:22:49:598	Small Orbiting Circle Coordinates: X = 304, Y = 534
+17:22:49:598	End effector Coordinates: X = 305, Y = 513
+17:22:49:598	Distance between .... :21
+17:22:49:598	40 , 105 , 32476 , 40130
+17:22:49:850	This is Upper Target 10 and Lower Target -10
+17:22:49:850	Small Orbiting Circle Coordinates: X = 307, Y = 537
+17:22:49:850	End effector Coordinates: X = 305, Y = 513
+17:22:49:850	Distance between .... :24
+17:22:50:101	40 , 105 , 32300 , 35929
+17:22:50:101	This is Upper Target -10 and Lower Target 10
+17:22:50:101	Small Orbiting Circle Coordinates: X = 310, Y = 540
+17:22:50:101	End effector Coordinates: X = 255, Y = 513
+17:22:50:101	Distance between .... :61
+17:22:50:101	39 , 104 , 38441 , 32875
+17:22:50:355	This is Upper Target -10 and Lower Target 10
+17:22:50:355	Small Orbiting Circle Coordinates: X = 313, Y = 543
+17:22:50:355	End effector Coordinates: X = 280, Y = 513
+17:22:50:355	Distance between .... :44
+17:22:50:355	39 , 105 , 47233 , 33991
+17:22:50:592	This is Upper Target -10 and Lower Target -10
+17:22:50:592	Small Orbiting Circle Coordinates: X = 317, Y = 546
+17:22:50:592	End effector Coordinates: X = 305, Y = 513
+17:22:50:592	Distance between .... :35
+17:22:50:592	40 , 105 , 40149 , 36870
+17:22:50:852	This is Upper Target 10 and Lower Target 10
+17:22:50:852	Small Orbiting Circle Coordinates: X = 320, Y = 549
+17:22:50:852	End effector Coordinates: X = 305, Y = 538
+17:22:50:852	Distance between .... :18
+17:22:50:852	41 , 105 , 32832 , 34531
+17:22:51:097	This is Upper Target 10 and Lower Target 10
+17:22:51:097	Small Orbiting Circle Coordinates: X = 324, Y = 552
+17:22:51:097	End effector Coordinates: X = 305, Y = 513
+17:22:51:097	Distance between .... :43
+17:22:51:097	40 , 105 , 33327 , 34934
+17:22:51:354	This is Upper Target -10 and Lower Target -10
+17:22:51:354	Small Orbiting Circle Coordinates: X = 327, Y = 554
+17:22:51:354	The thread 0x1d34 has exited with code 0 (0x0).
+17:22:51:354	End effector Coordinates: X = 305, Y = 513
+17:22:51:354	Distance between .... :46
+17:22:51:354	39 , 106 , 39427 , 35996
+17:22:51:607	This is Upper Target -10 and Lower Target 10
+17:22:51:607	Small Orbiting Circle Coordinates: X = 331, Y = 557
+17:22:51:607	End effector Coordinates: X = 305, Y = 513
+17:22:51:607	Distance between .... :51
+17:22:51:607	40 , 105 , 43749 , 34446
+17:22:51:847	This is Upper Target -10 and Lower Target 10
+17:22:51:847	Small Orbiting Circle Coordinates: X = 334, Y = 559
+17:22:51:847	End effector Coordinates: X = 330, Y = 538
+17:22:51:847	Distance between .... :21
+17:22:51:847	41 , 106 , 40139 , 34437
+17:22:52:099	This is Upper Target -10 and Lower Target -10
+17:22:52:099	Small Orbiting Circle Coordinates: X = 338, Y = 562
+17:22:52:099	End effector Coordinates: X = 355, Y = 538
+17:22:52:099	Distance between .... :29
+17:22:52:099	41 , 107 , 35008 , 40011
+17:22:52:099	This is Upper Target -10 and Lower Target -10
+17:22:52:099	Small Orbiting Circle Coordinates: X = 341, Y = 564
+17:22:52:347	End effector Coordinates: X = 330, Y = 538
+17:22:52:347	Distance between .... :28
+17:22:52:347	42 , 106 , 35419 , 36035
+17:22:52:347	This is Upper Target 10 and Lower Target 10
+17:22:52:347	Small Orbiting Circle Coordinates: X = 345, Y = 567
+17:22:52:595	End effector Coordinates: X = 305, Y = 538
+17:22:52:595	Distance between .... :49
+17:22:52:595	43 , 105 , 33813 , 33428
+17:22:52:595	This is Upper Target 10 and Lower Target 10
+17:22:52:595	Small Orbiting Circle Coordinates: X = 349, Y = 569
+17:22:52:853	End effector Coordinates: X = 330, Y = 538
+17:22:52:853	Distance between .... :36
+17:22:52:853	42 , 106 , 32846 , 34480
+17:22:52:853	This is Upper Target 10 and Lower Target -10
+17:22:52:853	Small Orbiting Circle Coordinates: X = 353, Y = 571
+17:22:52:853	End effector Coordinates: X = 355, Y = 538
+17:22:52:853	Distance between .... :33
+17:22:52:853	41 , 107 , 11796 , 39142
+17:22:53:093	This is Upper Target -10 and Lower Target 10
+17:22:53:093	Small Orbiting Circle Coordinates: X = 356, Y = 573
+17:22:53:093	End effector Coordinates: X = 330, Y = 538
+17:22:53:093	Distance between .... :43
+17:22:53:093	41 , 106 , 49850 , 34995
+17:22:53:347	This is Upper Target -10 and Lower Target -10
+17:22:53:347	Small Orbiting Circle Coordinates: X = 360, Y = 575
+17:22:53:347	End effector Coordinates: X = 355, Y = 538
+17:22:53:347	Distance between .... :37
+17:22:53:347	41 , 107 , 52930 , 36554
+17:22:53:603	This is Upper Target -10 and Lower Target -10
+17:22:53:603	Small Orbiting Circle Coordinates: X = 364, Y = 577
+17:22:53:603	End effector Coordinates: X = 330, Y = 538
+17:22:53:603	Distance between .... :51
+17:22:53:603	42 , 106 , 49323 , 35392
+17:22:53:853	This is Upper Target -10 and Lower Target 10
+17:22:53:853	Small Orbiting Circle Coordinates: X = 368, Y = 579
+17:22:53:853	End effector Coordinates: X = 305, Y = 538
+17:22:53:853	Distance between .... :75
+17:22:53:853	43 , 105 , 40671 , 33482
+17:22:54:102	This is Upper Target -10 and Lower Target 10
+17:22:54:102	Small Orbiting Circle Coordinates: X = 372, Y = 581
+17:22:54:102	End effector Coordinates: X = 330, Y = 563
+17:22:54:102	Distance between .... :45
+17:22:54:102	44 , 106 , 39484 , 34971
+17:22:54:341	This is Upper Target -10 and Lower Target -10
+17:22:54:341	Small Orbiting Circle Coordinates: X = 376, Y = 583
+17:22:54:341	End effector Coordinates: X = 355, Y = 563
+17:22:54:341	Distance between .... :29
+17:22:54:341	44 , 107 , 38438 , 41046
+17:22:54:592	This is Upper Target -10 and Lower Target -10
+17:22:54:592	Small Orbiting Circle Coordinates: X = 380, Y = 585
+17:22:54:592	End effector Coordinates: X = 330, Y = 563
+17:22:54:592	Distance between .... :54
+17:22:54:592	45 , 106 , 37488 , 38086
+17:22:54:851	This is Upper Target -10 and Lower Target 10
+17:22:54:851	Small Orbiting Circle Coordinates: X = 384, Y = 586
+17:22:54:851	End effector Coordinates: X = 330, Y = 588
+17:22:54:851	Distance between .... :54
+17:22:54:851	46 , 105 , 35964 , 33877
+17:22:54:851	This is Upper Target -10 and Lower Target -10
+17:22:54:851	Small Orbiting Circle Coordinates: X = 388, Y = 588
+17:22:55:108	End effector Coordinates: X = 355, Y = 588
+17:22:55:108	Distance between .... :33
+17:22:55:108	46 , 106 , 36387 , 35006
+17:22:55:108	This is Upper Target -10 and Lower Target 10
+17:22:55:108	Small Orbiting Circle Coordinates: X = 392, Y = 589
+17:22:55:108	End effector Coordinates: X = 330, Y = 588
+17:22:55:108	Distance between .... :62
+17:22:55:108	47 , 105 , 35573 , 34042
+17:22:55:359	This is Upper Target -10 and Lower Target -10
+17:22:55:359	Small Orbiting Circle Coordinates: X = 396, Y = 591
+17:22:55:598	End effector Coordinates: X = 355, Y = 613
+17:22:55:598	Distance between .... :46
+17:22:55:598	48 , 106 , 35341 , 35979
+17:22:55:598	This is Upper Target 10 and Lower Target 10
+17:22:55:598	Small Orbiting Circle Coordinates: X = 400, Y = 592
+17:22:55:598	End effector Coordinates: X = 330, Y = 613
+17:22:55:598	Distance between .... :73
+17:22:55:598	49 , 105 , 34349 , 33993
+17:22:55:842	This is Upper Target 10 and Lower Target -10
+17:22:55:842	Small Orbiting Circle Coordinates: X = 404, Y = 594
+17:22:55:842	End effector Coordinates: X = 355, Y = 613
+17:22:55:842	Distance between .... :52
+17:22:55:842	48 , 106 , 32401 , 35045
+17:22:56:095	This is Upper Target 10 and Lower Target 10
+17:22:56:095	Small Orbiting Circle Coordinates: X = 409, Y = 595
+17:22:56:095	End effector Coordinates: X = 330, Y = 588
+17:22:56:095	Distance between .... :79
+17:22:56:095	47 , 105 , 34016 , 34391
+17:22:56:343	This is Upper Target -10 and Lower Target 10
+17:22:56:343	Small Orbiting Circle Coordinates: X = 413, Y = 596
+17:22:56:343	End effector Coordinates: X = 355, Y = 588
+17:22:56:343	Distance between .... :58
+17:22:56:343	46 , 106 , 39065 , 33898
+17:22:56:595	This is Upper Target -10 and Lower Target -10
+17:22:56:595	Small Orbiting Circle Coordinates: X = 417, Y = 597
+17:22:56:595	End effector Coordinates: X = 380, Y = 588
+17:22:56:595	Distance between .... :38
+17:22:56:595	47 , 107 , 39612 , 35544
+17:22:56:858	This is Upper Target 10 and Lower Target 10
+17:22:56:858	Small Orbiting Circle Coordinates: X = 421, Y = 598
+17:22:56:858	End effector Coordinates: X = 355, Y = 613
+17:22:56:858	Distance between .... :67
+17:22:56:858	48 , 106 , 32888 , 33376
+17:22:57:096	This is Upper Target 10 and Lower Target 10
+17:22:57:096	Small Orbiting Circle Coordinates: X = 426, Y = 599
+17:22:57:096	End effector Coordinates: X = 380, Y = 588
+17:22:57:096	Distance between .... :47
+17:22:57:096	47 , 107 , 32450 , 33809
+17:22:57:096	This is Upper Target 10 and Lower Target 10
+17:22:57:096	Small Orbiting Circle Coordinates: X = 430, Y = 600
+17:22:57:344	End effector Coordinates: X = 355, Y = 588
+17:22:57:344	Distance between .... :75
+17:22:57:344	46 , 107 , 32485 , 34497
+17:22:57:344	This is Upper Target -10 and Lower Target -10
+17:22:57:344	Small Orbiting Circle Coordinates: X = 434, Y = 601
+17:22:57:602	End effector Coordinates: X = 380, Y = 588
+17:22:57:602	Distance between .... :55
+17:22:57:602	46 , 108 , 36390 , 35354
+17:22:57:602	This is Upper Target -10 and Lower Target 10
+17:22:57:602	Small Orbiting Circle Coordinates: X = 438, Y = 601
+17:22:57:602	End effector Coordinates: X = 355, Y = 588
+17:22:57:602	Distance between .... :84
+17:22:57:602	46 , 107 , 38061 , 33886
+17:22:57:843	This is Upper Target 10 and Lower Target 10
+17:22:57:843	Small Orbiting Circle Coordinates: X = 443, Y = 602
+17:22:57:843	End effector Coordinates: X = 405, Y = 588
+17:22:57:843	Distance between .... :40
+17:22:57:843	47 , 108 , 34816 , 34476
+17:22:58:098	This is Upper Target 10 and Lower Target -10
+17:22:58:098	Small Orbiting Circle Coordinates: X = 447, Y = 603
+17:22:58:098	End effector Coordinates: X = 380, Y = 588
+17:22:58:098	Distance between .... :68
+17:22:58:098	46 , 108 , 31248 , 35451
+17:22:58:349	This is Upper Target 10 and Lower Target 10
+17:22:58:349	Small Orbiting Circle Coordinates: X = 451, Y = 603
+17:22:58:349	End effector Coordinates: X = 380, Y = 588
+17:22:58:349	Distance between .... :72
+17:22:58:349	46 , 108 , 33442 , 31950
+17:22:58:596	This is Upper Target -10 and Lower Target 10
+17:22:58:596	Small Orbiting Circle Coordinates: X = 456, Y = 604
+17:22:58:596	End effector Coordinates: X = 380, Y = 563
+17:22:58:596	Distance between .... :86
+17:22:58:596	45 , 108 , 35865 , 32968
+17:22:58:852	This is Upper Target -10 and Lower Target 10
+17:22:58:852	Small Orbiting Circle Coordinates: X = 460, Y = 604
+17:22:58:852	End effector Coordinates: X = 405, Y = 588
+17:22:58:852	Distance between .... :57
+17:22:58:852	46 , 109 , 41194 , 33877
+17:22:59:103	This is Upper Target -10 and Lower Target -10
+17:22:59:103	Small Orbiting Circle Coordinates: X = 464, Y = 604
+17:22:59:103	End effector Coordinates: X = 405, Y = 588
+17:22:59:103	Distance between .... :61
+17:22:59:103	47 , 109 , 34914 , 35559
+17:22:59:346	This is Upper Target 10 and Lower Target 10
+17:22:59:346	Small Orbiting Circle Coordinates: X = 469, Y = 604
+17:22:59:346	End effector Coordinates: X = 405, Y = 588
+17:22:59:346	Distance between .... :65
+17:22:59:346	47 , 109 , 31928 , 33969
+17:22:59:603	This is Upper Target 10 and Lower Target 10
+17:22:59:603	Small Orbiting Circle Coordinates: X = 473, Y = 604
+17:22:59:603	End effector Coordinates: X = 405, Y = 588
+17:22:59:603	Distance between .... :69
+17:22:59:603	46 , 109 , 30939 , 34541
+17:22:59:603	This is Upper Target 10 and Lower Target 10
+17:22:59:603	Small Orbiting Circle Coordinates: X = 478, Y = 605
+17:22:59:851	End effector Coordinates: X = 430, Y = 588
+17:22:59:851	Distance between .... :50
+17:22:59:851	46 , 110 , 33324 , 33519
+17:22:59:851	This is Upper Target -10 and Lower Target 10
+17:22:59:851	Small Orbiting Circle Coordinates: X = 482, Y = 604
+17:23:00:097	End effector Coordinates: X = 430, Y = 563
+17:23:00:097	Distance between .... :66
+17:23:00:097	45 , 110 , 39049 , 34378
+17:23:00:097	This is Upper Target -10 and Lower Target -10
+17:23:00:097	Small Orbiting Circle Coordinates: X = 486, Y = 604
+17:23:00:348	End effector Coordinates: X = 455, Y = 588
+17:23:00:348	Distance between .... :34
+17:23:00:348	46 , 111 , 42179 , 35864
+17:23:00:348	This is Upper Target -10 and Lower Target 10
+17:23:00:348	Small Orbiting Circle Coordinates: X = 491, Y = 604
+17:23:00:348	End effector Coordinates: X = 430, Y = 588
+17:23:00:348	Distance between .... :63
+17:23:00:348	46 , 110 , 40982 , 32810
+17:23:00:596	This is Upper Target -10 and Lower Target 10
+17:23:00:596	Small Orbiting Circle Coordinates: X = 495, Y = 604
+17:23:00:596	End effector Coordinates: X = 455, Y = 588
+17:23:00:596	Distance between .... :43
+17:23:00:596	47 , 111 , 36510 , 33877
+17:23:00:845	This is Upper Target -10 and Lower Target 10
+17:23:00:845	Small Orbiting Circle Coordinates: X = 499, Y = 604
+17:23:00:845	End effector Coordinates: X = 455, Y = 613
+17:23:00:845	Distance between .... :44
+17:23:00:845	48 , 111 , 36357 , 34030
+17:23:01:104	This is Upper Target -10 and Lower Target -10
+17:23:01:104	Small Orbiting Circle Coordinates: X = 504, Y = 603
+17:23:01:104	End effector Coordinates: X = 480, Y = 613
+17:23:01:104	Distance between .... :26
+17:23:01:104	48 , 112 , 36508 , 36535
+17:23:01:346	This is Upper Target 10 and Lower Target 10
+17:23:01:346	Small Orbiting Circle Coordinates: X = 508, Y = 603
+17:23:01:346	End effector Coordinates: X = 480, Y = 613
+17:23:01:346	Distance between .... :29
+17:23:01:346	49 , 111 , 34556 , 33284
+17:23:01:593	This is Upper Target 10 and Lower Target 10
+17:23:01:593	Small Orbiting Circle Coordinates: X = 512, Y = 602
+17:23:01:593	End effector Coordinates: X = 505, Y = 613
+17:23:01:593	Distance between .... :13
+17:23:01:593	49 , 112 , 32276 , 33894
+17:23:01:850	This is Upper Target 10 and Lower Target 10
+17:23:01:850	Small Orbiting Circle Coordinates: X = 517, Y = 601
+17:23:01:850	End effector Coordinates: X = 480, Y = 613
+17:23:01:850	Distance between .... :38
+17:23:01:850	48 , 112 , 33885 , 33936
+17:23:02:096	This is Upper Target -10 and Lower Target -10
+17:23:02:096	Small Orbiting Circle Coordinates: X = 521, Y = 601
+17:23:02:096	End effector Coordinates: X = 505, Y = 588
+17:23:02:096	Distance between .... :20
+17:23:02:096	47 , 113 , 41481 , 35426
+17:23:02:096	This is Upper Target -10 and Lower Target 10
+17:23:02:096	Small Orbiting Circle Coordinates: X = 525, Y = 600
+17:23:02:353	End effector Coordinates: X = 480, Y = 613
+17:23:02:353	Distance between .... :46
+17:23:02:353	48 , 112 , 44553 , 33971
+17:23:02:353	This is Upper Target -10 and Lower Target 10
+17:23:02:353	Small Orbiting Circle Coordinates: X = 529, Y = 599
+17:23:02:596	End effector Coordinates: X = 505, Y = 613
+17:23:02:596	Distance between .... :27
+17:23:02:596	49 , 113 , 38428 , 34046
+17:23:02:596	This is Upper Target 10 and Lower Target 10
+17:23:02:596	Small Orbiting Circle Coordinates: X = 534, Y = 598
+17:23:02:596	End effector Coordinates: X = 505, Y = 613
+17:23:02:848	Distance between .... :32
+17:23:02:848	49 , 113 , 34818 , 34959
+17:23:02:848	This is Upper Target 10 and Lower Target -10
+17:23:02:848	Small Orbiting Circle Coordinates: X = 538, Y = 597
+17:23:02:848	End effector Coordinates: X = 530, Y = 613
+17:23:02:848	Distance between .... :17
+17:23:02:848	49 , 114 , 34447 , 36547
+17:23:03:095	This is Upper Target -10 and Lower Target 10
+17:23:03:095	Small Orbiting Circle Coordinates: X = 542, Y = 596
+17:23:03:095	End effector Coordinates: X = 505, Y = 613
+17:23:03:095	Distance between .... :40
+17:23:03:095	48 , 113 , 40991 , 32943
+17:23:03:351	This is Upper Target -10 and Lower Target 10
+17:23:03:351	Small Orbiting Circle Coordinates: X = 546, Y = 595
+17:23:03:351	End effector Coordinates: X = 530, Y = 613
+17:23:03:351	Distance between .... :24
+17:23:03:351	49 , 114 , 46284 , 34487
+17:23:03:598	This is Upper Target -10 and Lower Target 10
+17:23:03:598	Small Orbiting Circle Coordinates: X = 551, Y = 594
+17:23:03:598	End effector Coordinates: X = 530, Y = 613
+17:23:03:598	Distance between .... :28
+17:23:03:598	49 , 114 , 37963 , 34453
+17:23:03:843	This is Upper Target 10 and Lower Target -10
+17:23:03:843	Small Orbiting Circle Coordinates: X = 555, Y = 592
+17:23:03:843	End effector Coordinates: X = 580, Y = 613
+17:23:03:843	Distance between .... :32
+17:23:03:843	50 , 115 , 33822 , 37036
+17:23:04:099	This is Upper Target 10 and Lower Target 10
+17:23:04:099	Small Orbiting Circle Coordinates: X = 559, Y = 591
+17:23:04:099	End effector Coordinates: X = 580, Y = 613
+17:23:04:099	Distance between .... :30
+17:23:04:099	50 , 115 , 32425 , 34308
+17:23:04:347	This is Upper Target 10 and Lower Target 10
+17:23:04:347	Small Orbiting Circle Coordinates: X = 563, Y = 589
+17:23:04:347	End effector Coordinates: X = 555, Y = 613
+17:23:04:347	Distance between .... :25
+17:23:04:347	49 , 115 , 31944 , 34475
+17:23:04:347	This is Upper Target -10 and Lower Target -10
+17:23:04:347	Small Orbiting Circle Coordinates: X = 567, Y = 588
+17:23:04:598	End effector Coordinates: X = 580, Y = 588
+17:23:04:598	Distance between .... :13
+17:23:04:598	48 , 116 , 37953 , 35524
+17:23:04:598	This is Upper Target -10 and Lower Target 10
+17:23:04:598	Small Orbiting Circle Coordinates: X = 571, Y = 586
+17:23:04:842	End effector Coordinates: X = 555, Y = 613
+17:23:04:842	Distance between .... :31
+17:23:04:842	49 , 115 , 42518 , 34359
+17:23:04:842	This is Upper Target -10 and Lower Target 10
+17:23:04:842	Small Orbiting Circle Coordinates: X = 575, Y = 585
+17:23:04:842	End effector Coordinates: X = 580, Y = 613
+17:23:04:842	Distance between .... :28
+17:23:04:842	50 , 116 , 38089 , 34342
+17:23:05:098	This is Upper Target 10 and Lower Target -10
+17:23:05:098	Small Orbiting Circle Coordinates: X = 579, Y = 583
+17:23:05:098	End effector Coordinates: X = 580, Y = 613
+17:23:05:098	Distance between .... :30
+17:23:05:098	50 , 116 , 30886 , 38512
+17:23:05:354	This is Upper Target 10 and Lower Target 10
+17:23:05:354	Small Orbiting Circle Coordinates: X = 583, Y = 581
+17:23:05:354	End effector Coordinates: X = 580, Y = 613
+17:23:05:354	Distance between .... :32
+17:23:05:354	49 , 116 , 26643 , 34439
+17:23:05:599	This is Upper Target 10 and Lower Target 10
+17:23:05:599	Small Orbiting Circle Coordinates: X = 587, Y = 579
+17:23:05:599	End effector Coordinates: X = 580, Y = 613
+17:23:05:599	Distance between .... :34
+17:23:05:599	49 , 116 , 32433 , 33998
+17:23:05:861	This is Upper Target -10 and Lower Target -10
+17:23:05:861	Small Orbiting Circle Coordinates: X = 591, Y = 577
+17:23:05:861	End effector Coordinates: X = 605, Y = 588
+17:23:05:861	Distance between .... :17
+17:23:05:861	48 , 117 , 39034 , 36971
+17:23:06:098	This is Upper Target -10 and Lower Target 10
+17:23:06:098	Small Orbiting Circle Coordinates: X = 595, Y = 575
+17:23:06:098	End effector Coordinates: X = 580, Y = 613
+17:23:06:098	Distance between .... :40
+17:23:06:098	49 , 116 , 40460 , 34381
+17:23:06:346	This is Upper Target 10 and Lower Target 10
+17:23:06:346	Small Orbiting Circle Coordinates: X = 599, Y = 573
+17:23:06:346	End effector Coordinates: X = 605, Y = 613
+17:23:06:346	Distance between .... :40
+17:23:06:346	49 , 117 , 32424 , 34496
+17:23:06:346	The thread 0x3ec4 has exited with code 0 (0x0).
+17:23:06:607	This is Upper Target 10 and Lower Target -10
+17:23:06:607	Small Orbiting Circle Coordinates: X = 603, Y = 571
+17:23:06:607	End effector Coordinates: X = 605, Y = 613
+17:23:06:607	Distance between .... :42
+17:23:06:607	49 , 117 , 26735 , 41171
+17:23:06:865	This is Upper Target 10 and Lower Target 10
+17:23:06:865	Small Orbiting Circle Coordinates: X = 606, Y = 569
+17:23:06:865	End effector Coordinates: X = 605, Y = 588
+17:23:06:865	Distance between .... :19
+17:23:06:865	48 , 117 , 28733 , 34865
+17:23:07:114	This is Upper Target -10 and Lower Target -10
+17:23:07:114	Small Orbiting Circle Coordinates: X = 610, Y = 567
+17:23:07:114	End effector Coordinates: X = 605, Y = 588
+17:23:07:114	Distance between .... :21
+17:23:07:114	47 , 117 , 36084 , 36035
+17:23:07:114	This is Upper Target -10 and Lower Target 10
+17:23:07:114	Small Orbiting Circle Coordinates: X = 614, Y = 564
+17:23:07:370	End effector Coordinates: X = 605, Y = 588
+17:23:07:370	Distance between .... :25
+17:23:07:370	48 , 117 , 41526 , 34462
+17:23:07:370	This is Upper Target -10 and Lower Target 10
+17:23:07:370	Small Orbiting Circle Coordinates: X = 617, Y = 562
+17:23:07:613	End effector Coordinates: X = 605, Y = 613
+17:23:07:613	Distance between .... :52
+17:23:07:613	49 , 117 , 38512 , 34366
+17:23:07:613	This is Upper Target 10 and Lower Target -10
+17:23:07:613	Small Orbiting Circle Coordinates: X = 621, Y = 559
+17:23:07:613	End effector Coordinates: X = 630, Y = 613
+17:23:07:613	Distance between .... :54
+17:23:07:613	49 , 118 , 29290 , 40466
+17:23:07:862	This is Upper Target 10 and Lower Target -10
+17:23:07:862	Small Orbiting Circle Coordinates: X = 624, Y = 557
+17:23:07:862	End effector Coordinates: X = 605, Y = 613
+17:23:07:862	Distance between .... :59
+17:23:07:862	49 , 117 , 24739 , 35944
+17:23:08:121	This is Upper Target 10 and Lower Target 10
+17:23:08:121	Small Orbiting Circle Coordinates: X = 628, Y = 554
+17:23:08:121	End effector Coordinates: X = 605, Y = 588
+17:23:08:121	Distance between .... :41
+17:23:08:121	48 , 117 , 27854 , 32833
+17:23:08:375	This is Upper Target 10 and Lower Target 10
+17:23:08:375	Small Orbiting Circle Coordinates: X = 631, Y = 552
+17:23:08:375	End effector Coordinates: X = 605, Y = 588
+17:23:08:375	Distance between .... :44
+17:23:08:375	47 , 117 , 33977 , 33807
+17:23:08:632	This is Upper Target -10 and Lower Target 10
+17:23:08:632	Small Orbiting Circle Coordinates: X = 635, Y = 549
+17:23:08:632	End effector Coordinates: X = 630, Y = 588
+17:23:08:632	Distance between .... :39
+17:23:08:632	47 , 118 , 34876 , 34432
+17:23:08:632	This is Upper Target 10 and Lower Target -10
+17:23:08:632	Small Orbiting Circle Coordinates: X = 638, Y = 546
+17:23:08:880	End effector Coordinates: X = 630, Y = 588
+17:23:08:880	Distance between .... :42
+17:23:08:880	47 , 118 , 34475 , 36063
+17:23:08:880	This is Upper Target 10 and Lower Target 10
+17:23:08:880	Small Orbiting Circle Coordinates: X = 642, Y = 543
+17:23:09:136	End effector Coordinates: X = 630, Y = 588
+17:23:09:136	Distance between .... :46
+17:23:09:136	47 , 118 , 31885 , 34015
+17:23:09:136	This is Upper Target 10 and Lower Target 10
+17:23:09:136	Small Orbiting Circle Coordinates: X = 645, Y = 540
+17:23:09:136	End effector Coordinates: X = 605, Y = 563
+17:23:09:136	Distance between .... :46
+17:23:09:136	46 , 118 , 28392 , 34515
+17:23:09:376	This is Upper Target 10 and Lower Target -10
+17:23:09:376	Small Orbiting Circle Coordinates: X = 648, Y = 537
+17:23:09:376	End effector Coordinates: X = 630, Y = 563
+17:23:09:376	Distance between .... :31
+17:23:09:376	45 , 119 , 31420 , 35881
+17:23:09:633	This is Upper Target 10 and Lower Target 10
+17:23:09:633	Small Orbiting Circle Coordinates: X = 651, Y = 534
+17:23:09:633	End effector Coordinates: X = 605, Y = 563
+17:23:09:633	Distance between .... :54
+17:23:09:633	45 , 118 , 32300 , 34017
+17:23:09:874	This is Upper Target 10 and Lower Target 10
+17:23:09:874	Small Orbiting Circle Coordinates: X = 654, Y = 531
+17:23:09:874	End effector Coordinates: X = 630, Y = 538
+17:23:09:874	Distance between .... :25
+17:23:09:874	44 , 119 , 31816 , 34466
+17:23:10:127	This is Upper Target 10 and Lower Target -10
+17:23:10:127	Small Orbiting Circle Coordinates: X = 657, Y = 528
+17:23:10:127	End effector Coordinates: X = 630, Y = 538
+17:23:10:127	Distance between .... :28
+17:23:10:127	43 , 119 , 32375 , 35968
+17:23:10:376	This is Upper Target 10 and Lower Target 10
+17:23:10:376	Small Orbiting Circle Coordinates: X = 660, Y = 525
+17:23:10:376	End effector Coordinates: X = 630, Y = 538
+17:23:10:376	Distance between .... :32
+17:23:10:376	42 , 119 , 31861 , 34006
+17:23:10:634	This is Upper Target -10 and Lower Target 10
+17:23:10:634	Small Orbiting Circle Coordinates: X = 663, Y = 522
+17:23:10:634	End effector Coordinates: X = 605, Y = 513
+17:23:10:634	Distance between .... :58
+17:23:10:634	41 , 119 , 35536 , 34475
+17:23:10:881	This is Upper Target -10 and Lower Target -10
+17:23:10:881	Small Orbiting Circle Coordinates: X = 666, Y = 519
+17:23:10:881	End effector Coordinates: X = 630, Y = 513
+17:23:10:881	Distance between .... :36
+17:23:10:881	42 , 120 , 36598 , 37007
+17:23:11:135	This is Upper Target 10 and Lower Target 10
+17:23:11:135	Small Orbiting Circle Coordinates: X = 669, Y = 515
+17:23:11:135	End effector Coordinates: X = 630, Y = 538
+17:23:11:135	Distance between .... :45
+17:23:11:135	43 , 119 , 31438 , 34552
+17:23:11:376	This is Upper Target 10 and Lower Target 10
+17:23:11:376	Small Orbiting Circle Coordinates: X = 672, Y = 512
+17:23:11:376	End effector Coordinates: X = 630, Y = 513
+17:23:11:376	Distance between .... :42
+17:23:11:376	42 , 120 , 25216 , 33836
+17:23:11:632	This is Upper Target 10 and Lower Target 10
+17:23:11:632	Small Orbiting Circle Coordinates: X = 675, Y = 508
+17:23:11:632	End effector Coordinates: X = 630, Y = 513
+17:23:11:632	Distance between .... :45
+17:23:11:632	41 , 120 , 30768 , 34879
+17:23:11:889	This is Upper Target -10 and Lower Target -10
+17:23:11:889	Small Orbiting Circle Coordinates: X = 677, Y = 505
+17:23:11:889	End effector Coordinates: X = 655, Y = 513
+17:23:11:889	Distance between .... :23
+17:23:11:889	41 , 121 , 34907 , 35474
+17:23:11:889	This is Upper Target -10 and Lower Target 10
+17:23:12:127	Small Orbiting Circle Coordinates: X = 680, Y = 501
+17:23:12:127	End effector Coordinates: X = 630, Y = 513
+17:23:12:127	Distance between .... :51
+17:23:12:127	41 , 120 , 38560 , 33377
+17:23:12:127	This is Upper Target 10 and Lower Target 10
+17:23:12:127	Small Orbiting Circle Coordinates: X = 682, Y = 498
+17:23:12:383	End effector Coordinates: X = 630, Y = 513
+17:23:12:383	Distance between .... :54
+17:23:12:383	42 , 120 , 34531 , 34527
+17:23:12:383	This is Upper Target 10 and Lower Target 10
+17:23:12:383	Small Orbiting Circle Coordinates: X = 685, Y = 494
+17:23:12:383	End effector Coordinates: X = 655, Y = 513
+17:23:12:383	Distance between .... :35
+17:23:12:383	41 , 121 , 30429 , 33845
+17:23:12:633	This is Upper Target 10 and Lower Target -10
+17:23:12:633	Small Orbiting Circle Coordinates: X = 687, Y = 491
+17:23:12:633	End effector Coordinates: X = 655, Y = 513
+17:23:12:633	Distance between .... :38
+17:23:12:633	41 , 121 , 32846 , 36973
+17:23:12:882	This is Upper Target -10 and Lower Target 10
+17:23:12:882	Small Orbiting Circle Coordinates: X = 690, Y = 487
+17:23:12:882	End effector Coordinates: X = 655, Y = 488
+17:23:12:882	Distance between .... :35
+17:23:12:882	40 , 121 , 40624 , 33844
+17:23:13:135	This is Upper Target -10 and Lower Target 10
+17:23:13:135	Small Orbiting Circle Coordinates: X = 692, Y = 483
+17:23:13:135	End effector Coordinates: X = 655, Y = 513
+17:23:13:135	Distance between .... :47
+17:23:13:135	41 , 121 , 41094 , 34462
+17:23:13:376	This is Upper Target -10 and Lower Target 10
+17:23:13:376	Small Orbiting Circle Coordinates: X = 694, Y = 480
+17:23:13:376	End effector Coordinates: X = 680, Y = 513
+17:23:13:376	Distance between .... :35
+17:23:13:376	41 , 122 , 38468 , 33954
+17:23:13:625	This is Upper Target 10 and Lower Target 10
+17:23:13:625	Small Orbiting Circle Coordinates: X = 696, Y = 476
+17:23:13:625	End effector Coordinates: X = 705, Y = 513
+17:23:13:625	Distance between .... :38
+17:23:13:625	42 , 123 , 32310 , 34933
+17:23:13:888	This is Upper Target 10 and Lower Target -10
+17:23:13:888	Small Orbiting Circle Coordinates: X = 698, Y = 472
+17:23:13:888	End effector Coordinates: X = 705, Y = 488
+17:23:13:888	Distance between .... :17
+17:23:13:888	41 , 123 , 32418 , 36557
+17:23:14:129	This is Upper Target -10 and Lower Target 10
+17:23:14:129	Small Orbiting Circle Coordinates: X = 700, Y = 468
+17:23:14:129	End effector Coordinates: X = 680, Y = 488
+17:23:14:129	Distance between .... :28
+17:23:14:129	40 , 122 , 39100 , 33425
+17:23:14:385	This is Upper Target -10 and Lower Target 10
+17:23:14:385	Small Orbiting Circle Coordinates: X = 702, Y = 464
+17:23:14:385	End effector Coordinates: X = 705, Y = 488
+17:23:14:385	Distance between .... :24
+17:23:14:385	41 , 123 , 44250 , 33818
+17:23:14:625	This is Upper Target -10 and Lower Target 10
+17:23:14:625	Small Orbiting Circle Coordinates: X = 704, Y = 460
+17:23:14:625	End effector Coordinates: X = 705, Y = 513
+17:23:14:625	Distance between .... :53
+17:23:14:625	42 , 123 , 39973 , 34875
+17:23:14:875	This is Upper Target -10 and Lower Target -10
+17:23:14:875	Small Orbiting Circle Coordinates: X = 706, Y = 456
+17:23:14:875	End effector Coordinates: X = 730, Y = 513
+17:23:14:875	Distance between .... :61
+17:23:14:875	43 , 124 , 34917 , 35514
+17:23:14:875	This is Upper Target 10 and Lower Target 10
+17:23:14:875	Small Orbiting Circle Coordinates: X = 708, Y = 452
+17:23:15:132	End effector Coordinates: X = 730, Y = 538
+17:23:15:132	Distance between .... :88
+17:23:15:132	44 , 124 , 33522 , 33461
+17:23:15:132	This is Upper Target 10 and Lower Target 10
+17:23:15:132	Small Orbiting Circle Coordinates: X = 709, Y = 448
+17:23:15:373	End effector Coordinates: X = 730, Y = 513
+17:23:15:373	Distance between .... :68
+17:23:15:373	43 , 124 , 28788 , 34538
+17:23:15:373	This is Upper Target 10 and Lower Target -10
+17:23:15:373	Small Orbiting Circle Coordinates: X = 711, Y = 444
+17:23:15:634	End effector Coordinates: X = 730, Y = 513
+17:23:15:634	Distance between .... :71
+17:23:15:634	42 , 124 , 30439 , 35926
+17:23:15:634	This is Upper Target 10 and Lower Target 10
+17:23:15:634	Small Orbiting Circle Coordinates: X = 712, Y = 440
+17:23:15:634	End effector Coordinates: X = 730, Y = 488
+17:23:15:634	Distance between .... :51
+17:23:15:634	41 , 124 , 33463 , 33857
+17:23:15:874	This is Upper Target 10 and Lower Target 10
+17:23:15:874	Small Orbiting Circle Coordinates: X = 714, Y = 436
+17:23:15:874	End effector Coordinates: X = 730, Y = 488
+17:23:15:874	Distance between .... :54
+17:23:15:874	41 , 124 , 32480 , 34519
+17:23:16:134	This is Upper Target 10 and Lower Target -10
+17:23:16:134	Small Orbiting Circle Coordinates: X = 715, Y = 432
+17:23:16:134	End effector Coordinates: X = 755, Y = 488
+17:23:16:134	Distance between .... :68
+17:23:16:134	40 , 125 , 29829 , 35900
+17:23:16:374	This is Upper Target 10 and Lower Target 10
+17:23:16:374	Small Orbiting Circle Coordinates: X = 717, Y = 428
+17:23:16:374	End effector Coordinates: X = 705, Y = 463
+17:23:16:374	Distance between .... :37
+17:23:16:374	39 , 124 , 26803 , 33879
+17:23:16:625	This is Upper Target 10 and Lower Target 10
+17:23:16:625	Small Orbiting Circle Coordinates: X = 718, Y = 423
+17:23:16:625	End effector Coordinates: X = 730, Y = 463
+17:23:16:625	Distance between .... :41
+17:23:16:625	39 , 125 , 26162 , 33822
+17:23:16:625	This is Upper Target 10 and Lower Target -10
+17:23:16:625	Small Orbiting Circle Coordinates: X = 719, Y = 419
+17:23:16:879	End effector Coordinates: X = 730, Y = 463
+17:23:16:879	Distance between .... :45
+17:23:16:879	38 , 125 , 25766 , 37451
+17:23:16:879	This is Upper Target 10 and Lower Target 10
+17:23:16:879	Small Orbiting Circle Coordinates: X = 720, Y = 415
+17:23:16:879	End effector Coordinates: X = 730, Y = 438
+17:23:16:879	Distance between .... :25
+17:23:16:879	37 , 125 , 25601 , 34551
+17:23:17:130	This is Upper Target 10 and Lower Target -10
+17:23:17:130	Small Orbiting Circle Coordinates: X = 721, Y = 411
+17:23:17:130	End effector Coordinates: X = 730, Y = 438
+17:23:17:130	Distance between .... :28
+17:23:17:130	37 , 125 , 25129 , 34989
+17:23:17:385	This is Upper Target 10 and Lower Target 10
+17:23:17:385	Small Orbiting Circle Coordinates: X = 722, Y = 406
+17:23:17:385	End effector Coordinates: X = 730, Y = 438
+17:23:17:385	Distance between .... :32
+17:23:17:385	36 , 125 , 25226 , 34425
+17:23:17:635	This is Upper Target 10 and Lower Target 10
+17:23:17:635	Small Orbiting Circle Coordinates: X = 723, Y = 402
+17:23:17:635	End effector Coordinates: X = 730, Y = 413
+17:23:17:635	Distance between .... :13
+17:23:17:635	35 , 125 , 26249 , 34435
+17:23:17:877	This is Upper Target 10 and Lower Target -10
+17:23:17:877	Small Orbiting Circle Coordinates: X = 724, Y = 398
+17:23:17:877	End effector Coordinates: X = 755, Y = 413
+17:23:17:877	Distance between .... :34
+17:23:17:877	34 , 126 , 27371 , 40137
+17:23:18:127	This is Upper Target 10 and Lower Target -10
+17:23:18:127	Small Orbiting Circle Coordinates: X = 724, Y = 394
+17:23:18:127	End effector Coordinates: X = 730, Y = 413
+17:23:18:127	Distance between .... :19
+17:23:18:127	34 , 125 , 27209 , 37594
+17:23:18:378	This is Upper Target 10 and Lower Target 10
+17:23:18:378	Small Orbiting Circle Coordinates: X = 725, Y = 389
+17:23:18:378	End effector Coordinates: X = 730, Y = 413
+17:23:18:378	Distance between .... :24
+17:23:18:378	33 , 125 , 28236 , 33962
+17:23:18:378	This is Upper Target 10 and Lower Target 10
+17:23:18:378	Small Orbiting Circle Coordinates: X = 726, Y = 385
+17:23:18:630	End effector Coordinates: X = 730, Y = 388
+17:23:18:630	Distance between .... :5
+17:23:18:630	32 , 125 , 28800 , 34904
+17:23:18:630	This is Upper Target 10 and Lower Target -10
+17:23:18:630	Small Orbiting Circle Coordinates: X = 726, Y = 381
+17:23:18:630	End effector Coordinates: X = 730, Y = 388
+17:23:18:880	Distance between .... :8
+17:23:18:880	32 , 126 , 29722 , 41061
+17:23:18:880	This is Upper Target 10 and Lower Target -10
+17:23:18:880	Small Orbiting Circle Coordinates: X = 727, Y = 376
+17:23:19:132	End effector Coordinates: X = 705, Y = 388
+17:23:19:132	Distance between .... :25
+17:23:19:132	31 , 125 , 30358 , 37922
+17:23:19:132	This is Upper Target 10 and Lower Target 10
+17:23:19:132	Small Orbiting Circle Coordinates: X = 727, Y = 372
+17:23:19:132	End effector Coordinates: X = 705, Y = 363
+17:23:19:132	Distance between .... :23
+17:23:19:132	30 , 125 , 30452 , 33971
+17:23:19:378	This is Upper Target 10 and Lower Target -10
+17:23:19:378	Small Orbiting Circle Coordinates: X = 727, Y = 368
+17:23:19:378	End effector Coordinates: X = 705, Y = 363
+17:23:19:378	Distance between .... :22
+17:23:19:378	29 , 125 , 32484 , 35566
+17:23:19:625	This is Upper Target 10 and Lower Target 10
+17:23:19:625	Small Orbiting Circle Coordinates: X = 727, Y = 363
+17:23:19:625	End effector Coordinates: X = 705, Y = 363
+17:23:19:625	Distance between .... :22
+17:23:19:625	29 , 125 , 33827 , 33856
+17:23:19:888	This is Upper Target 10 and Lower Target 10
+17:23:19:888	Small Orbiting Circle Coordinates: X = 727, Y = 359
+17:23:19:888	End effector Coordinates: X = 705, Y = 338
+17:23:19:888	Distance between .... :30
+17:23:19:888	28 , 125 , 33906 , 34309
+17:23:20:145	This is Upper Target -10 and Lower Target -10
+17:23:20:145	Small Orbiting Circle Coordinates: X = 728, Y = 355
+17:23:20:145	End effector Coordinates: X = 730, Y = 338
+17:23:20:145	Distance between .... :17
+17:23:20:145	27 , 126 , 36403 , 37948
+17:23:20:397	This is Upper Target -10 and Lower Target 10
+17:23:20:397	Small Orbiting Circle Coordinates: X = 727, Y = 350
+17:23:20:397	End effector Coordinates: X = 705, Y = 338
+17:23:20:397	Distance between .... :25
+17:23:20:397	28 , 125 , 37986 , 34546
+17:23:20:646	This is Upper Target 10 and Lower Target -10
+17:23:20:646	Small Orbiting Circle Coordinates: X = 727, Y = 346
+17:23:20:646	End effector Coordinates: X = 730, Y = 363
+17:23:20:646	Distance between .... :17
+17:23:20:646	29 , 126 , 32923 , 36500
+17:23:20:902	This is Upper Target 10 and Lower Target 10
+17:23:20:902	Small Orbiting Circle Coordinates: X = 727, Y = 341
+17:23:20:902	End effector Coordinates: X = 705, Y = 338
+17:23:20:902	Distance between .... :22
+17:23:20:902	28 , 125 , 27727 , 34534
+17:23:21:148	This is Upper Target 10 and Lower Target 10
+17:23:21:148	Small Orbiting Circle Coordinates: X = 727, Y = 337
+17:23:21:148	End effector Coordinates: X = 730, Y = 338
+17:23:21:148	Distance between .... :3
+17:23:21:148	27 , 126 , 32500 , 34464
+17:23:21:148	This is Upper Target -10 and Lower Target -10
+17:23:21:148	Small Orbiting Circle Coordinates: X = 727, Y = 333
+17:23:21:390	End effector Coordinates: X = 730, Y = 313
+17:23:21:390	Distance between .... :20
+17:23:21:390	26 , 126 , 37402 , 39018
+17:23:21:390	The thread 0x3900 has exited with code 0 (0x0).
+17:23:21:653	This is Upper Target -10 and Lower Target 10
+17:23:21:653	Small Orbiting Circle Coordinates: X = 726, Y = 328
+17:23:21:653	End effector Coordinates: X = 730, Y = 338
+17:23:21:653	Distance between .... :10
+17:23:21:653	27 , 126 , 40164 , 33860
+17:23:21:653	This is Upper Target -10 and Lower Target -10
+17:23:21:653	Small Orbiting Circle Coordinates: X = 726, Y = 324
+17:23:21:653	End effector Coordinates: X = 730, Y = 338
+17:23:21:653	Distance between .... :14
+17:23:21:653	28 , 126 , 36051 , 35406
+17:23:21:893	This is Upper Target 10 and Lower Target 10
+17:23:21:893	Small Orbiting Circle Coordinates: X = 725, Y = 320
+17:23:21:893	End effector Coordinates: X = 705, Y = 363
+17:23:21:893	Distance between .... :47
+17:23:21:893	29 , 125 , 28274 , 33888
+17:23:22:149	This is Upper Target 10 and Lower Target -10
+17:23:22:149	Small Orbiting Circle Coordinates: X = 724, Y = 315
+17:23:22:149	End effector Coordinates: X = 730, Y = 338
+17:23:22:149	Distance between .... :23
+17:23:22:149	28 , 126 , 24288 , 36379
+17:23:22:391	This is Upper Target 10 and Lower Target 10
+17:23:22:391	Small Orbiting Circle Coordinates: X = 724, Y = 311
+17:23:22:391	End effector Coordinates: X = 705, Y = 338
+17:23:22:391	Distance between .... :33
+17:23:22:391	27 , 125 , 30877 , 33999
+17:23:22:639	This is Upper Target -10 and Lower Target -10
+17:23:22:639	Small Orbiting Circle Coordinates: X = 723, Y = 307
+17:23:22:639	End effector Coordinates: X = 730, Y = 313
+17:23:22:639	Distance between .... :9
+17:23:22:639	26 , 126 , 35340 , 35548
+17:23:22:895	This is Upper Target -10 and Lower Target 10
+17:23:22:895	Small Orbiting Circle Coordinates: X = 722, Y = 303
+17:23:22:895	End effector Coordinates: X = 705, Y = 338
+17:23:22:895	Distance between .... :38
+17:23:22:895	27 , 125 , 38959 , 34514
+17:23:23:148	This is Upper Target 10 and Lower Target 10
+17:23:23:148	Small Orbiting Circle Coordinates: X = 721, Y = 298
+17:23:23:148	End effector Coordinates: X = 730, Y = 338
+17:23:23:148	Distance between .... :41
+17:23:23:148	28 , 126 , 34339 , 34849
+17:23:23:475	This is Upper Target 10 and Lower Target -10
+17:23:23:475	Small Orbiting Circle Coordinates: X = 720, Y = 294
+17:23:23:475	End effector Coordinates: X = 755, Y = 313
+17:23:23:475	Distance between .... :39
+17:23:23:475	27 , 127 , 26345 , 44711
+17:23:23:475	This is Upper Target 10 and Lower Target -10
+17:23:23:475	Small Orbiting Circle Coordinates: X = 719, Y = 290
+17:23:23:475	End effector Coordinates: X = 730, Y = 313
+17:23:23:475	Distance between .... :25
+17:23:23:475	26 , 126 , 27900 , 40048
+17:23:23:648	This is Upper Target 10 and Lower Target 10
+17:23:23:648	Small Orbiting Circle Coordinates: X = 718, Y = 286
+17:23:23:901	End effector Coordinates: X = 730, Y = 313
+17:23:23:901	Distance between .... :29
+17:23:23:901	26 , 126 , 32783 , 33844
+17:23:23:901	This is Upper Target 10 and Lower Target 10
+17:23:23:901	Small Orbiting Circle Coordinates: X = 717, Y = 281
+17:23:24:141	End effector Coordinates: X = 730, Y = 313
+17:23:24:141	Distance between .... :34
+17:23:24:141	25 , 126 , 34843 , 34892
+17:23:24:141	This is Upper Target -10 and Lower Target -10
+17:23:24:141	Small Orbiting Circle Coordinates: X = 715, Y = 277
+17:23:24:392	End effector Coordinates: X = 755, Y = 288
+17:23:24:392	Distance between .... :41
+17:23:24:392	24 , 127 , 35963 , 45121
+17:23:24:392	This is Upper Target -10 and Lower Target -10
+17:23:24:392	Small Orbiting Circle Coordinates: X = 714, Y = 273
+17:23:24:639	End effector Coordinates: X = 730, Y = 313
+17:23:24:639	Distance between .... :43
+17:23:24:639	25 , 126 , 37564 , 42554
+17:23:24:639	This is Upper Target 10 and Lower Target 10
+17:23:24:639	Small Orbiting Circle Coordinates: X = 712, Y = 269
+17:23:24:639	End effector Coordinates: X = 730, Y = 313
+17:23:24:639	Distance between .... :47
+17:23:24:639	25 , 126 , 34511 , 34365
+17:23:24:903	This is Upper Target 10 and Lower Target -10
+17:23:24:903	Small Orbiting Circle Coordinates: X = 711, Y = 265
+17:23:24:903	End effector Coordinates: X = 730, Y = 313
+17:23:24:903	Distance between .... :51
+17:23:24:903	25 , 126 , 28845 , 36436
+17:23:25:150	This is Upper Target 10 and Lower Target 10
+17:23:25:150	Small Orbiting Circle Coordinates: X = 709, Y = 261
+17:23:25:150	End effector Coordinates: X = 730, Y = 288
+17:23:25:150	Distance between .... :34
+17:23:25:150	24 , 126 , 29274 , 34825
+17:23:25:389	This is Upper Target 10 and Lower Target -10
+17:23:25:389	Small Orbiting Circle Coordinates: X = 708, Y = 257
+17:23:25:389	End effector Coordinates: X = 730, Y = 288
+17:23:25:389	Distance between .... :38
+17:23:25:389	23 , 126 , 32778 , 40059
+17:23:25:658	This is Upper Target 10 and Lower Target -10
+17:23:25:658	Small Orbiting Circle Coordinates: X = 706, Y = 253
+17:23:25:658	End effector Coordinates: X = 730, Y = 263
+17:23:25:658	Distance between .... :26
+17:23:25:658	22 , 126 , 32294 , 40458
+17:23:25:894	This is Upper Target 10 and Lower Target 10
+17:23:25:894	Small Orbiting Circle Coordinates: X = 704, Y = 249
+17:23:25:894	End effector Coordinates: X = 705, Y = 288
+17:23:25:894	Distance between .... :39
+17:23:25:894	22 , 125 , 33497 , 34848
+17:23:26:149	This is Upper Target 10 and Lower Target -10
+17:23:26:149	Small Orbiting Circle Coordinates: X = 702, Y = 245
+17:23:26:149	End effector Coordinates: X = 730, Y = 263
+17:23:26:149	Distance between .... :33
+17:23:26:149	21 , 126 , 31757 , 41582
+17:23:26:389	This is Upper Target 10 and Lower Target -10
+17:23:26:389	Small Orbiting Circle Coordinates: X = 700, Y = 241
+17:23:26:389	End effector Coordinates: X = 705, Y = 263
+17:23:26:389	Distance between .... :22
+17:23:26:389	20 , 125 , 33015 , 39984
+17:23:26:645	This is Upper Target -10 and Lower Target -10
+17:23:26:645	Small Orbiting Circle Coordinates: X = 698, Y = 237
+17:23:26:645	End effector Coordinates: X = 680, Y = 263
+17:23:26:645	Distance between .... :31
+17:23:26:645	19 , 124 , 36371 , 35551
+17:23:26:898	This is Upper Target -10 and Lower Target 10
+17:23:26:898	Small Orbiting Circle Coordinates: X = 696, Y = 233
+17:23:26:898	End effector Coordinates: X = 680, Y = 263
+17:23:26:898	Distance between .... :34
+17:23:26:898	20 , 124 , 35428 , 32929
+17:23:27:142	This is Upper Target 10 and Lower Target -10
+17:23:27:142	Small Orbiting Circle Coordinates: X = 694, Y = 230
+17:23:27:142	End effector Coordinates: X = 680, Y = 263
+17:23:27:142	Distance between .... :35
+17:23:27:142	20 , 124 , 30885 , 35484
+17:23:27:142	This is Upper Target 10 and Lower Target 10
+17:23:27:142	Small Orbiting Circle Coordinates: X = 692, Y = 226
+17:23:27:405	End effector Coordinates: X = 680, Y = 263
+17:23:27:405	Distance between .... :38
+17:23:27:405	20 , 124 , 25270 , 33854
+17:23:27:405	This is Upper Target 10 and Lower Target 10
+17:23:27:405	Small Orbiting Circle Coordinates: X = 690, Y = 222
+17:23:27:669	End effector Coordinates: X = 680, Y = 263
+17:23:27:669	Distance between .... :42
+17:23:27:669	19 , 124 , 25311 , 34883
+17:23:27:669	This is Upper Target 10 and Lower Target -10
+17:23:27:669	Small Orbiting Circle Coordinates: X = 687, Y = 218
+17:23:27:669	End effector Coordinates: X = 705, Y = 238
+17:23:27:669	Distance between .... :26
+17:23:27:669	18 , 125 , 31273 , 43666
+17:23:27:906	This is Upper Target 10 and Lower Target -10
+17:23:27:906	Small Orbiting Circle Coordinates: X = 685, Y = 215
+17:23:27:906	End effector Coordinates: X = 680, Y = 238
+17:23:27:906	Distance between .... :23
+17:23:27:906	18 , 124 , 32980 , 41095
+17:23:28:164	This is Upper Target 10 and Lower Target -10
+17:23:28:164	Small Orbiting Circle Coordinates: X = 682, Y = 211
+17:23:28:164	End effector Coordinates: X = 680, Y = 238
+17:23:28:164	Distance between .... :27
+17:23:28:164	17 , 124 , 34349 , 35065
+17:23:28:405	This is Upper Target 10 and Lower Target 10
+17:23:28:405	Small Orbiting Circle Coordinates: X = 680, Y = 208
+17:23:28:405	End effector Coordinates: X = 680, Y = 213
+17:23:28:405	Distance between .... :5
+17:23:28:405	16 , 124 , 32774 , 33953
+17:23:28:662	This is Upper Target 10 and Lower Target -10
+17:23:28:662	Small Orbiting Circle Coordinates: X = 677, Y = 204
+17:23:28:662	End effector Coordinates: X = 680, Y = 213
+17:23:28:662	Distance between .... :9
+17:23:28:662	16 , 124 , 32853 , 35871
+17:23:28:917	This is Upper Target 10 and Lower Target 10
+17:23:28:917	Small Orbiting Circle Coordinates: X = 675, Y = 201
+17:23:28:917	End effector Coordinates: X = 680, Y = 213
+17:23:28:917	Distance between .... :13
+17:23:28:917	15 , 124 , 34904 , 34448
+17:23:29:157	This is Upper Target -10 and Lower Target -10
+17:23:29:157	Small Orbiting Circle Coordinates: X = 672, Y = 197
+17:23:29:157	End effector Coordinates: X = 680, Y = 188
+17:23:29:157	Distance between .... :12
+17:23:29:157	14 , 124 , 36503 , 37411
+17:23:29:405	This is Upper Target -10 and Lower Target -10
+17:23:29:405	Small Orbiting Circle Coordinates: X = 669, Y = 194
+17:23:29:405	End effector Coordinates: X = 680, Y = 213
+17:23:29:405	Distance between .... :21
+17:23:29:405	15 , 124 , 38494 , 36466
+17:23:29:405	This is Upper Target -10 and Lower Target 10
+17:23:29:405	Small Orbiting Circle Coordinates: X = 666, Y = 190
+17:23:29:669	End effector Coordinates: X = 655, Y = 213
+17:23:29:669	Distance between .... :25
+17:23:29:669	15 , 123 , 36504 , 33452
+17:23:29:669	This is Upper Target 10 and Lower Target -10
+17:23:29:669	Small Orbiting Circle Coordinates: X = 663, Y = 187
+17:23:29:914	End effector Coordinates: X = 680, Y = 213
+17:23:29:914	Distance between .... :31
+17:23:29:914	16 , 124 , 27890 , 35328
+17:23:29:914	This is Upper Target 10 and Lower Target 10
+17:23:29:914	Small Orbiting Circle Coordinates: X = 660, Y = 184
+17:23:29:914	End effector Coordinates: X = 655, Y = 213
+17:23:30:165	Distance between .... :29
+17:23:30:165	15 , 123 , 22769 , 33866
+17:23:30:165	This is Upper Target 10 and Lower Target -10
+17:23:30:165	Small Orbiting Circle Coordinates: X = 657, Y = 181
+17:23:30:165	End effector Coordinates: X = 680, Y = 213
+17:23:30:165	Distance between .... :39
+17:23:30:406	15 , 124 , 28178 , 35972
+17:23:30:406	This is Upper Target 10 and Lower Target 10
+17:23:30:406	Small Orbiting Circle Coordinates: X = 654, Y = 178
+17:23:30:670	End effector Coordinates: X = 655, Y = 188
+17:23:30:670	Distance between .... :10
+17:23:30:670	14 , 123 , 32306 , 34397
+17:23:30:670	This is Upper Target 10 and Lower Target -10
+17:23:30:670	Small Orbiting Circle Coordinates: X = 651, Y = 175
+17:23:30:916	End effector Coordinates: X = 680, Y = 188
+17:23:30:916	Distance between .... :31
+17:23:30:916	13 , 124 , 31954 , 38604
+17:23:30:916	This is Upper Target 10 and Lower Target -10
+17:23:30:916	Small Orbiting Circle Coordinates: X = 648, Y = 172
+17:23:30:916	End effector Coordinates: X = 655, Y = 188
+17:23:30:916	Distance between .... :17
+17:23:30:916	12 , 123 , 32928 , 38444
+17:23:31:164	This is Upper Target -10 and Lower Target 10
+17:23:31:164	Small Orbiting Circle Coordinates: X = 645, Y = 169
+17:23:31:164	End effector Coordinates: X = 655, Y = 188
+17:23:31:164	Distance between .... :21
+17:23:31:164	12 , 123 , 35475 , 34500
+17:23:31:404	This is Upper Target 10 and Lower Target -10
+17:23:31:404	Small Orbiting Circle Coordinates: X = 642, Y = 166
+17:23:31:404	End effector Coordinates: X = 655, Y = 188
+17:23:31:404	Distance between .... :25
+17:23:31:404	12 , 123 , 34334 , 38071
+17:23:31:659	This is Upper Target 10 and Lower Target -10
+17:23:31:659	Small Orbiting Circle Coordinates: X = 638, Y = 163
+17:23:31:659	End effector Coordinates: X = 655, Y = 188
+17:23:31:659	Distance between .... :30
+17:23:31:659	12 , 123 , 31461 , 36083
+17:23:31:915	This is Upper Target 10 and Lower Target 10
+17:23:31:915	Small Orbiting Circle Coordinates: X = 635, Y = 160
+17:23:31:915	End effector Coordinates: X = 655, Y = 163
+17:23:31:915	Distance between .... :20
+17:23:31:915	11 , 122 , 31755 , 34425
+17:23:32:155	This is Upper Target 10 and Lower Target -10
+17:23:32:155	Small Orbiting Circle Coordinates: X = 631, Y = 157
+17:23:32:155	End effector Coordinates: X = 680, Y = 163
+17:23:32:155	Distance between .... :49
+17:23:32:155	10 , 123 , 30802 , 39500
+17:23:32:412	This is Upper Target 10 and Lower Target -10
+17:23:32:412	Small Orbiting Circle Coordinates: X = 628, Y = 155
+17:23:32:412	End effector Coordinates: X = 655, Y = 138
+17:23:32:412	Distance between .... :31
+17:23:32:412	9 , 122 , 31917 , 39101
+17:23:32:412	This is Upper Target 10 and Lower Target -10
+17:23:32:412	Small Orbiting Circle Coordinates: X = 624, Y = 152
+17:23:32:661	End effector Coordinates: X = 655, Y = 138
+17:23:32:661	Distance between .... :34
+17:23:32:661	9 , 122 , 32849 , 36867
+17:23:32:661	This is Upper Target 10 and Lower Target -10
+17:23:32:661	Small Orbiting Circle Coordinates: X = 621, Y = 150
+17:23:32:909	End effector Coordinates: X = 630, Y = 138
+17:23:32:909	Distance between .... :15
+17:23:32:909	8 , 121 , 32410 , 36401
+17:23:32:909	This is Upper Target 10 and Lower Target -10
+17:23:32:909	Small Orbiting Circle Coordinates: X = 617, Y = 147
+17:23:33:165	End effector Coordinates: X = 630, Y = 138
+17:23:33:165	Distance between .... :15
+17:23:33:165	7 , 121 , 32331 , 35482
+17:23:33:165	This is Upper Target 10 and Lower Target 10
+17:23:33:165	Small Orbiting Circle Coordinates: X = 614, Y = 145
+17:23:33:407	End effector Coordinates: X = 605, Y = 113
+17:23:33:407	Distance between .... :33
+17:23:33:407	6 , 120 , 32990 , 34469
+17:23:33:407	This is Upper Target 10 and Lower Target -10
+17:23:33:407	Small Orbiting Circle Coordinates: X = 610, Y = 142
+17:23:33:407	End effector Coordinates: X = 630, Y = 113
+17:23:33:407	Distance between .... :35
+17:23:33:660	6 , 121 , 34935 , 39040
+17:23:33:660	This is Upper Target -10 and Lower Target -10
+17:23:33:660	Small Orbiting Circle Coordinates: X = 606, Y = 140
+17:23:33:660	End effector Coordinates: X = 605, Y = 113
+17:23:33:660	Distance between .... :27
+17:23:33:660	5 , 120 , 38584 , 37586
+17:23:33:908	This is Upper Target -10 and Lower Target 10
+17:23:33:908	Small Orbiting Circle Coordinates: X = 603, Y = 138
+17:23:33:908	End effector Coordinates: X = 580, Y = 138
+17:23:33:908	Distance between .... :23
+17:23:33:908	6 , 119 , 39621 , 34458
+17:23:34:157	This is Upper Target 10 and Lower Target -10
+17:23:34:157	Small Orbiting Circle Coordinates: X = 599, Y = 136
+17:23:34:157	End effector Coordinates: X = 605, Y = 138
+17:23:34:157	Distance between .... :6
+17:23:34:157	7 , 120 , 31907 , 35545
+17:23:34:404	This is Upper Target 10 and Lower Target 10
+17:23:34:404	Small Orbiting Circle Coordinates: X = 595, Y = 134
+17:23:34:404	End effector Coordinates: X = 605, Y = 113
+17:23:34:404	Distance between .... :23
+17:23:34:404	6 , 120 , 27832 , 34322
+17:23:34:667	This is Upper Target 10 and Lower Target -10
+17:23:34:667	Small Orbiting Circle Coordinates: X = 591, Y = 132
+17:23:34:667	End effector Coordinates: X = 605, Y = 113
+17:23:34:667	Distance between .... :23
+17:23:34:667	5 , 120 , 31360 , 36506
+17:23:34:915	This is Upper Target -10 and Lower Target -10
+17:23:34:915	Small Orbiting Circle Coordinates: X = 587, Y = 130
+17:23:34:915	End effector Coordinates: X = 605, Y = 113
+17:23:34:915	Distance between .... :24
+17:23:34:915	4 , 119 , 35430 , 38047
+17:23:35:159	This is Upper Target -10 and Lower Target 10
+17:23:35:159	Small Orbiting Circle Coordinates: X = 583, Y = 128
+17:23:35:159	End effector Coordinates: X = 605, Y = 113
+17:23:35:159	Distance between .... :26
+17:23:35:159	5 , 119 , 38602 , 34427
+17:23:35:416	This is Upper Target 10 and Lower Target -10
+17:23:35:416	Small Orbiting Circle Coordinates: X = 579, Y = 126
+17:23:35:416	End effector Coordinates: X = 605, Y = 113
+17:23:35:416	Distance between .... :29
+17:23:35:416	6 , 120 , 33283 , 37628
+17:23:35:670	This is Upper Target 10 and Lower Target 10
+17:23:35:670	Small Orbiting Circle Coordinates: X = 575, Y = 124
+17:23:35:670	End effector Coordinates: X = 605, Y = 113
+17:23:35:670	Distance between .... :31
+17:23:35:670	5 , 119 , 26135 , 34967
+17:23:35:926	This is Upper Target 10 and Lower Target -10
+17:23:35:926	Small Orbiting Circle Coordinates: X = 571, Y = 123
+17:23:35:926	End effector Coordinates: X = 605, Y = 113
+17:23:35:926	Distance between .... :35
+17:23:35:926	4 , 119 , 29723 , 39011
+17:23:36:182	This is Upper Target -10 and Lower Target -10
+17:23:36:182	Small Orbiting Circle Coordinates: X = 567, Y = 121
+17:23:36:182	End effector Coordinates: X = 605, Y = 88
+17:23:36:182	Distance between .... :50
+17:23:36:182	3 , 119 , 35973 , 41164
+17:23:36:421	This is Upper Target -10 and Lower Target -10
+17:23:36:421	Small Orbiting Circle Coordinates: X = 563, Y = 120
+17:23:36:421	End effector Coordinates: X = 580, Y = 113
+17:23:36:421	Distance between .... :18
+17:23:36:421	4 , 118 , 39470 , 37512
+17:23:36:421	The thread 0x4170 has exited with code 0 (0x0).
+17:23:36:680	This is Upper Target 10 and Lower Target 10
+17:23:36:680	Small Orbiting Circle Coordinates: X = 559, Y = 118
+17:23:36:680	End effector Coordinates: X = 580, Y = 113
+17:23:36:680	Distance between .... :21
+17:23:36:680	5 , 118 , 33388 , 34376
+17:23:36:935	This is Upper Target 10 and Lower Target -10
+17:23:36:935	Small Orbiting Circle Coordinates: X = 555, Y = 117
+17:23:36:935	End effector Coordinates: X = 580, Y = 113
+17:23:36:935	Distance between .... :25
+17:23:36:935	4 , 118 , 29421 , 37932
+17:23:37:174	This is Upper Target 10 and Lower Target -10
+17:23:37:174	Small Orbiting Circle Coordinates: X = 551, Y = 115
+17:23:37:174	End effector Coordinates: X = 580, Y = 88
+17:23:37:174	Distance between .... :39
+17:23:37:174	3 , 118 , 32884 , 37899
+17:23:37:422	This is Upper Target -10 and Lower Target -10
+17:23:37:422	Small Orbiting Circle Coordinates: X = 546, Y = 114
+17:23:37:422	End effector Coordinates: X = 555, Y = 88
+17:23:37:422	Distance between .... :27
+17:23:37:422	2 , 117 , 37598 , 38032
+17:23:37:677	This is Upper Target -10 and Lower Target -10
+17:23:37:677	Small Orbiting Circle Coordinates: X = 542, Y = 113
+17:23:37:677	End effector Coordinates: X = 555, Y = 113
+17:23:37:677	Distance between .... :13
+17:23:37:677	3 , 117 , 40189 , 35014
+17:23:37:677	This is Upper Target 10 and Lower Target 10
+17:23:37:677	Small Orbiting Circle Coordinates: X = 538, Y = 112
+17:23:37:933	End effector Coordinates: X = 530, Y = 113
+17:23:37:933	Distance between .... :8
+17:23:37:933	4 , 116 , 34388 , 33805
+17:23:37:933	This is Upper Target 10 and Lower Target -10
+17:23:37:933	Small Orbiting Circle Coordinates: X = 534, Y = 111
+17:23:38:181	End effector Coordinates: X = 555, Y = 113
+17:23:38:181	Distance between .... :21
+17:23:38:181	3 , 117 , 29907 , 36418
+17:23:38:181	This is Upper Target 10 and Lower Target -10
+17:23:38:181	Small Orbiting Circle Coordinates: X = 529, Y = 110
+17:23:38:421	End effector Coordinates: X = 530, Y = 88
+17:23:38:421	Distance between .... :22
+17:23:38:421	2 , 116 , 32472 , 36374
+17:23:38:421	This is Upper Target -10 and Lower Target -10
+17:23:38:421	Small Orbiting Circle Coordinates: X = 525, Y = 109
+17:23:38:688	End effector Coordinates: X = 530, Y = 88
+17:23:38:688	Distance between .... :21
+17:23:38:688	2 , 116 , 36865 , 35393
+17:23:38:688	This is Upper Target -10 and Lower Target 10
+17:23:38:688	Small Orbiting Circle Coordinates: X = 521, Y = 108
+17:23:38:688	End effector Coordinates: X = 505, Y = 88
+17:23:38:688	Distance between .... :25
+17:23:38:688	2 , 115 , 41019 , 33999
+17:23:38:950	This is Upper Target -10 and Lower Target -10
+17:23:38:950	Small Orbiting Circle Coordinates: X = 517, Y = 108
+17:23:38:950	End effector Coordinates: X = 530, Y = 113
+17:23:38:950	Distance between .... :13
+17:23:38:950	3 , 116 , 35978 , 35942
+17:23:39:198	This is Upper Target 10 and Lower Target 10
+17:23:39:198	Small Orbiting Circle Coordinates: X = 512, Y = 107
+17:23:39:198	End effector Coordinates: X = 505, Y = 113
+17:23:39:198	Distance between .... :9
+17:23:39:198	4 , 115 , 30815 , 34934
+17:23:39:444	This is Upper Target 10 and Lower Target -10
+17:23:39:444	Small Orbiting Circle Coordinates: X = 508, Y = 106
+17:23:39:444	End effector Coordinates: X = 530, Y = 113
+17:23:39:444	Distance between .... :23
+17:23:39:444	3 , 116 , 26809 , 39139
+17:23:39:693	This is Upper Target 10 and Lower Target -10
+17:23:39:693	Small Orbiting Circle Coordinates: X = 504, Y = 106
+17:23:39:693	End effector Coordinates: X = 505, Y = 88
+17:23:39:693	Distance between .... :18
+17:23:39:693	2 , 115 , 31876 , 37597
+17:23:39:943	This is Upper Target -10 and Lower Target -10
+17:23:39:943	Small Orbiting Circle Coordinates: X = 499, Y = 105
+17:23:39:943	End effector Coordinates: X = 505, Y = 88
+17:23:39:943	Distance between .... :18
+17:23:39:943	2 , 115 , 36027 , 37625
+17:23:40:201	This is Upper Target -10 and Lower Target 10
+17:23:40:201	Small Orbiting Circle Coordinates: X = 495, Y = 105
+17:23:40:201	End effector Coordinates: X = 480, Y = 88
+17:23:40:201	Distance between .... :22
+17:23:40:201	2 , 114 , 40033 , 34318
+17:23:40:467	This is Upper Target 10 and Lower Target -10
+17:23:40:467	Small Orbiting Circle Coordinates: X = 491, Y = 105
+17:23:40:467	End effector Coordinates: X = 505, Y = 113
+17:23:40:467	Distance between .... :16
+17:23:40:467	3 , 115 , 32468 , 36505
+17:23:40:467	This is Upper Target 10 and Lower Target -10
+17:23:40:467	Small Orbiting Circle Coordinates: X = 486, Y = 105
+17:23:40:701	End effector Coordinates: X = 480, Y = 88
+17:23:40:701	Distance between .... :18
+17:23:40:701	2 , 114 , 27847 , 35574
+17:23:40:701	This is Upper Target 10 and Lower Target 10
+17:23:40:701	Small Orbiting Circle Coordinates: X = 482, Y = 105
+17:23:40:957	End effector Coordinates: X = 480, Y = 88
+17:23:40:957	Distance between .... :17
+17:23:40:957	2 , 114 , 29295 , 34316
+17:23:50:796	The program '[19880] PULSR_3.exe' has exited with code 0 (0x0).

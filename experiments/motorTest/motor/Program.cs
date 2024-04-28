@@ -79,8 +79,8 @@ namespace motor
             if (input == "Y")
             {
                 //test();
-                //assistiveTest();
-                activeTest();
+                assistiveTest();
+                //activeTest();
             }
             else if (input == "N") { }
 
@@ -299,12 +299,28 @@ namespace motor
                         // Parse and add the values to the lsList
                         foreach (string line in lsLines)
                         {
-                            lsList.Add(double.Parse(line));
+                            //lsList.Add(double.Parse(line));
+                            if (double.TryParse(line, out double value))
+                            {
+                                lsList.Add(value);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error: Unable to parse value from file.");
+                            }
                         }
                         // Parse and add the values to the usList
                         foreach (string line in usLines)
                         {
-                            usList.Add(double.Parse(line));
+                            //usList.Add(double.Parse(line));
+                            if (double.TryParse(line, out double value))
+                            {
+                                usList.Add(value);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error: Unable to parse value from file.");
+                            }
                         }
 
 
@@ -344,7 +360,7 @@ namespace motor
                                     break;
                                 }
                             } 
-                        }
+                        } 
                         Console.WriteLine("Circle Mode Ended...");
                         pulsr3.UpdateMotorSpeed(0, 0);
 

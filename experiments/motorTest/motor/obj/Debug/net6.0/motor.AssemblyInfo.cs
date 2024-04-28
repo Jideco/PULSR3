@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("motor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+072c68d3b04caa8438c786f4a5c141995d0752b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8da67bf8890fb1dc734c147fb7cd029fc827e11")]
 [assembly: System.Reflection.AssemblyProductAttribute("motor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("motor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
