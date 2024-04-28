@@ -24,8 +24,8 @@ namespace PULSR_3
 
         pulsr pulsr3 = new pulsr();
 
-        int selectedMode; //Store the Selected mode
-        bool running;   // ///////testing/// store state for assistive mode 
+        int selectedMode { get; set; } //Store the Selected mode
+        bool running;   // ///////testing/// store state for assistive and active mode
 
         //int upper_force_t { get; set; }
         //int lower_force_t { get; set; }
@@ -46,6 +46,13 @@ namespace PULSR_3
         public int new_x;
         public int yOffset { get; set; } = 38;
         public int xOffset { get; set; } = 195;
+
+        double ls, us;
+        double dest = 10;
+       
+        List<double> usList = new List<double>();
+        List<double> lsList = new List<double>();
+        int Q = 0; //ACTIVe increment counter
 
         int levelStart = 0;   // This should be threshold // see effect and remove later
         int cycle = 0;
@@ -215,16 +222,57 @@ namespace PULSR_3
             {
                 // Set parameters for Active Mode
 
-
                 pulsr3.ComputerMode();
                 pulsr3.KeyMode();
                 Console.WriteLine("Now in Active");
-
 
                 pulsr3.UpdateMotorSpeed(0, 0);
                 // reset motion function
                 pulsr3.ResetAngles();
                 pulsr3.UpdateMotorAngles();
+                ///////
+                // Read all lines from the text files
+                string[] usLines = File.ReadAllLines("Bupper_targets.txt"); /// add txt file of the data
+                string[] lsLines = File.ReadAllLines("Blower_targets.txt"); ///
+
+                // Parse and add the values to the lsList
+                foreach (string line in lsLines)
+                {
+                    //lsList.Add(double.Parse(line));
+                    if (double.TryParse(line, out double value))
+                    {
+                        lsList.Add(value);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Unable to parse value from file.");
+                    }
+                }
+                // Parse and add the values to the usList
+                foreach (string line in usLines)
+                {
+                    //usList.Add(double.Parse(line));
+                    if (double.TryParse(line, out double value))
+                    {
+                        usList.Add(value);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Unable to parse value from file.");
+                    }
+                }
+
+
+                // Ensure both lists have the same length
+                if (lsList.Count != usList.Count)
+                {
+                    Console.WriteLine("Error: Lists are not the same length.");
+
+
+                    return;
+                }
+
+
             }
 
         }
@@ -233,6 +281,13 @@ namespace PULSR_3
         private void timer_Tick(object sender, EventArgs e)
         {
             angle -= angularSpeed;
+
+            if (selectedMode == 8 && Q <= lsList.Count)
+            {
+                Q++;
+            }
+            
+
             if (angle == -90)
             {
                 timer.Stop();
@@ -249,22 +304,13 @@ namespace PULSR_3
                 else if (selectedMode == 8)
                 {
                     running = false;
-
-                    pulsr3.UpdateMotorSpeed(0, 0);
+                    //Q = 0; 
+                    pulsr3.UpdateMotorSpeed(0, 0); // Stop motor movement 
                 }
                 //file.Close();  //Close the file after each cycle
 
             }
             orbitPanel.Invalidate(); // Trigger a redraw of the panel
-
-            //// Calculate and display the coordinates
-            //float centerX = panel12.Width / 2;
-            //float centerY = panel12.Height / 2;
-            //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
-            //float orbitingY = centerY + (float)(orbitRadius * Math.Sin(angle));
-
-            //string coordinates = $"Orbiting Circle: ({orbitingX}, {orbitingY})";
-            //Console.WriteLine(coordinates); // Print to the command line
 
         }
 
@@ -308,31 +354,29 @@ namespace PULSR_3
 
             angle = 270;
             score = 0;
+            Q = 0;
+            trailPoints.Clear();
 
             //cycleCount = 0;
             //cycleCount += 1;
             //textBox1.Text = cycleCount.ToString();
 
             //timer.Start(); // Start the timer to begin the animation  // Take it to the bottom and see the effect
-
             
             if (selectedMode == 4) // For assistive
             {
                 threshold = 1000;
-                running = true; /////////////testing///
+                running = true; 
 
                 button2.Text = Convert.ToString(threshold);
             }
             else if (selectedMode == 8) // For active
             {
-                //threshold = 1000;
+                threshold = 1000;
                 running = true;
 
                 button2.Text = Convert.ToString(threshold);
             }
-
-
-
             // Initiate the filename to log parameters //
             cyclename = cycleCount + 1;
             fileName = "sessions_files/" + (cyclename) + ".csv";   ///Create the file for that session in session folder
@@ -427,26 +471,16 @@ namespace PULSR_3
                 pulsr3.UpdateUpperLoadCell(); //logic
                 pulsr3.UpdateLowerLoadCell(); // logic
 
-                upper_force_t.RemoveAt(0); // logic
-                upper_force_t.Add(pulsr3.upper.link_force); // logic
+                //upper_force_t.RemoveAt(0); // logic
+                //upper_force_t.Add(pulsr3.upper.link_force); // logic
 
-                lower_force_t.RemoveAt(0); // logic
-                lower_force_t.Add(pulsr3.lower.link_force); // logic
-                                                            /////////
-
-                /////////
+                //lower_force_t.RemoveAt(0); // logic
+                //lower_force_t.Add(pulsr3.lower.link_force); // logic
                 ///
-                if (selectedMode == 4)
-                {
-                    threshold_upper = (threshold / 2) + ((threshold * Math.Cos(Math.PI * pulsr3.upper.angle / 180)) / 2);
-                    threshold_lower = (threshold / 2) + ((threshold * Math.Cos(Math.PI * (pulsr3.lower.angle - 110) / 180)) / 2);
-                }
-                else
-                {
-                    threshold_upper = threshold;
-                    threshold_lower = threshold;
-                }
-
+                
+                threshold_upper = (threshold / 2) + ((threshold * Math.Cos(Math.PI * pulsr3.upper.angle / 180)) / 2);
+                threshold_lower = (threshold / 2) + ((threshold * Math.Cos(Math.PI * (pulsr3.lower.angle - 110) / 180)) / 2);
+                
                 double ls, us;
                 double dest = 10;
 
@@ -508,7 +542,7 @@ namespace PULSR_3
                 }
 
                 // Update speed instruction
-                Console.WriteLine($"This is Upper Target {us} and Lower Target {ls}");
+                Console.WriteLine($"This is Upper Target {us} and Lower Target {ls}"); // To collect data for active mode
                 pulsr3.UpdateMotorSpeed((int)us, (int)ls);
                 //Thread.Sleep(100);
 
@@ -635,7 +669,7 @@ namespace PULSR_3
 
                 // Draw the trail
                 Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
-                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash; // Set the DashStyle to Dash
+                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot; // Set the DashStyle to Dash
                 for (int i = 0; i < trailPoints.Count - 1; i++)
                 {
                     e.Graphics.DrawLine(trailPen, trailPoints[i], trailPoints[i + 1]);
@@ -800,7 +834,7 @@ namespace PULSR_3
 
                 // Draw the trail
                 Pen trailPen = new Pen(Color.White, 1); // Change the color and thickness as needed
-                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash; // Set the DashStyle to Dash
+                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot; // DashStyle
                 for (int i = 0; i < trailPoints.Count - 1; i++)
                 {
                     e.Graphics.DrawLine(trailPen, trailPoints[i], trailPoints[i + 1]);
@@ -836,82 +870,45 @@ namespace PULSR_3
                 Console.WriteLine($"{pulsr3.upper.angle} , {pulsr3.lower.angle} , {pulsr3.upper.link_force} , {pulsr3.lower.link_force}");
 
             }
-            else if (selectedMode != 4 && selectedMode == 8 && running == true )  // For Active
+            else if (selectedMode == 8 && running == true )  // For Active
             {
-                
-
-                double ls, us;
-                double dest = 10;
-
-
-                // Read all lines from the text files
-                string[] usLines = File.ReadAllLines("upper_targets1.txt"); /// add txt file of the data
-                string[] lsLines = File.ReadAllLines("lower_targets1.txt"); ///
-
-                // Initialize lists for ls and us // Populate with the data from assistive
-                List<double> usList = new List<double>();
-                List<double> lsList = new List<double>();
-
-                // Parse and add the values to the lsList
-                foreach (string line in lsLines)
-                {
-                    lsList.Add(double.Parse(line));
-                }
-                // Parse and add the values to the usList
-                foreach (string line in usLines)
-                {
-                    usList.Add(double.Parse(line));
-                }
-
-
-                // Ensure both lists have the same length
-                if (lsList.Count != usList.Count)
-                {
-                    Console.WriteLine("Error: Lists are not the same length.");
-
-                    return;
-                }
-
                 // Loop through the lists
                 //Console.WriteLine("Circle Mode Started...");
-                for (int i = 0; i < lsList.Count; i++)
-                {
-                    ls = lsList[i];
-                    us = usList[i];
-                    ///////////////////
-                    pulsr3.UpdateUpperLoadCell(); //logic
-                    pulsr3.UpdateLowerLoadCell(); // logic
-
-
-                    if (selectedMode == 4)
+                    if (Q < lsList.Count)
                     {
-                        threshold_upper = (threshold / 2) + ((threshold * Math.Cos(Math.PI * pulsr3.upper.angle / 180)) / 2);
-                        threshold_lower = (threshold / 2) + ((threshold * Math.Cos(Math.PI * (pulsr3.lower.angle - 110) / 180)) / 2);
+                        ls = lsList[Q];
+                        us = usList[Q];
+                    }
+                    else if (Q >= lsList.Count)
+                    {
+                        ls = 0;
+                        us = 0;
                     }
                     else
                     {
-                        threshold_upper = threshold;
-                        threshold_lower = threshold;
+                        ls = 0;
+                        us = 0;
                     }
 
+                    pulsr3.UpdateUpperLoadCell(); //logic
+                    pulsr3.UpdateLowerLoadCell(); // logic
+                    
+                    threshold_upper = threshold;
+                    threshold_lower = threshold;
+            
                     // Update motor speed
                     pulsr3.UpdateMotorSpeed((int)us, (int)ls);
+                    //pulsr3.UpdateMotorSpeed((int)usList[Q], (int)lsList[Q]);
 
 
                     //////////////////
-                    //Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);  //moved to buttom
                     float centerX = orbitPanel.Width / 2;
                     float centerY = orbitPanel.Height / 2;
-                    //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
-                    //float orbitingY = centerY + (float)(orbitRadius * Math.Sin(angle));
 
                     /// Draw the larger circle
                     float largeCircleX = centerX - largeCircleRadius;
                     float largeCircleY = centerY - largeCircleRadius;
                     float largeCircleDiameter = 2 * largeCircleRadius;
-
-                    //e.Graphics.DrawEllipse(largeCirclePen, largeCircleX, largeCircleY, largeCircleDiameter, largeCircleDiameter); //moved to buttom
-
 
                     /// Draw Small Obiting Circle
                     double radians = angle * Math.PI / 180;
@@ -921,9 +918,7 @@ namespace PULSR_3
                     int smallCircleDiameter = 2 * smallCircleRadius;
 
                     int smallCircleXPos = smallCircleX - smallCircleRadius;
-                    int smallCircleYPos = smallCircleY - smallCircleRadius;
-
-                    //e.Graphics.FillEllipse(Brushes.Green, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter); //moved to buttom
+                    int smallCircleYPos = smallCircleY - smallCircleRadius;                    
 
                     /// Display the coordinates in the terminal ///
                     Console.WriteLine("Small Orbiting Circle Coordinates: X = {0}, Y = {1}", smallCircleXPos, smallCircleYPos);
@@ -932,13 +927,6 @@ namespace PULSR_3
                     float rectWidth = 20;
                     float rectHeight = 20;
                     float rectX = centerX - rectWidth / 2;
-                    //float rectY = centerY - orbitingCircleRadius - rectHeight;
-                    //e.Graphics.FillRectangle(Brushes.Blue, rectX, rectY, rectWidth, rectHeight);
-                    //e.Graphics.FillRectangle(Brushes.Blue, 57, 345, rectWidth, rectHeight);
-
-                    /// update effector coordinate to give new effector coordinates ///
-                    //old_x = new_x;
-                    //old_y = new_y;
 
                     pulsr3.ReturnXYCoordinate();
                     //pulsr3.ComputeXY();
@@ -958,21 +946,14 @@ namespace PULSR_3
                     new_x = (xOffset - pulsr3.x);
                     new_y = (pulsr3.y - (yOffset));
 
-                    //new_x = pulsr3.x; // + 306;
-                    //new_y = pulsr3.y; // + 95;
-
                     current_x = (int)(centerX - new_x);
                     current_y = (int)(centerY + new_y);
 
                     // Add the current position to the trail points
                     trailPoints.Add(new Point(current_y, current_x));
 
-
-                    //e.Graphics.FillRectangle(Brushes.Blue, current_y, current_x, rectWidth, rectHeight); // moved to buttom
-
                     //Console.WriteLine("End effector : X = {0}, Y = {1}", new_x, new_y);
                     Console.WriteLine("End effector Coordinates: X = {0}, Y = {1}", current_y, current_x);
-
 
                     /// Scoring Calculations ///
                     int xDiff = current_y - smallCircleXPos;
@@ -980,8 +961,6 @@ namespace PULSR_3
 
                     distance = (int)Math.Sqrt((xDiff * xDiff) + (yDiff * yDiff));
                     Console.WriteLine("Distance between .... :" + distance);
-
-
 
                     Brush ellipseBrush = Brushes.Green;  //default colour
                     SolidBrush rectangleBrush = (SolidBrush)Brushes.Blue; //default colour
@@ -996,7 +975,6 @@ namespace PULSR_3
                             ellipseBrush = Brushes.Green;
                             rectangleBrush = (SolidBrush)Brushes.Green;
                             largeCirclePen = new Pen(Color.Green, 5.0f);
-
 
                             //update score
                             button3.Text = Convert.ToString(score += 1);
@@ -1029,7 +1007,6 @@ namespace PULSR_3
 
                     e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
 
-
                     /// Loggging parameter into CSV file ///
                     parameterLogging();
 
@@ -1042,9 +1019,6 @@ namespace PULSR_3
                         //file.WriteLine($"{threshold},{score},{pulsr2.upper.angle},{threshold_upper},{pulsr2.upper.link_force},{pulsr2.lower.angle},{threshold_lower},{pulsr2.lower.link_force},{DEP},{DEM},{DateTime.Now.Ticks},{n}");
                     }
                     Console.WriteLine($"{pulsr3.upper.angle} , {pulsr3.lower.angle} , {pulsr3.upper.link_force} , {pulsr3.lower.link_force}");
-
-                }
-
                 
             }
         }
