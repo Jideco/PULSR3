@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.IO;
 
-namespace motor 
+namespace motor
 {
     class Program
     {
@@ -96,22 +96,22 @@ namespace motor
                 pulsr3.DisableUpperMotor();
 
 
-                pulsr3.UpdateMotorSpeed(10 , 0);  //Move 10 counter clockwise UPPER R
+                pulsr3.UpdateMotorSpeed(10, 0);  //Move 10 counter clockwise UPPER R
                 Thread.Sleep(1000);
-                pulsr3.UpdateMotorSpeed(0, 0);  
+                pulsr3.UpdateMotorSpeed(0, 0);
                 Thread.Sleep(1000);
                 pulsr3.UpdateMotorSpeed(-10, 0);  //Move 10 clockwise UPPER F
                 Thread.Sleep(1000);
-                pulsr3.UpdateMotorSpeed(0, 0);  
+                pulsr3.UpdateMotorSpeed(0, 0);
                 Thread.Sleep(1000);
 
                 pulsr3.UpdateMotorSpeed(0, 10);  // Move 10 counter clockwise LOWER R
                 Thread.Sleep(1000);
-                pulsr3.UpdateMotorSpeed(0, 0);  
+                pulsr3.UpdateMotorSpeed(0, 0);
                 Thread.Sleep(1000);
                 pulsr3.UpdateMotorSpeed(0, -10); // Move 10 clockwise LOWER F
                 Thread.Sleep(1000);
-                pulsr3.UpdateMotorSpeed(0, 0);  
+                pulsr3.UpdateMotorSpeed(0, 0);
                 Thread.Sleep(1000);
 
 
@@ -119,16 +119,16 @@ namespace motor
 
             }
 
-            void assistiveTest() 
+            void assistiveTest()
             {
                 Console.WriteLine("Please enter a number:");
-                string input = Console.ReadLine() ;
+                string input = Console.ReadLine();
                 int number;
                 bool isNumber = Int32.TryParse(input, out number);
 
                 List<int> levels = new List<int> { 5, 6, 7 };
-                
-                if (isNumber && levels.Contains(number)) 
+
+                if (isNumber && levels.Contains(number))
                 {
                     Console.WriteLine("You entered a number. Press x to exit ");
 
@@ -139,103 +139,111 @@ namespace motor
                         List<int> upper_force_t = new List<int>(Enumerable.Repeat(32000, 70));
                         List<int> lower_force_t = new List<int>(Enumerable.Repeat(32000, 70));
 
-                        pulsr3.UpdateUpperLoadCell();
-                        Console.WriteLine("UPPER LINK FORCE: "+ pulsr3.upper.link_force);
-                        pulsr3.UpdateLowerLoadCell();
-                        Console.WriteLine("LOWER LINK FORCE: "+ pulsr3.lower.link_force);
+                        //pulsr3.UpdateUpperLoadCell();
+                        //Console.WriteLine("UPPER LINK FORCE: " + pulsr3.upper.link_force);
+                        //pulsr3.UpdateLowerLoadCell();
+                        //Console.WriteLine("LOWER LINK FORCE: " + pulsr3.lower.link_force);
                         //Thread.Sleep(2000);
                         pulsr3.UpdateSensorData();
 
-                         upper_force_t.RemoveAt(0);
-                         upper_force_t.Add(pulsr3.upper.link_force);
+                        upper_force_t.RemoveAt(0);
+                        upper_force_t.Add(pulsr3.upper.link_force);
 
-                         lower_force_t.RemoveAt(0);
-                         lower_force_t.Add(pulsr3.lower.link_force);
+                        lower_force_t.RemoveAt(0);
+                        lower_force_t.Add(pulsr3.lower.link_force);
 
-                         double threshold_upper, threshold_lower;
-                         double threshold = 1000;
+                        double threshold_upper, threshold_lower;
+                        double threshold = 1000;
 
-                         if (number == 6)
-                         {
-                             threshold_upper = (threshold / 2) + ((threshold * Math.Cos(Math.PI * pulsr3.upper.angle / 180)) / 2);
-                             threshold_lower = (threshold / 2) + ((threshold * Math.Cos(Math.PI * (pulsr3.lower.angle - 110) / 180)) / 2);
-                         }
-                         else
-                         {
-                             threshold_upper = threshold;
-                             threshold_lower = threshold;
-                         }
+                        if (number == 6)
+                        {
+                            threshold_upper = (threshold / 2) + ((threshold * Math.Cos(Math.PI * pulsr3.upper.angle / 180)) / 2);
+                            threshold_lower = (threshold / 2) + ((threshold * Math.Cos(Math.PI * (pulsr3.lower.angle - 110) / 180)) / 2);
+                        }
+                        else
+                        {
+                            threshold_upper = threshold;
+                            threshold_lower = threshold;
+                        }
                         //Console.WriteLine("upper thres"+ threshold_upper);
                         //Console.WriteLine("lower thres" + threshold_lower);
                         //Thread.Sleep(2000);
-                         double ls, us;
-                         double dest = 10;
+                        double ls, us;
+                        double dest = 10;
 
-                         if (pulsr3.lower.link_force < 30000 - threshold_lower)
-                         {
-                             ls = dest;
-                         }
-                         else if (pulsr3.lower.link_force > 34000 + threshold_lower)
-                         {
-                             ls = -dest;
-                         }
-                         else
-                         {
-                             ls = 0;
-                         }
+                        if (pulsr3.lower.link_force < 30000 - threshold_lower)
+                        {
+                            ls = dest;
+                        }
+                        else if (pulsr3.lower.link_force > 34000 + threshold_lower)
+                        {
+                            ls = -dest;
+                        }
+                        else
+                        {
+                            ls = 0;
+                        }
 
-                         if (pulsr3.upper.link_force < 30000 - threshold_upper)
-                         {
-                             us = dest;
-                         }
-                         else if (pulsr3.upper.link_force > 34000 + threshold_upper)
-                         {
-                             us = -dest;
-                         }
-                         else
-                         {
-                             us = 0;
-                         }
+                        if (pulsr3.upper.link_force < 26000 - threshold_upper)
+                        {
+                            us = dest;
+                        }
+                        else if (pulsr3.upper.link_force > 31000 + threshold_upper)
+                        {
+                            us = -dest;
+                        }
+                        else
+                        {
+                            us = 0;
+                        }
 
-                         //capping the speed
-                         if (us < 0)
-                         {
-                             if (Math.Abs(us) > dest)
-                             {
-                                 us = -dest;
-                             }
-                         }
-                         else
-                         {
-                             if (Math.Abs(us) < dest)
-                             {
-                                 us = dest;
-                             }
-                         }
+                        //capping the speed
+                        if (us < 0)
+                        {
+                            if (Math.Abs(us) > dest)
+                            {
+                                us = -dest;
+                            }
+                        }
+                        else if (us > 0)
+                        {
+                            if (Math.Abs(us) < dest)
+                            {
+                                us = dest;
+                            }
+                        }
+                        else
+                        {
+                            us = 0; 
+                        }
 
-                         if (ls < 0)
-                         {
-                             if (Math.Abs(ls) > dest)
-                             {
-                                 ls = -dest;
-                             }
-                         }
-                         else
-                         {
-                             if (Math.Abs(ls) < dest)
-                             {
-                                 ls = dest;
-                             }
-                         }
+                        if (ls < 0)
+                        {
+                            if (Math.Abs(ls) > dest)
+                            {
+                                ls = -dest;
+                            }
+                        }
+                        else if (ls > 0)
+                        {
+                            if (Math.Abs(ls) < dest)
+                            {
+                                ls = dest;
+                            }
+                        }
+                        else
+                        {
+                            ls = 0;
+                        }
 
                         // Update speed instruction
-                         Console.WriteLine($"This is Upper Target {us} and Lower Target {ls}");
+                        //Console.WriteLine($"This is Upper Target {us} and Lower Target {ls}");
 
-                         pulsr3.UpdateMotorSpeed((int)us, (int)ls);
+                        pulsr3.UpdateMotorSpeed((int)us, (int)ls);
 
-                         Console.WriteLine("SPEED UPDATED");
+                        Console.WriteLine("SPEED UPDATED");
 
-                         Thread.Sleep(100); 
+                        Thread.Sleep(100);
 
 
 
@@ -262,7 +270,7 @@ namespace motor
             }
 
 
-            void activeTest() 
+            void activeTest()
             {
                 Console.WriteLine("Please enter a number:");
                 string input = Console.ReadLine();
@@ -273,96 +281,73 @@ namespace motor
 
                 if (isNumber && levels.Contains(number))
                 {
-                        Console.WriteLine("You entered a number. Press x to exit ");
-
-                    
-                    
-                        // Logic  //
-                        pulsr3.UpdateUpperLoadCell();
-                        //Console.WriteLine("UPPER LINK FORCE: " + pulsr3.upper.link_force);
-                        pulsr3.UpdateLowerLoadCell();
-                        //xConsole.WriteLine("LOWER LINK FORCE: " + pulsr3.lower.link_force);
-                        //Thread.Sleep(2000);
-                        pulsr3.UpdateSensorData();
-
-                        double ls, us;
-                        double dest = 10;
-
-                        // Read all lines from the text files
-                        string[] usLines = File.ReadAllLines("upper_targets1.txt");
-                        string[] lsLines = File.ReadAllLines("lower_targets1.txt");
-
-                        // Initialize lists for ls and us // Populate with the data from assistive
-                        List<double> usList = new List<double>();
-                        List<double> lsList = new List<double>();
-                        
-                        // Parse and add the values to the lsList
-                        foreach (string line in lsLines)
-                        {
-                            //lsList.Add(double.Parse(line));
-                            if (double.TryParse(line, out double value))
-                            {
-                                lsList.Add(value);
-                            }
-                            else
-                            {
-                                Console.WriteLine("Error: Unable to parse value from file.");
-                            }
-                        }
-                        // Parse and add the values to the usList
-                        foreach (string line in usLines)
-                        {
-                            //usList.Add(double.Parse(line));
-                            if (double.TryParse(line, out double value))
-                            {
-                                usList.Add(value);
-                            }
-                            else
-                            {
-                                Console.WriteLine("Error: Unable to parse value from file.");
-                            }
-                        }
+                    Console.WriteLine("You entered a number. Press x to exit ");
 
 
-                        // Ensure both lists have the same length
-                        if (lsList.Count != usList.Count)
-                        {
-                            Console.WriteLine("Error: Lists are not the same length.");
-                          
-                            return;
-                        }
-                    Console.WriteLine(lsList.Count());
-                    Console.WriteLine(usList.Count());
+
+                    // Logic  //
+                    pulsr3.UpdateUpperLoadCell();
+                    //Console.WriteLine("UPPER LINK FORCE: " + pulsr3.upper.link_force);
+                    pulsr3.UpdateLowerLoadCell();
+                    //xConsole.WriteLine("LOWER LINK FORCE: " + pulsr3.lower.link_force);
+                    //Thread.Sleep(2000);
+                    pulsr3.UpdateSensorData();
+
+                    double ls, us;
+                    double dest = 10;
+
+                    // Read all lines from the text files
+                    string[] usLines = File.ReadAllLines("upper_targets1.txt");
+                    string[] lsLines = File.ReadAllLines("lower_targets1.txt");
+
+                    // Initialize lists for ls and us // Populate with the data from assistive
+                    List<double> usList = new List<double>();
+                    List<double> lsList = new List<double>();
+
+                    // Parse and add the values to the lsList
+                    foreach (string line in lsLines)
+                    {
+                        lsList.Add(double.Parse(line));
+                    }
+                    // Parse and add the values to the usList
+                    foreach (string line in usLines)
+                    {
+                        usList.Add(double.Parse(line));
+                    }
+
+
+                    // Ensure both lists have the same length
+                    if (lsList.Count != usList.Count)
+                    {
+                        Console.WriteLine("Error: Lists are not the same length.");
+
+                        return;
+                    }
 
                     // Loop through the lists
                     Console.WriteLine("Circle Mode Started...");
-                        for (int i = 0; i < lsList.Count && i < usList.Count; i++)
+                    for (int i = 0; i < lsList.Count; i++)
+                    {
+                        ls = lsList[i];
+                        us = usList[i];
+
+                        // Update motor speed
+                        pulsr3.UpdateMotorSpeed((int)us, (int)ls);
+
+                        //Thread.Sleep(100);
+
+                        if (Console.KeyAvailable)
                         {
-                            ls = lsList[i];
-                            us = usList[i];
-
-                            // Update motor speed
-                            pulsr3.UpdateMotorSpeed((int)us, (int)ls);
-
-                            Thread.Sleep(200);
-                            Console.WriteLine(i);
-                            pulsr3.UpdateSensorData();
-
-
-
-                            if (Console.KeyAvailable)
+                            var key = Console.ReadKey(true).Key;
+                            if (key == ConsoleKey.X)
                             {
-                                var key = Console.ReadKey(true).Key;
-                                if (key == ConsoleKey.X)
-                                {
-                                    Console.WriteLine("You pressed 'x'. Exiting the loop.");
-                                    pulsr3.UpdateMotorSpeed(0, 0);
-                                    break;
-                                }
-                            } 
-                        } 
-                        Console.WriteLine("Circle Mode Ended...");
-                        pulsr3.UpdateMotorSpeed(0, 0);
+                                Console.WriteLine("You pressed 'x'. Exiting the loop.");
+                                pulsr3.UpdateMotorSpeed(0, 0);
+                                break;
+                            }
+                        }
+                    }
+                    Console.WriteLine("Circle Mode Ended...");
 
 
                 }
