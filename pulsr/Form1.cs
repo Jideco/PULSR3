@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
@@ -24,18 +25,14 @@ namespace PULSR_3
 
         pulsr pulsr3 = new pulsr();
 
-        int selectedMode { get; set; } //Store the Selected mode
-        bool running;   // ///////testing/// store state for assistive and active mode
+        private int selectedMode { get; set; } //Store the Selected mode
+        bool running;   // store state for assistive and active mode
 
-        //int upper_force_t { get; set; }
-        //int lower_force_t { get; set; }
-        //int[] upper_force_t;
         List<int> upper_force_t;
         List<int> lower_force_t;
         int threshold { get; set; }
         double threshold_upper, threshold_lower;
 
-        //public int value { get; set; }
         public int value;
 
         public int old_y;
@@ -58,11 +55,7 @@ namespace PULSR_3
         int cycle = 0;
         int score = 0;
         int distance;
-        //
-        //private float angle = 0;
-        //private const float orbitRadius = 100;
-        //private const float centerOffset = 150;
-        //
+
         private int centerX;
         private int centerY;
         private int largeCircleRadius = 250;
@@ -76,6 +69,7 @@ namespace PULSR_3
 
 
         List<Point> trailPoints = new List<Point>();
+        GraphicsPath path = new GraphicsPath();
 
 
         public int smallCircleX { get; private set; }
@@ -119,7 +113,7 @@ namespace PULSR_3
 
             //// Game level selection ////
             //public int value { get; set;}   /////key metric
-            if (InputBox("GAME LEVEL", "Select a Level!", ref value) == DialogResult.OK)
+            /*if (InputBox("GAME LEVEL", "Select a Level!", ref value) == DialogResult.OK)
             {
                 if (value == 0)
                 {
@@ -144,7 +138,28 @@ namespace PULSR_3
                     //Close();
 
                 }
+            }*/
+
+            
+            if (InputBox("GAME MODE", "Select a Mode!", this) == DialogResult.OK)
+            {
+                if (selectedMode == 0)
+                {
+                    MessageBox.Show("You selected: Passive Mode");
+                    selectedMode = 0;
+                }
+                else if (selectedMode == 4)
+                {
+                    MessageBox.Show("You selected: Assistive Mode");
+                    selectedMode = 4;
+                }
+                else if (selectedMode == 8)
+                {
+                    MessageBox.Show("You selected: Active Mode");
+                    selectedMode = 8;
+                }
             }
+
 
             // RESET ANGLE PARAMETERS AND DISABLE MOTORS //
             pulsr3.UpdateMotorSpeed(0, 0);
@@ -154,16 +169,6 @@ namespace PULSR_3
             pulsr3.DefineGeometry(26, 26, 26);
             pulsr3.SetOrigin(20);
 
-            //int[] new_yx = pulsr3.ReturnXYCoordinate();
-            //old_y = new_yx[0];
-            //old_x = new_yx[1];
-
-
-
-            //InitializeComponent();
-            //panel12.Paint += panel12_Paint;
-            //timer.Tick += timer_Tick;
-            //timer.Start();
         }
 
 
@@ -176,9 +181,6 @@ namespace PULSR_3
         {
             //timer.Start();    //commentend not to start when the form loads, the start button controls it now
 
-            //this.KeyPreview = true;       // Enable keyevents for the move
-            //this.KeyDown += keyisdown;   // Register the KeyDown event handler
-
             /// Set initial parameters based on selectedMode ///
             if (selectedMode == 0) // Set parameters for Passive Mode
             {
@@ -186,10 +188,7 @@ namespace PULSR_3
 
                 pulsr3.UserMode();
 
-
-
                 Console.WriteLine("Now in Passive");
-
 
                 pulsr3.UpdateMotorSpeed(0, 0);
                 // reset motion function
@@ -232,8 +231,8 @@ namespace PULSR_3
                 pulsr3.UpdateMotorAngles();
                 ///////
                 // Read all lines from the text files
-                string[] usLines = File.ReadAllLines("Bupper_targets.txt"); /// add txt file of the data
-                string[] lsLines = File.ReadAllLines("Blower_targets.txt"); ///
+                string[] usLines = File.ReadAllLines("Nupper_targets.txt"); /// add txt file of the data
+                string[] lsLines = File.ReadAllLines("Nlower_targets.txt"); ///
 
                 // Parse and add the values to the lsList
                 foreach (string line in lsLines)
@@ -297,7 +296,7 @@ namespace PULSR_3
                 //angle = 0;
                 if (selectedMode == 4) 
                 {
-                    running = false; ///////testing///
+                    running = false;
 
                     pulsr3.UpdateMotorSpeed(0, 0); // Stop motor movement 
                 }
@@ -314,7 +313,7 @@ namespace PULSR_3
 
         }
 
-        ////  Close Maximize Minimize  ////
+        ////  Close Maximize Minimize ModeSwitch ////
         private void closeButton(object sender, MouseEventArgs e)
         {
             DialogResult dr = MessageBox.Show("Do you want to close this window", "Confirm", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
@@ -335,6 +334,29 @@ namespace PULSR_3
             //int width = this.Width;
             //int height = this.Height;
             //Console.WriteLine("NORMAL Width: " + width + ", Height: " + height);
+        }
+        private void switchClick(object sender, MouseEventArgs e)
+        {
+            if (InputBox("GAME MODE", "Select a Mode!", this) == DialogResult.OK)
+            {
+                if (selectedMode == 0)
+                {
+                    MessageBox.Show("You selected: Passive Mode");
+                    selectedMode = 0;
+                }
+                else if (selectedMode == 4)
+                {
+                    MessageBox.Show("You selected: Assistive Mode");
+                    selectedMode = 4;
+                }
+                else if (selectedMode == 8)
+                {
+                    MessageBox.Show("You selected: Active Mode");
+                    selectedMode = 8;
+                }
+                Form1_Load(this,e);
+                resetClick(this,e);
+            }
         }
 
         //////// START Button //////
@@ -357,10 +379,6 @@ namespace PULSR_3
             Q = 0;
             trailPoints.Clear();
 
-            //cycleCount = 0;
-            //cycleCount += 1;
-            //textBox1.Text = cycleCount.ToString();
-
             //timer.Start(); // Start the timer to begin the animation  // Take it to the bottom and see the effect
             
             if (selectedMode == 4) // For assistive
@@ -379,7 +397,7 @@ namespace PULSR_3
             }
             // Initiate the filename to log parameters //
             cyclename = cycleCount + 1;
-            fileName = "sessions_files/" + (cyclename) + ".csv";   ///Create the file for that session in session folder
+            fileName = "sessions_files/" + (cyclename) + ".csv";   //Create the file for that session in session folder
 
             if (File.Exists(fileName))   // Check if it existed before
             {
@@ -497,11 +515,11 @@ namespace PULSR_3
                     ls = 0;
                 }
 
-                if (pulsr3.upper.link_force < 30000 - threshold_upper)
+                if (pulsr3.upper.link_force < 26000 - threshold_upper)
                 {
                     us = dest;
                 }
-                else if (pulsr3.upper.link_force > 34000 + threshold_upper)
+                else if (pulsr3.upper.link_force > 31000 + threshold_upper)
                 {
                     us = -dest;
                 }
@@ -518,12 +536,16 @@ namespace PULSR_3
                         us = -dest;
                     }
                 }
-                else
+                else if (us > 0)
                 {
                     if (Math.Abs(us) < dest)
                     {
                         us = dest;
                     }
+                }
+                else
+                {
+                    us = 0;
                 }
 
                 if (ls < 0)
@@ -533,12 +555,16 @@ namespace PULSR_3
                         ls = -dest;
                     }
                 }
-                else
+                else if (ls > 0)
                 {
                     if (Math.Abs(ls) < dest)
                     {
                         ls = dest;
                     }
+                }
+                else
+                {
+                    ls = 0;
                 }
 
                 // Update speed instruction
@@ -550,8 +576,6 @@ namespace PULSR_3
                 //Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);  //moved to buttom
                 float centerX = orbitPanel.Width / 2;
                 float centerY = orbitPanel.Height / 2;
-                //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
-                //float orbitingY = centerY + (float)(orbitRadius * Math.Sin(angle));
 
                 /// Draw the larger circle
                 float largeCircleX = centerX - largeCircleRadius;
@@ -574,15 +598,12 @@ namespace PULSR_3
                 //e.Graphics.FillEllipse(Brushes.Green, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter); //moved to buttom
 
                 /// Display the coordinates in the terminal ///
-                Console.WriteLine("Small Orbiting Circle Coordinates: X = {0}, Y = {1}", smallCircleXPos, smallCircleYPos);
+                //Console.WriteLine("Small Orbiting Circle Coordinates: X = {0}, Y = {1}", smallCircleXPos, smallCircleYPos);
 
                 ///// Draw the small rectangle connected to end effector  /////
                 float rectWidth = 20;
                 float rectHeight = 20;
                 float rectX = centerX - rectWidth / 2;
-                //float rectY = centerY - orbitingCircleRadius - rectHeight;
-                //e.Graphics.FillRectangle(Brushes.Blue, rectX, rectY, rectWidth, rectHeight);
-                //e.Graphics.FillRectangle(Brushes.Blue, 57, 345, rectWidth, rectHeight);
 
                 /// update effector coordinate to give new effector coordinates ///
                 //old_x = new_x;
@@ -614,6 +635,7 @@ namespace PULSR_3
 
                 // Add the current position to the trail points
                 trailPoints.Add(new Point(current_y, current_x));
+                
 
 
                 //e.Graphics.FillRectangle(Brushes.Blue, current_y, current_x, rectWidth, rectHeight); // moved to buttom
@@ -668,31 +690,29 @@ namespace PULSR_3
                 e.Graphics.FillEllipse(ellipseBrush, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter);
 
                 // Draw the trail
-                Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
-                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot; // Set the DashStyle to Dash
+                /*Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
+                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot; // Set the DashStyle to Dash or Dot
                 for (int i = 0; i < trailPoints.Count - 1; i++)
                 {
                     e.Graphics.DrawLine(trailPen, trailPoints[i], trailPoints[i + 1]);
-                }
-
-                e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
-
-
-
-                //TO force exit assistive //
-                /*if (Console.KeyAvailable)
-                {
-                    var key = Console.ReadKey(true).Key;
-                    if (key == ConsoleKey.X)
-                    {
-                        Console.WriteLine("You pressed 'x'. Exiting the loop.");
-                        pulsr3.UpdateMotorSpeed(0, 0);
-                        //break;
-                        
-                    }
                 }*/
 
 
+                Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
+                trailPen.StartCap = LineCap.Round;
+                trailPen.EndCap = LineCap.Round;
+                trailPen.LineJoin = LineJoin.Round;
+
+                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+                if (trailPoints.Count > 2)
+                {
+                    Point[] points = trailPoints.ToArray();
+                    e.Graphics.DrawCurve(trailPen, points, 0.3f); // 0.5f is the tension parameter
+                }
+
+
+                e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
                 /// Loggging parameter into CSV file ///
                 parameterLogging();
 
@@ -714,8 +734,6 @@ namespace PULSR_3
                 //Pen largeCirclePen = new Pen(Color.FromArgb(0xB0, 0x80, 0x2E), 5.0f);  //moved to buttom
                 float centerX = orbitPanel.Width / 2;
                 float centerY = orbitPanel.Height / 2;
-                //float orbitingX = centerX + (float)(orbitRadius * Math.Cos(angle)) - centerOffset;
-                //float orbitingY = centerY + (float)(orbitRadius * Math.Sin(angle));
 
                 /// Draw the larger circle
                 float largeCircleX = centerX - largeCircleRadius;
@@ -744,9 +762,6 @@ namespace PULSR_3
                 float rectWidth = 20;
                 float rectHeight = 20;
                 float rectX = centerX - rectWidth / 2;
-                //float rectY = centerY - orbitingCircleRadius - rectHeight;
-                //e.Graphics.FillRectangle(Brushes.Blue, rectX, rectY, rectWidth, rectHeight);
-                //e.Graphics.FillRectangle(Brushes.Blue, 57, 345, rectWidth, rectHeight);
 
                 /// update effector coordinate to give new effector coordinates ///
                 //old_x = new_x;
@@ -833,15 +848,19 @@ namespace PULSR_3
                 e.Graphics.FillEllipse(ellipseBrush, smallCircleXPos, smallCircleYPos, smallCircleDiameter, smallCircleDiameter);
 
                 // Draw the trail
-                Pen trailPen = new Pen(Color.White, 1); // Change the color and thickness as needed
-                trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot; // DashStyle
-                for (int i = 0; i < trailPoints.Count - 1; i++)
+                Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
+                trailPen.StartCap = LineCap.Round;
+                trailPen.EndCap = LineCap.Round;
+                trailPen.LineJoin = LineJoin.Round;
+
+                if (trailPoints.Count > 2)
                 {
-                    e.Graphics.DrawLine(trailPen, trailPoints[i], trailPoints[i + 1]);
+                    Point[] points = trailPoints.ToArray();
+                    e.Graphics.DrawCurve(trailPen, points, 0.5f); // 0.5f is the tension parameter
                 }
 
-                e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
 
+                e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
                 /////////
                 ///
                 if (selectedMode == 4)
@@ -891,7 +910,7 @@ namespace PULSR_3
                     }
 
                     pulsr3.UpdateUpperLoadCell(); //logic
-                    pulsr3.UpdateLowerLoadCell(); // logic
+                    pulsr3.UpdateLowerLoadCell(); //logic
                     
                     threshold_upper = threshold;
                     threshold_lower = threshold;
@@ -999,14 +1018,18 @@ namespace PULSR_3
 
                     // Draw the trail
                     Pen trailPen = new Pen(Color.White, 2); // Change the color and thickness as needed
-                    trailPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash; // Set the DashStyle to Dash
-                    for (int p = 0; p < trailPoints.Count - 1; p++)
+                    trailPen.StartCap = LineCap.Round;
+                    trailPen.EndCap = LineCap.Round;
+                    trailPen.LineJoin = LineJoin.Round;
+
+                    if (trailPoints.Count > 2)
                     {
-                        e.Graphics.DrawLine(trailPen, trailPoints[p], trailPoints[p + 1]);
+                        Point[] points = trailPoints.ToArray();
+                        e.Graphics.DrawCurve(trailPen, points, 0.5f); // 0.5f is the tension parameter
                     }
 
-                    e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
 
+                    e.Graphics.FillRectangle(rectangleBrush, current_y, current_x, rectWidth, rectHeight);
                     /// Loggging parameter into CSV file ///
                     parameterLogging();
 
@@ -1023,50 +1046,46 @@ namespace PULSR_3
             }
         }
 
-            
+        
+
+
 
 
         /// Dialog ///
-
-        public static DialogResult InputBox(string title, string promptText, ref int value)
+        public static DialogResult InputBox(string title, string promptText, Form1 formInstance)
         {
             Form form = new Form();
             Label label = new Label();
-            TextBox textBox = new TextBox();
-            Button buttonOk = new Button();
-            Button buttonCancel = new Button();
+            Button buttonPassiveMode = new Button();
+            Button buttonAssistiveMode = new Button();
+            Button buttonActiveMode = new Button();
 
             form.Text = title;
             label.Text = promptText;
+            buttonPassiveMode.Text = "Passive Mode";
+            buttonAssistiveMode.Text = "Assistive Mode";
+            buttonActiveMode.Text = "Active Mode";
 
-            buttonOk.Text = "OK";
-            buttonCancel.Text = "Cancel";
-            buttonOk.DialogResult = DialogResult.OK;
-            buttonCancel.DialogResult = DialogResult.Cancel;
-
-            label.SetBounds(60, 5, 100, 13);
-            textBox.SetBounds(75, 23, 50, 20);
-            buttonOk.SetBounds(25, 50, 70, 35);
-            buttonCancel.SetBounds(100, 50, 70, 35);
+            label.SetBounds(130, 5, 100, 13);
+            buttonPassiveMode.SetBounds(25, 50, 100, 35);
+            buttonAssistiveMode.SetBounds(130, 50, 100, 35);
+            buttonActiveMode.SetBounds(235, 50, 100, 35);
 
             label.AutoSize = true;
-            form.ClientSize = new Size(200, 100);
+            form.ClientSize = new Size(350, 120);
             form.FormBorderStyle = FormBorderStyle.FixedDialog;
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MinimizeBox = false;
             form.MaximizeBox = false;
 
-            form.Controls.AddRange(new Control[] { label, textBox, buttonOk, buttonCancel });
-            form.AcceptButton = buttonOk;
-            form.CancelButton = buttonCancel;
+            form.Controls.AddRange(new Control[] { label, buttonPassiveMode, buttonAssistiveMode, buttonActiveMode });
 
-            DialogResult dialogResult = form.ShowDialog();
-
-            value = Convert.ToInt32(textBox.Text);
-            return dialogResult;
+            buttonPassiveMode.Click += (sender, e) => { formInstance.selectedMode = 0; form.DialogResult = DialogResult.OK; form.Close(); };
+            buttonAssistiveMode.Click += (sender, e) => { formInstance.selectedMode = 4; form.DialogResult = DialogResult.OK; form.Close(); };
+            buttonActiveMode.Click += (sender, e) => { formInstance.selectedMode = 8; form.DialogResult = DialogResult.OK; form.Close(); };
 
 
-
+            return form.ShowDialog();
         }
 
 
