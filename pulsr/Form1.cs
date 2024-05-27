@@ -141,7 +141,7 @@ namespace PULSR_3
             }*/
 
             
-            if (InputBox("GAME MODE", "Select a Mode!", this) == DialogResult.OK)
+            if (InputBox("GAME MODE", "SELECT A MODE!", this) == DialogResult.OK)
             {
                 if (selectedMode == 0)
                 {
@@ -337,7 +337,7 @@ namespace PULSR_3
         }
         private void switchClick(object sender, MouseEventArgs e)
         {
-            if (InputBox("GAME MODE", "Select a Mode!", this) == DialogResult.OK)
+            if (InputBox("GAME MODE", "SELECT A MODE!", this) == DialogResult.OK)
             {
                 if (selectedMode == 0)
                 {
@@ -1056,29 +1056,39 @@ namespace PULSR_3
         {
             Form form = new Form();
             Label label = new Label();
+
+            PictureBox pictureBox = new PictureBox(); // PictureBox to display the image
+
             Button buttonPassiveMode = new Button();
             Button buttonAssistiveMode = new Button();
             Button buttonActiveMode = new Button();
 
             form.Text = title;
+            //form.Font = new Font(form.Font, FontStyle.Bold);
             label.Text = promptText;
+            label.Font = new Font(label.Font, FontStyle.Bold);
             buttonPassiveMode.Text = "Passive Mode";
             buttonAssistiveMode.Text = "Assistive Mode";
             buttonActiveMode.Text = "Active Mode";
 
-            label.SetBounds(130, 5, 100, 13);
-            buttonPassiveMode.SetBounds(25, 50, 100, 35);
-            buttonAssistiveMode.SetBounds(130, 50, 100, 35);
-            buttonActiveMode.SetBounds(235, 50, 100, 35);
+            // set up the PictureBox 
+            pictureBox.Image = Properties.Resources.PULSR_header;
+            pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox.Location = new Point(0, 0);
+
+            label.SetBounds(130, pictureBox.Bottom + 10, 100, 13);
+            buttonPassiveMode.SetBounds(25, label.Bottom + 10, 100, 35);
+            buttonAssistiveMode.SetBounds(130, label.Bottom + 10, 100, 35);
+            buttonActiveMode.SetBounds(235, label.Bottom + 10 , 100, 35);
 
             label.AutoSize = true;
-            form.ClientSize = new Size(350, 120);
+            form.ClientSize = new Size(350, 90 + pictureBox.Height); // Adjust the form height based on the image height
             form.FormBorderStyle = FormBorderStyle.FixedDialog;
             form.StartPosition = FormStartPosition.CenterScreen;
             form.MinimizeBox = false;
             form.MaximizeBox = false;
 
-            form.Controls.AddRange(new Control[] { label, buttonPassiveMode, buttonAssistiveMode, buttonActiveMode });
+            form.Controls.AddRange(new Control[] { pictureBox, label, buttonPassiveMode, buttonAssistiveMode, buttonActiveMode });
 
             buttonPassiveMode.Click += (sender, e) => { formInstance.selectedMode = 0; form.DialogResult = DialogResult.OK; form.Close(); };
             buttonAssistiveMode.Click += (sender, e) => { formInstance.selectedMode = 4; form.DialogResult = DialogResult.OK; form.Close(); };
